@@ -1,0 +1,14 @@
+using System;
+using UnityEngine;
+
+[Serializable]
+public class PurchasableObject
+{
+    public string objectName;
+    public int objectTier = 0;
+    public bool isPurchased;
+    public bool isPlaced;
+    public string objectDescription;
+    public float objectPrice;
+    public GameObject objectModel;
+}
