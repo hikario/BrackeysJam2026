@@ -31,9 +31,13 @@ public class PurchasableObjectViewer : MonoBehaviour
     {
         if (purchasableData.isPurchased)
         {
+            //Debug.Log($"{gameObject.name} is already purchased!");
             return;
         }
+
+        //Debug.Log($"View Object for {gameObject.name} is {view} at {Time.frameCount}");
         anim.SetBool("viewObject", view);
+
         if (view)
         {
             rtCamera.enabled = true;

@@ -3,22 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PurchaseScreenController : MonoBehaviour
+public class PurchaseScreenController : ComputerScreen
 {
-    [SerializeField] private PurchasableObjectDefinition purchasableObjectDefinitionReference;
     [SerializeField] public PurchasableListing listingPrefab;
     [SerializeField] public PurchasableObjectViewer rtCameraPrefab;
+    private List<PurchasableObject> instantiatedObjects = new List<PurchasableObject>();
     private List<PurchasableObjectViewer> viewers = new List<PurchasableObjectViewer>();
     [SerializeField] public RectTransform listingParentRectTransform;
     [SerializeField] public Transform listingObjectsTransform;
-    [SerializeField] private int currentObjectTier = 0;
 
 
     private void OnEnable()
     {
-        foreach (PurchasableObject purchasableObject in purchasableObjectDefinitionReference.purchasableObjects)
+        foreach (PurchasableObject purchasableObject in ComputerScreenManager.purchasableObjectDefinitionReference.purchasableObjects)
         {
-            if (currentObjectTier >= purchasableObject.objectTier)
+            if (ComputerScreenManager.currentSequence >= purchasableObject.objectTier && !instantiatedObjects.Contains(purchasableObject))
             {
                 Debug.Log($"Instantiate listing for {purchasableObject.objectName} at {Time.frameCount}");
                 PurchasableListing listing = Instantiate(listingPrefab, listingParentRectTransform);
@@ -31,11 +30,11 @@ public class PurchaseScreenController : MonoBehaviour
                 });
                 listing.onPointerEnter.AddListener(() =>
                 {
-                    GetViewerForListing(listing.purchasableData).ViewObject(true);
+                    GetViewerForListing(purchasableObject).ViewObject(true);
                 });
                 listing.onPointerExit.AddListener(() =>
                 {
-                    GetViewerForListing(listing.purchasableData).ViewObject(false);
+                    GetViewerForListing(purchasableObject).ViewObject(false);
                 });
 
                 float newViewerXPos = 10 * viewers.Count;
@@ -43,6 +42,8 @@ public class PurchaseScreenController : MonoBehaviour
                 viewer.transform.localPosition = new Vector3(newViewerXPos, viewer.transform.position.y, viewer.transform.position.z);
                 viewer.InitViewer(purchasableObject);
                 viewers.Add(viewer);
+
+                instantiatedObjects.Add(purchasableObject);
             }
         }
 
@@ -62,6 +63,7 @@ public class PurchaseScreenController : MonoBehaviour
         {
             if (viewer.purchasableData == _purchasableObject)
             {
+                //Debug.Log($"Return {viewer.gameObject.name} at {Time.frameCount}");
                 return viewer;
             }
         }
