@@ -11,4 +11,6 @@ public class PurchasableObject
     public string objectDescription;
     public float objectPrice;
     public GameObject objectModel;
+    public RenderTexture objectRT;
+    public Material objectRTMaterial;
 }

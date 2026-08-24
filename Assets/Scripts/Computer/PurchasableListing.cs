@@ -1,24 +1,38 @@
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 
-public class PurchasableListing : MonoBehaviour
+public class PurchasableListing : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    private PurchasableObject purchasableData;
+    [SerializeField] public PurchasableObject purchasableData;
     [SerializeField] public Button purchaseButton;
     [SerializeField] private Image objectImage;
     [SerializeField] private TextMeshProUGUI objectName;
     [SerializeField] private TextMeshProUGUI objectPrice;
     [SerializeField] private TextMeshProUGUI objectDescription;
+    [SerializeField] public UnityEvent onPointerEnter;
+    [SerializeField] public UnityEvent onPointerExit;
 
     public void InitListing(PurchasableObject purchasable)
     {
         purchasableData = purchasable;
 
         this.name = purchasableData.objectName + " Listing";
-
+        objectImage.material = purchasableData.objectRTMaterial;
         objectName.text = purchasableData.objectName;
         objectPrice.text = "$" + purchasableData.objectPrice.ToString();
         objectDescription.text = purchasableData.objectDescription;
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        onPointerEnter.Invoke();
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        onPointerExit.Invoke();
     }
 }

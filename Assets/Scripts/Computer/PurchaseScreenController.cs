@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class PurchaseScreenController : MonoBehaviour
 {
-    [SerializeField] public List<PurchasableObject> purchasableObjects = new List<PurchasableObject>();
+    [SerializeField] private PurchasableObjectDefinition purchasableObjectDefinitionReference;
     [SerializeField] public PurchasableListing listingPrefab;
-    [SerializeField] public Camera rtCameraPrefab;
-    private List<Camera> rtCameras = new List<Camera>();
+    [SerializeField] public PurchasableObjectViewer rtCameraPrefab;
+    private List<PurchasableObjectViewer> viewers = new List<PurchasableObjectViewer>();
     [SerializeField] public RectTransform listingParentRectTransform;
     [SerializeField] public Transform listingObjectsTransform;
     [SerializeField] private int currentObjectTier = 0;
@@ -16,7 +16,7 @@ public class PurchaseScreenController : MonoBehaviour
 
     private void OnEnable()
     {
-        foreach (PurchasableObject purchasableObject in purchasableObjects)
+        foreach (PurchasableObject purchasableObject in purchasableObjectDefinitionReference.purchasableObjects)
         {
             if (currentObjectTier >= purchasableObject.objectTier)
             {
@@ -26,12 +26,23 @@ public class PurchaseScreenController : MonoBehaviour
                 listing.purchaseButton.onClick.AddListener(() => 
                 {
                     PurchaseListing(purchasableObject);
+                    GetViewerForListing(purchasableObject).ViewObject(false);
                     listing.purchaseButton.interactable = false;
                 });
+                listing.onPointerEnter.AddListener(() =>
+                {
+                    GetViewerForListing(listing.purchasableData).ViewObject(true);
+                });
+                listing.onPointerExit.AddListener(() =>
+                {
+                    GetViewerForListing(listing.purchasableData).ViewObject(false);
+                });
 
-                Camera rtCam = Instantiate(rtCameraPrefab, listingObjectsTransform);
-                GameObject model = Instantiate(purchasableObject.objectModel, rtCam.GetComponentInChildren<Transform>(), false);
-                model.transform.SetPositionAndRotation(Vector3.zero, Quaternion.identity);
+                float newViewerXPos = 10 * viewers.Count;
+                PurchasableObjectViewer viewer = Instantiate(rtCameraPrefab, listingObjectsTransform);
+                viewer.transform.localPosition = new Vector3(newViewerXPos, viewer.transform.position.y, viewer.transform.position.z);
+                viewer.InitViewer(purchasableObject);
+                viewers.Add(viewer);
             }
         }
 
@@ -41,5 +52,21 @@ public class PurchaseScreenController : MonoBehaviour
     private void PurchaseListing(PurchasableObject _purchasableObject)
     {
         _purchasableObject.isPurchased = true;
+
+        GetViewerForListing(_purchasableObject).ViewObject(false);
+    }
+
+    private PurchasableObjectViewer GetViewerForListing(PurchasableObject _purchasableObject)
+    {
+        foreach(PurchasableObjectViewer viewer in viewers)
+        {
+            if (viewer.purchasableData == _purchasableObject)
+            {
+                return viewer;
+            }
+        }
+
+        Debug.LogError($"NO VIEWER FOUND FOR {_purchasableObject.objectName}!");
+        return null;
     }
 }
