@@ -5,4 +5,25 @@ using UnityEngine;
 public class PurchasableObjectDefinition : ScriptableObject
 {
     [SerializeField] public List<PurchasableObject> purchasableObjects = new List<PurchasableObject>();
+
+    public void MarkObjectAsPurchased(string purchasableObjectName)
+    {
+        foreach (PurchasableObject purchasableObject in purchasableObjects)
+        {
+            if (purchasableObject.objectName == purchasableObjectName)
+            {
+                purchasableObject.isPurchased = true;
+            }
+        }
+    }
+    public void MarkObjectAsPlaced(string purchasableObjectName)
+    {
+        foreach (PurchasableObject purchasableObject in purchasableObjects)
+        {
+            if (purchasableObject.objectName == purchasableObjectName)
+            {
+                purchasableObject.isPlaced = true;
+            }
+        }
+    }
 }

@@ -15,7 +15,7 @@ public class PurchaseScreenController : ComputerScreen
 
     private void OnEnable()
     {
-        foreach (PurchasableObject purchasableObject in ComputerScreenManager.purchasableObjectDefinitionReference.purchasableObjects)
+        foreach (PurchasableObject purchasableObject in ComputerScreenManager.instance.purchasableObjectDefinitionReference.purchasableObjects)
         {
             if (ComputerScreenManager.currentSequence >= purchasableObject.objectTier && !instantiatedObjects.Contains(purchasableObject))
             {
@@ -53,6 +53,7 @@ public class PurchaseScreenController : ComputerScreen
     private void PurchaseListing(PurchasableObject _purchasableObject)
     {
         _purchasableObject.isPurchased = true;
+        ComputerScreenManager.instance.purchasableObjectDefinitionReference.MarkObjectAsPurchased(_purchasableObject.objectName);
 
         GetViewerForListing(_purchasableObject).ViewObject(false);
     }

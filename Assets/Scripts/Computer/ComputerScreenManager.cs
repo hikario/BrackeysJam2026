@@ -22,9 +22,20 @@ public class ComputerScreen : MonoBehaviour
 
 public class ComputerScreenManager : MonoBehaviour
 {
+    public static ComputerScreenManager instance;
     [SerializeField] private ComputerScreen[] screens;
-    [SerializeField] public static PurchasableObjectDefinition purchasableObjectDefinitionReference;
+    [SerializeField] public PurchasableObjectDefinition purchasableObjectDefinitionReference;
+    [SerializeField] public EvidenceDefinition evidenceDefinitionReference;
     [SerializeField] public static int currentSequence = 0;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(this);
+        }
+        instance = this;
+    }
 
     public void ProgressToNextSequence()
     {

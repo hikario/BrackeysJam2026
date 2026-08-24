@@ -1,0 +1,35 @@
+using System;
+using UnityEngine;
+
+[Serializable]
+public enum EvidenceType
+{
+    Photo = 0,
+    Audio = 1
+}
+
+[Serializable]
+public class Evidence
+{
+    [SerializeField] public string evidenceName;
+    [SerializeField] public EvidenceType evidenceType;
+    [SerializeField] public bool evidenceIsCollected = false;
+    [SerializeField] public int evidencePhase;
+    [SerializeField] public Sprite evidenceSprite;
+    // TODO replace Audio Clip with FMOD Event Emitter
+    [SerializeField] public AudioClip evidenceAudioClip;
+    [SerializeField] private string requiredPurchasableID;
+
+    public bool CheckForRequiredPurchasable()
+    {
+        foreach (PurchasableObject purchasableObject in ComputerScreenManager.instance.purchasableObjectDefinitionReference.purchasableObjects)
+        {
+            if (requiredPurchasableID == purchasableObject.objectName && purchasableObject.isPlaced)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
