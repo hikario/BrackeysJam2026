@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using FMODUnity;
 
 [Serializable]
 public enum EvidenceType
@@ -16,8 +17,7 @@ public class Evidence
     [SerializeField] public bool evidenceIsCollected = false;
     [SerializeField] public int evidencePhase;
     [SerializeField] public Sprite evidenceSprite;
-    // TODO replace Audio Clip with FMOD Event Emitter
-    [SerializeField] public AudioClip evidenceAudioClip;
+    [SerializeField] public EventReference evidenceAudioEvent;
     [SerializeField] private string requiredPurchasableID;
 
     public bool CheckForRequiredPurchasable()

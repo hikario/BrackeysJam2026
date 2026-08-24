@@ -1,13 +1,12 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
 
 public class AudioEvidence : MonoBehaviour
 {
     private Evidence evidenceData;
-    // TODO replace Unity Audio setup with FMOD event emitters
-    [SerializeField] private AudioSource audioSource;
-    [SerializeField] private float clipDuration;
+    [SerializeField] private float clipDuration = 1;
     [SerializeField] private Button playButton;
     [SerializeField] private Button stopButton;
     [SerializeField] private Image progressBar;
@@ -16,8 +15,9 @@ public class AudioEvidence : MonoBehaviour
     {
         evidenceData = _evidence;
 
-        audioSource.clip = _evidence.evidenceAudioClip;
-        clipDuration = _evidence.evidenceAudioClip.length;
+        //audioSource.clip = _evidence.evidenceAudioClip;
+        //clipDuration = _evidence.evidenceAudioClip.length;
+
         playButton.onClick.AddListener(() => TogglePlay(true));
         stopButton.onClick.AddListener(() => TogglePlay(false));
 
@@ -31,11 +31,12 @@ public class AudioEvidence : MonoBehaviour
 
         if (play)
         {
-            audioSource.Play();
+            evidenceData.evidenceAudioEvent.PlayOrResume();
             coProgressBar = StartCoroutine(CoProgressBar());
         }
         else
         {
+            evidenceData.evidenceAudioEvent.Stop();
             StopCoroutine(coProgressBar);
             coProgressBar = null;
         }
