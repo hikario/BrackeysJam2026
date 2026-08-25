@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{3bf502e5-8fdc-466a-b230-92f01aaa0e6d}">
+		<property name="assetPath">
+			<value>SFX_FlowerPotCamera_Setup_Mechanical Focus-004.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.38864583333333336</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{83af5857-ce9b-4c2f-a8f2-911a6e3703c8}</destination>
+		</relationship>
+	</object>
+</objects>
