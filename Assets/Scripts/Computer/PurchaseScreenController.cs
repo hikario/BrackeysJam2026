@@ -19,7 +19,7 @@ public class PurchaseScreenController : ComputerScreen
         {
             if (ComputerScreenManager.currentSequence >= purchasableObject.objectTier && !instantiatedObjects.Contains(purchasableObject))
             {
-                Debug.Log($"Instantiate listing for {purchasableObject.objectName} at {Time.frameCount}");
+                //Debug.Log($"Instantiate listing for {purchasableObject.objectName} at {Time.frameCount}");
                 PurchasableListing listing = Instantiate(listingPrefab, listingParentRectTransform);
                 listing.InitListing(purchasableObject);
                 listing.purchaseButton.onClick.AddListener(() => 

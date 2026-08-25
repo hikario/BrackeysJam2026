@@ -16,7 +16,7 @@ MonoBehaviour:
   - objectName: Labels
     objectTier: 0
     isPurchased: 1
-    isPlaced: 0
+    isPlaced: 1
     objectDescription: For if your idiot roommate forgets that they <b>did not</b>
       go to your favorite Chinese place last night, and have no rights to the box
       in the fridge.

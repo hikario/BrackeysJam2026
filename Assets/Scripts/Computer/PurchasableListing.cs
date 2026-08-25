@@ -24,6 +24,11 @@ public class PurchasableListing : MonoBehaviour, IPointerEnterHandler, IPointerE
         objectName.text = purchasableData.objectName;
         objectPrice.text = "$" + purchasableData.objectPrice.ToString();
         objectDescription.text = purchasableData.objectDescription;
+
+        if (purchasableData.isPurchased)
+        {
+            purchaseButton.interactable = false;
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)

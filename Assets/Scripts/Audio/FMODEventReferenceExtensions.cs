@@ -164,5 +164,5 @@ using UnityEngine;
 		{
 			AudioManager.ReleaseInstance(ref _eventInstance, gameObj);
 		}
-	}
+}
 //}

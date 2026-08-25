@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4746060126052724296
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -100, y: -100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3565979688263480114
 MonoBehaviour:
@@ -51,12 +51,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PurchaseScreenController
   screenAnimator: {fileID: 4134345077122902907}
-  purchasableObjectDefinitionReference: {fileID: 11400000, guid: 40ee62c2e674ede44a9137a8bd55af30, type: 2}
   listingPrefab: {fileID: 3300624409733199424, guid: bf13936965bb7f748ba488313ef5e334, type: 3}
   rtCameraPrefab: {fileID: 3284041619861116398, guid: 5ef927d52f03c8849ab2bed7ef766303, type: 3}
   listingParentRectTransform: {fileID: 347105217023757640}
   listingObjectsTransform: {fileID: 0}
-  currentObjectTier: 0
 --- !u!95 &4134345077122902907
 Animator:
   serializedVersion: 7
