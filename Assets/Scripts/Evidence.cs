@@ -18,6 +18,7 @@ public class Evidence
     [SerializeField] public int evidencePhase;
     [SerializeField] public Sprite evidenceSprite;
     [SerializeField] public EventReference evidenceAudioEvent;
+    [SerializeField] public float audioLength;
     [SerializeField] private string requiredPurchasableID;
 
     public bool CheckForRequiredPurchasable()
