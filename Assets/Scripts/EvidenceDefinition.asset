@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EvidenceDefinition
   evidence:
   - evidenceName: Pigeon Photo Night 1
-    evidenceType: 1
+    evidenceType: 0
     evidenceIsCollected: 0
     evidencePhase: 0
     evidenceSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
     evidenceAudioEvent:
       Guid:
-        Data1: 911645609
-        Data2: 1151423509
-        Data3: 646952107
-        Data4: -2132536467
-      Path: event:/SFX_FlowerpotCamera_Setup
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
     audioLength: 2.857
     requiredPurchasableID: Labels
   - evidenceName: Pigeon Photo Night 2

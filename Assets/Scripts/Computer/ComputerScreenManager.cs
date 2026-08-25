@@ -26,6 +26,7 @@ public class ComputerScreenManager : MonoBehaviour
     [SerializeField] private ComputerScreen[] screens;
     [SerializeField] public PurchasableObjectDefinition purchasableObjectDefinitionReference;
     [SerializeField] public EvidenceDefinition evidenceDefinitionReference;
+    [SerializeField] public MessagesDefinition messagesDefinitionReference;
     [SerializeField] public static int currentSequence = 0;
 
     private void Awake()

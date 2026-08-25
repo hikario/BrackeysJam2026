@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc336997fa8d524488e8d7326d3f80a, type: 3}
+  m_Name: MessagesDefinition
+  m_EditorClassIdentifier: Assembly-CSharp::MessagesDefinition
+  messages:
+  - messageText: Are you okay?
+    messagePhase: 0
+    isPlayerMessage: 0
+    isSent: 0
+  - messageText: Stop pretending you don't know what you did
+    messagePhase: 0
+    isPlayerMessage: 1
+    isSent: 1
+  - messageText: I'm going to expose you
+    messagePhase: 0
+    isPlayerMessage: 1
+    isSent: 1
+  - messageText: ????????
+    messagePhase: 1
+    isPlayerMessage: 0
+    isSent: 0

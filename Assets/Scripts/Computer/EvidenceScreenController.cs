@@ -22,6 +22,7 @@ public class EvidenceScreenController : ComputerScreen
     private void OnEnable()
     {
         evidenceViewerGameObject.SetActive(false);
+
         foreach (Evidence evidence in ComputerScreenManager.instance.evidenceDefinitionReference.evidence)
         {
             if (ComputerScreenManager.currentSequence == evidence.evidencePhase && evidence.CheckForRequiredPurchasable() && !evidenceToDisplay.Contains(evidence))
