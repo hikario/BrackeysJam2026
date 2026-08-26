@@ -1,8 +1,9 @@
 using UnityEngine;
 
-public class CameraSwapper : MonoBehaviour
+public class EnableDisable : MonoBehaviour
 {
-    public GameObject camera;
+    public GameObject nextObject;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,4 +15,6 @@ public class CameraSwapper : MonoBehaviour
     {
         
     }
+
+
 }
