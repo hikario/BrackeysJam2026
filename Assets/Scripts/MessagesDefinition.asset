@@ -20,11 +20,11 @@ MonoBehaviour:
   - messageText: Stop pretending you don't know what you did
     messagePhase: 0
     isPlayerMessage: 1
-    isSent: 1
+    isSent: 0
   - messageText: I'm going to expose you
     messagePhase: 0
     isPlayerMessage: 1
-    isSent: 1
+    isSent: 0
   - messageText: ????????
     messagePhase: 1
     isPlayerMessage: 0

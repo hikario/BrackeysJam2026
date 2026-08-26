@@ -26,8 +26,8 @@ MonoBehaviour:
     objectRTMaterial: {fileID: 2100000, guid: 466e8d69766d06b419fbc8b33186b372, type: 2}
   - objectName: Sticky Notes
     objectTier: 0
-    isPurchased: 0
-    isPlaced: 0
+    isPurchased: 1
+    isPlaced: 1
     objectDescription: Great for leaving little reminders, such as telling your roomie
       that you <b>do</b> in fact want to eat the leftover wontons in the fridge!
     objectPrice: 2.99
@@ -43,7 +43,16 @@ MonoBehaviour:
     objectModel: {fileID: 2495399393759589061, guid: 51882d43e545bca42abe3a336149d58f, type: 3}
     objectRT: {fileID: 8400000, guid: 267fc8c24673f27439f00176247d4a02, type: 2}
     objectRTMaterial: {fileID: 2100000, guid: 39db26c22c00b0343a79429cb6ecc21d, type: 2}
-  - objectName: Infared Goggles
+  - objectName: Microphone Plant
+    objectTier: 1
+    isPurchased: 0
+    isPlaced: 0
+    objectDescription: They won't get away with this
+    objectPrice: 49.99
+    objectModel: {fileID: 2495399393759589061, guid: 80d0f40cc775683469dca7e827094039, type: 3}
+    objectRT: {fileID: 8400000, guid: b86d9b207c2ed174c82506c1187d9430, type: 2}
+    objectRTMaterial: {fileID: 2100000, guid: 71c86c116f30bb644bfac7ee7c08476e, type: 2}
+  - objectName: X-Ray Goggles
     objectTier: 2
     isPurchased: 0
     isPlaced: 0
