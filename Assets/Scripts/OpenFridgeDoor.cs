@@ -8,6 +8,7 @@ public class OpenFridgeDoor : MonoBehaviour
     private float doorRotationBottom;
     private bool openDoorTop;
     private bool openDoorBottom;
+    public float doorSpeed;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -50,8 +51,8 @@ public class OpenFridgeDoor : MonoBehaviour
     {
         if (doorRotationTop > -60)
         {
-            doorTop.transform.RotateAround(doorTop.transform.position, Vector3.up, -20 * Time.deltaTime);
-            doorRotationTop += Vector3.up.y * -20 * Time.deltaTime;
+            doorTop.transform.RotateAround(doorTop.transform.position, Vector3.up, (-1 * doorSpeed) * Time.deltaTime);
+            doorRotationTop += Vector3.up.y * (-1 * doorSpeed) * Time.deltaTime;
         }
     }
 
@@ -59,8 +60,8 @@ public class OpenFridgeDoor : MonoBehaviour
     {
         if (doorRotationTop < 0)
         {
-            doorTop.transform.RotateAround(doorTop.transform.position, Vector3.up, +20 * Time.deltaTime);
-            doorRotationTop += Vector3.up.y * +20 * Time.deltaTime;
+            doorTop.transform.RotateAround(doorTop.transform.position, Vector3.up, doorSpeed * Time.deltaTime);
+            doorRotationTop += Vector3.up.y * doorSpeed * Time.deltaTime;
         }
         if (doorRotationTop > 0)
         {
@@ -73,8 +74,8 @@ public class OpenFridgeDoor : MonoBehaviour
     {
         if (doorRotationBottom > -60)
         {
-            doorBottom.transform.RotateAround(doorBottom.transform.position, Vector3.up, -20 * Time.deltaTime);
-            doorRotationBottom += Vector3.up.y * -20 * Time.deltaTime;
+            doorBottom.transform.RotateAround(doorBottom.transform.position, Vector3.up, (-1 * doorSpeed) * Time.deltaTime);
+            doorRotationBottom += Vector3.up.y * (-1 * doorSpeed) * Time.deltaTime;
         }
     }
 
@@ -82,8 +83,8 @@ public class OpenFridgeDoor : MonoBehaviour
     {
         if (doorRotationBottom < 0)
         {
-            doorBottom.transform.RotateAround(doorBottom.transform.position, Vector3.up, +20 * Time.deltaTime);
-            doorRotationBottom += Vector3.up.y * +20 * Time.deltaTime;
+            doorBottom.transform.RotateAround(doorBottom.transform.position, Vector3.up, doorSpeed * Time.deltaTime);
+            doorRotationBottom += Vector3.up.y * doorSpeed * Time.deltaTime;
         }
         if (doorRotationBottom > 0)
         {
