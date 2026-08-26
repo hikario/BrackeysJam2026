@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{73e57a1f-1326-4b18-83f9-49f6dce13dbb}">
+		<property name="assetPath">
+			<value>SFX_Computer_Window_Close-003.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.53089583333333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{83af5857-ce9b-4c2f-a8f2-911a6e3703c8}</destination>
+		</relationship>
+	</object>
+</objects>
