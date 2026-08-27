@@ -92,4 +92,14 @@ public class OpenFridgeDoor : MonoBehaviour
             doorRotationBottom = 0;
         }
     }
+
+    void SetBottomDoorOpen()
+    {
+        openDoorBottom = true;
+    }
+
+    void SetBottomDoorClosed()
+    {
+        openDoorBottom = false;
+    }
 }

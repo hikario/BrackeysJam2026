@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class CameraController : MonoBehaviour
 {
+    // Cameras
     GameObject CurrentCamera;
     GameObject TargetCamera;
     [SerializeField]
@@ -16,7 +17,11 @@ public class CameraController : MonoBehaviour
     GameObject BedroomCamera;
     [SerializeField]
     GameObject ComputerCamera;
+
+    // Cinemachine Brain variable, so we don't have to keep looking it up
     CinemachineBrain activeBrain;
+
+    // Input actions, only needed for testing/debugging
     InputAction first;
     InputAction second;
     InputAction third;
@@ -24,6 +29,8 @@ public class CameraController : MonoBehaviour
     InputAction fifth;
 
     bool UpdatedCurrent = false;
+    [SerializeField]
+    GameObject EnvironmentalStateManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -37,6 +44,11 @@ public class CameraController : MonoBehaviour
         activeBrain = CinemachineBrain.GetActiveBrain(0);
         CinemachineCamera CineCam = activeBrain.ActiveVirtualCamera as CinemachineCamera;
         CurrentCamera = CineCam.gameObject;
+
+        if (EnvironmentalStateManager == null)
+        {
+            EnvironmentalStateManager = GameObject.Find("/EnvironmentalStateManager");
+        }
     }
 
     // Update is called once per frame
@@ -79,40 +91,61 @@ public class CameraController : MonoBehaviour
     void MoveToFridge()
     {
         FridgeInsideCamera.SetActive(true);
-        // CurrentCamera.SetActive(false);
         TargetCamera = FridgeInsideCamera;
         UpdatedCurrent = false;
+
+        if(CurrentCamera != FridgeInsideCamera)
+        {
+            Debug.Log("Opening Fridge");
+            EnvironmentalStateManager.SendMessage("OpenFridge");
+        }
     }
 
     void MoveToKitchen()
     {
         KitchenCamera.SetActive(true);
-        // CurrentCamera.SetActive(false);
         TargetCamera = KitchenCamera;
         UpdatedCurrent = false;
+
+        if(CurrentCamera == FridgeInsideCamera)
+        {
+            EnvironmentalStateManager.SendMessage("CloseFridge");
+        }
     }
 
     void MoveToBedroomDoor()
     {
         BedroomDoorCamera.SetActive(true);
-        // CurrentCamera.SetActive(false);
         TargetCamera = BedroomDoorCamera;
         UpdatedCurrent = false;
+
+        if(CurrentCamera == FridgeInsideCamera)
+        {
+            EnvironmentalStateManager.SendMessage("CloseFridge");
+        }
     }
 
     void MoveToBedroom()
     {
         BedroomCamera.SetActive(true);
-        // CurrentCamera.SetActive(false);
         TargetCamera = BedroomCamera;
         UpdatedCurrent = false;
+
+        if(CurrentCamera == FridgeInsideCamera)
+        {
+            EnvironmentalStateManager.SendMessage("CloseFridge");
+        }
     }
 
     void MoveToComputer()
     {
         ComputerCamera.SetActive(true);
-        // CurrentCamera.SetActive(false);
         TargetCamera = ComputerCamera;
         UpdatedCurrent = false;
+
+        if(CurrentCamera == FridgeInsideCamera)
+        {
+            EnvironmentalStateManager.SendMessage("CloseFridge");
+        }
     }
 }
