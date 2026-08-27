@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.ColorAdjustments
   active: 1
   postExposure:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: -0.5
   contrast:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 50
   colorFilter:
     m_OverrideState: 0
@@ -59,7 +59,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 0
-    m_Value: 1
+    m_Value: 0
 --- !u!114 &5901725502852858616
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -75,7 +75,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 0
-    m_Value: 0.47
+    m_Value: 0.51
   xMultiplier:
     m_OverrideState: 0
     m_Value: 1
