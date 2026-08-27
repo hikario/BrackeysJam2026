@@ -51,8 +51,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EvidenceScreenController
   screenAnimator: {fileID: 4134345077122902907}
-  evidenceThumbnailPrefab: {fileID: 5800256513019025115, guid: 51eac8d34ce5cc341865df46c3dfafcc, type: 3}
-  photoEvidencePrefab: {fileID: 1340036631729103862, guid: 84e5c6e6cff479a40a003dee44f31583, type: 3}
+  evidenceThumbnailPrefab: {fileID: 3561252097932656119, guid: 51eac8d34ce5cc341865df46c3dfafcc, type: 3}
+  photoEvidencePrefab: {fileID: 7616366107434094256, guid: 84e5c6e6cff479a40a003dee44f31583, type: 3}
   audioEvidencePrefab: {fileID: 819726851532304734, guid: 7f73a3efa8d0ace43adfca5ca67bba62, type: 3}
   evidenceThumbnailParentRectTransform: {fileID: 347105217023757640}
   evidenceViewerGameObject: {fileID: 5523274683090761945}

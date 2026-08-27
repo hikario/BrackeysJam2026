@@ -64,7 +64,7 @@ public class PurchaseScreenController : ComputerScreen
         {
             if (viewer.purchasableData == _purchasableObject)
             {
-                Debug.Log($"Return {viewer.gameObject.name} at {Time.frameCount}");
+                //Debug.Log($"Return {viewer.gameObject.name} at {Time.frameCount}");
                 return viewer;
             }
         }

@@ -15,7 +15,9 @@ MonoBehaviour:
   evidence:
   - evidenceName: Pigeon Photo Night 1
     evidenceType: 0
+    catEvidence: 1
     evidenceIsCollected: 0
+    flaggedAsRelevant: 1
     evidencePhase: 0
     evidenceSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
     evidenceAudioEvent:
@@ -29,7 +31,9 @@ MonoBehaviour:
     requiredPurchasableID: Labels
   - evidenceName: Pigeon Photo Night 2
     evidenceType: 0
+    catEvidence: 0
     evidenceIsCollected: 0
+    flaggedAsRelevant: 0
     evidencePhase: 0
     evidenceSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
     evidenceAudioEvent:
@@ -43,7 +47,9 @@ MonoBehaviour:
     requiredPurchasableID: Labels
   - evidenceName: Loud Clank
     evidenceType: 1
+    catEvidence: 0
     evidenceIsCollected: 0
+    flaggedAsRelevant: 0
     evidencePhase: 0
     evidenceSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
     evidenceAudioEvent:
@@ -57,7 +63,9 @@ MonoBehaviour:
     requiredPurchasableID: Sticky Notes
   - evidenceName: Mysterious Gurgle
     evidenceType: 1
+    catEvidence: 0
     evidenceIsCollected: 0
+    flaggedAsRelevant: 0
     evidencePhase: 0
     evidenceSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
     evidenceAudioEvent:

@@ -8,8 +8,9 @@ using TMPro;
 public class EvidenceScreenController : ComputerScreen
 {
     private List<Evidence> evidenceToDisplay = new List<Evidence>();
-    [SerializeField] private Button evidenceThumbnailPrefab;
-    [SerializeField] private Image photoEvidencePrefab;
+    private List<EvidenceThumbnail> evidenceThumbnails = new List<EvidenceThumbnail>();
+    [SerializeField] private EvidenceThumbnail evidenceThumbnailPrefab;
+    [SerializeField] private PhotoEvidence photoEvidencePrefab;
     [SerializeField] private AudioEvidence audioEvidencePrefab;
     [SerializeField] private RectTransform evidenceThumbnailParentRectTransform;
 
@@ -28,24 +29,22 @@ public class EvidenceScreenController : ComputerScreen
             if (ComputerScreenManager.currentSequence == evidence.evidencePhase && evidence.CheckForRequiredPurchasable() && !evidenceToDisplay.Contains(evidence))
             {
                 //Debug.Log($"{evidence.evidenceName} is collected, instantiate");
-                Button thumbnail = Instantiate(evidenceThumbnailPrefab, evidenceThumbnailParentRectTransform);
-                thumbnail.GetComponentInChildren<Image>().sprite = evidence.evidenceSprite;
-                thumbnail.onClick.AddListener(() => OpenEvidenceViewer(evidence));
-                thumbnail.name = evidence.evidenceName + " Thumbnail";
+                EvidenceThumbnail thumbnail = Instantiate(evidenceThumbnailPrefab, evidenceThumbnailParentRectTransform);
+                thumbnail.InitEvidenceThumbnail(evidence);
+                thumbnail.button.onClick.AddListener(() => OpenEvidenceViewer(evidence));
+                evidenceThumbnails.Add(thumbnail);
 
                 if (evidence.evidenceType == EvidenceType.Photo)
                 {
-                    thumbnail.GetComponentInChildren<TextMeshProUGUI>().text = evidence.evidenceName + ".png";
-                    Image photoEvidence = Instantiate(photoEvidencePrefab, evidenceParentRectTransform);
-                    photoEvidence.sprite = evidence.evidenceSprite;
-                    photoEvidence.gameObject.name = evidence.evidenceName + " Evidence";
+                    PhotoEvidence photoEvidence = Instantiate(photoEvidencePrefab, evidenceParentRectTransform);
+                    photoEvidence.InitPhotoEvidence(evidence);
                 }
                 else if (evidence.evidenceType == EvidenceType.Audio)
                 {
-                    thumbnail.GetComponentInChildren<TextMeshProUGUI>().text = evidence.evidenceName + ".wav";
                     AudioEvidence audioEvidence = Instantiate(audioEvidencePrefab, evidenceParentRectTransform);
                     audioEvidence.InitAudioEvidence(evidence);
                 }
+
                 evidenceToDisplay.Add(evidence);
             }
             //else
@@ -84,5 +83,19 @@ public class EvidenceScreenController : ComputerScreen
     private void DisableEvidenceViewer()
     {
         evidenceViewerGameObject.SetActive(false);
+    }
+
+    public EvidenceThumbnail GetThumbnailForEvidence(Evidence _evidence)
+    {
+        foreach (EvidenceThumbnail evidenceThumbnail in evidenceThumbnails)
+        {
+            if (evidenceThumbnail.EvidenceDataFromThumbnail() == _evidence)
+            {
+                return evidenceThumbnail;
+            }
+        }
+
+        Debug.LogError($"NO THUMBNAIL FOUND FOR {_evidence.evidenceName}");
+        return null;
     }
 }

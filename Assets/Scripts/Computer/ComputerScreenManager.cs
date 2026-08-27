@@ -32,6 +32,8 @@ public class ComputerScreen : MonoBehaviour
     }
 }
 
+
+// Really more of a game controller at this point my b guys
 public class ComputerScreenManager : MonoBehaviour
 {
     public static ComputerScreenManager instance;
@@ -40,6 +42,7 @@ public class ComputerScreenManager : MonoBehaviour
     [SerializeField] private float startingMoney = 436f;
     [SerializeField] private float currentMoney;
     [SerializeField] private bool resetOnPlay = true;
+
     [Header("Screens")]
     [SerializeField] public PurchaseScreenController purchaseScreenController;
     [SerializeField] public EvidenceScreenController evidenceScreenController;
@@ -70,6 +73,7 @@ public class ComputerScreenManager : MonoBehaviour
             foreach (Evidence evidence in evidenceDefinitionReference.evidence)
             {
                 evidence.evidenceIsCollected = false;
+                evidence.flaggedAsRelevant = false;
             }
             foreach (Messages message in messagesDefinitionReference.messages)
             {

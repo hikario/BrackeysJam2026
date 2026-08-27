@@ -11,11 +11,19 @@ public class AudioEvidence : MonoBehaviour
     [SerializeField] private TextMeshProUGUI titleText;
     [SerializeField] private Button playButton;
     [SerializeField] private Button stopButton;
+    [SerializeField] public Toggle relevantToggle;
     [SerializeField] private Image progressBar;
 
     public void InitAudioEvidence(Evidence _evidence)
     {
         evidenceData = _evidence;
+
+        relevantToggle.isOn = evidenceData.flaggedAsRelevant;
+        relevantToggle.onValueChanged.AddListener((value) => 
+        {
+            ComputerScreenManager.instance.evidenceDefinitionReference.MarkEvidenceAsRelevant(evidenceData, value);
+            ComputerScreenManager.instance.evidenceScreenController.GetThumbnailForEvidence(_evidence).relevantImage.enabled = value;
+        });
 
         clipDuration = _evidence.audioLength;
 

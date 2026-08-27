@@ -15,8 +15,8 @@ MonoBehaviour:
   purchasableObjects:
   - objectName: Labels
     objectTier: 0
-    isPurchased: 0
-    isPlaced: 0
+    isPurchased: 1
+    isPlaced: 1
     objectDescription: For if your idiot roommate forgets that they <b>did not</b>
       go to your favorite Chinese place last night, and have no rights to the box
       in the fridge.
@@ -28,8 +28,8 @@ MonoBehaviour:
     viewerStartRotation: {x: 0, y: 0, z: 0}
   - objectName: Sticky Notes
     objectTier: 0
-    isPurchased: 0
-    isPlaced: 0
+    isPurchased: 1
+    isPlaced: 1
     objectDescription: Great for leaving little reminders, such as telling your roomie
       that you <b>do</b> in fact want to eat the leftover wontons in the fridge!
     objectPrice: 2.99
@@ -40,8 +40,8 @@ MonoBehaviour:
     viewerStartRotation: {x: 0, y: 0, z: 0}
   - objectName: Trip Wire
     objectTier: 1
-    isPurchased: 0
-    isPlaced: 0
+    isPurchased: 1
+    isPlaced: 1
     objectDescription: Watch your step around this!
     objectPrice: 19.99
     objectModel: {fileID: 1855991305918741893, guid: 2deb4b7bd611e14459029146a2dbde0e, type: 3}
@@ -51,8 +51,8 @@ MonoBehaviour:
     viewerStartRotation: {x: 0, y: 0, z: 0}
   - objectName: Microphone Plant
     objectTier: 1
-    isPurchased: 0
-    isPlaced: 0
+    isPurchased: 1
+    isPlaced: 1
     objectDescription: They won't get away with this
     objectPrice: 49.99
     objectModel: {fileID: 919132149155446097, guid: 89ffa0066bb6d1b469b1380944b55e26, type: 3}
@@ -62,8 +62,8 @@ MonoBehaviour:
     viewerStartRotation: {x: 0, y: 0, z: 0}
   - objectName: X-Ray Goggles
     objectTier: 2
-    isPurchased: 0
-    isPlaced: 0
+    isPurchased: 1
+    isPlaced: 1
     objectDescription: They won't get away with this
     objectPrice: 699.99
     objectModel: {fileID: 919132149155446097, guid: fcbc876e5daa532468f096eb7ddf81bd, type: 3}
