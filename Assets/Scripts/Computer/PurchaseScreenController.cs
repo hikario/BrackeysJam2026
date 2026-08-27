@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class PurchaseScreenController : ComputerScreen
 {
+    [SerializeField] public bool resetOnPlay = true;
     [SerializeField] public PurchasableListing listingPrefab;
     [SerializeField] public PurchasableObjectViewer rtCameraPrefab;
     private List<PurchasableObject> instantiatedObjects = new List<PurchasableObject>();
     private List<PurchasableObjectViewer> viewers = new List<PurchasableObjectViewer>();
     [SerializeField] public RectTransform listingParentRectTransform;
     [SerializeField] public Transform listingObjectsTransform;
-
 
     private void OnEnable()
     {
@@ -25,7 +25,6 @@ public class PurchaseScreenController : ComputerScreen
                 listing.purchaseButton.onClick.AddListener(() => 
                 {
                     PurchaseListing(purchasableObject);
-                    GetViewerForListing(purchasableObject).ViewObject(false);
                     listing.purchaseButton.interactable = false;
                 });
                 listing.onPointerEnter.AddListener(() =>
@@ -52,10 +51,11 @@ public class PurchaseScreenController : ComputerScreen
 
     private void PurchaseListing(PurchasableObject _purchasableObject)
     {
+        //Debug.Log($"Purchase {_purchasableObject.objectName} at {Time.frameCount}");
         _purchasableObject.isPurchased = true;
         ComputerScreenManager.instance.purchasableObjectDefinitionReference.MarkObjectAsPurchased(_purchasableObject.objectName);
-
-        GetViewerForListing(_purchasableObject).ViewObject(false);
+        ComputerScreenManager.instance.UpdateCurrentMoney(-_purchasableObject.objectPrice);
+        ComputerScreenManager.instance.bankingScreenController.AddNewLineItem(_purchasableObject);
     }
 
     private PurchasableObjectViewer GetViewerForListing(PurchasableObject _purchasableObject)
@@ -64,7 +64,7 @@ public class PurchaseScreenController : ComputerScreen
         {
             if (viewer.purchasableData == _purchasableObject)
             {
-                //Debug.Log($"Return {viewer.gameObject.name} at {Time.frameCount}");
+                Debug.Log($"Return {viewer.gameObject.name} at {Time.frameCount}");
                 return viewer;
             }
         }

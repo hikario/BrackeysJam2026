@@ -21,43 +21,53 @@ MonoBehaviour:
       go to your favorite Chinese place last night, and have no rights to the box
       in the fridge.
     objectPrice: 4.99
-    objectModel: {fileID: 2495399393759589061, guid: 51882d43e545bca42abe3a336149d58f, type: 3}
+    objectModel: {fileID: 1855991305918741893, guid: 2deb4b7bd611e14459029146a2dbde0e, type: 3}
     objectRT: {fileID: 8400000, guid: 1794d4a6aa48b98468712d0bc8ad4402, type: 2}
     objectRTMaterial: {fileID: 2100000, guid: 466e8d69766d06b419fbc8b33186b372, type: 2}
+    viewerScale: 1
+    viewerStartRotation: {x: 0, y: 0, z: 0}
   - objectName: Sticky Notes
     objectTier: 0
-    isPurchased: 1
-    isPlaced: 1
+    isPurchased: 0
+    isPlaced: 0
     objectDescription: Great for leaving little reminders, such as telling your roomie
       that you <b>do</b> in fact want to eat the leftover wontons in the fridge!
     objectPrice: 2.99
-    objectModel: {fileID: 2495399393759589061, guid: 80d0f40cc775683469dca7e827094039, type: 3}
+    objectModel: {fileID: 1855991305918741893, guid: 2deb4b7bd611e14459029146a2dbde0e, type: 3}
     objectRT: {fileID: 8400000, guid: d421c81173f8dbc4c94d684462a2451d, type: 2}
     objectRTMaterial: {fileID: 2100000, guid: dd1f328d03956e747b50d0eed81783d1, type: 2}
+    viewerScale: 1
+    viewerStartRotation: {x: 0, y: 0, z: 0}
   - objectName: Trip Wire
     objectTier: 1
     isPurchased: 0
     isPlaced: 0
     objectDescription: Watch your step around this!
     objectPrice: 19.99
-    objectModel: {fileID: 2495399393759589061, guid: 51882d43e545bca42abe3a336149d58f, type: 3}
+    objectModel: {fileID: 1855991305918741893, guid: 2deb4b7bd611e14459029146a2dbde0e, type: 3}
     objectRT: {fileID: 8400000, guid: 267fc8c24673f27439f00176247d4a02, type: 2}
     objectRTMaterial: {fileID: 2100000, guid: 39db26c22c00b0343a79429cb6ecc21d, type: 2}
+    viewerScale: 1
+    viewerStartRotation: {x: 0, y: 0, z: 0}
   - objectName: Microphone Plant
     objectTier: 1
     isPurchased: 0
     isPlaced: 0
     objectDescription: They won't get away with this
     objectPrice: 49.99
-    objectModel: {fileID: 2495399393759589061, guid: 80d0f40cc775683469dca7e827094039, type: 3}
+    objectModel: {fileID: 919132149155446097, guid: 89ffa0066bb6d1b469b1380944b55e26, type: 3}
     objectRT: {fileID: 8400000, guid: b86d9b207c2ed174c82506c1187d9430, type: 2}
     objectRTMaterial: {fileID: 2100000, guid: 71c86c116f30bb644bfac7ee7c08476e, type: 2}
+    viewerScale: 1
+    viewerStartRotation: {x: 0, y: 0, z: 0}
   - objectName: X-Ray Goggles
     objectTier: 2
     isPurchased: 0
     isPlaced: 0
     objectDescription: They won't get away with this
-    objectPrice: 299.99
-    objectModel: {fileID: 2495399393759589061, guid: 80d0f40cc775683469dca7e827094039, type: 3}
+    objectPrice: 699.99
+    objectModel: {fileID: 919132149155446097, guid: fcbc876e5daa532468f096eb7ddf81bd, type: 3}
     objectRT: {fileID: 8400000, guid: b86d9b207c2ed174c82506c1187d9430, type: 2}
     objectRTMaterial: {fileID: 2100000, guid: 71c86c116f30bb644bfac7ee7c08476e, type: 2}
+    viewerScale: 3.5
+    viewerStartRotation: {x: 270, y: 210, z: 0}

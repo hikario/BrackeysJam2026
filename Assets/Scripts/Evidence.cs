@@ -14,6 +14,7 @@ public class Evidence
 {
     [SerializeField] public string evidenceName;
     [SerializeField] public EvidenceType evidenceType;
+    [SerializeField] public bool catEvidence = false;
     [SerializeField] public bool evidenceIsCollected = false;
     [SerializeField] public int evidencePhase;
     [SerializeField] public Sprite evidenceSprite;

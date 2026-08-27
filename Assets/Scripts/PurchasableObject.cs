@@ -13,4 +13,6 @@ public class PurchasableObject
     public GameObject objectModel;
     public RenderTexture objectRT;
     public Material objectRTMaterial;
+    public float viewerScale = 1;
+    public Vector3 viewerStartRotation = Vector3.zero;
 }

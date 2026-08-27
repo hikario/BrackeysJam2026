@@ -8,6 +8,18 @@ public class ComputerScreen : MonoBehaviour
 {
     [SerializeField] private Animator screenAnimator;
 
+    public void ToggleScreenVisibility()
+    {
+        if (gameObject.activeInHierarchy)
+        {
+            CloseScreen();
+        }
+        else
+        {
+            gameObject.SetActive(true);
+        }
+    }
+
     public void CloseScreen()
     {
         screenAnimator.SetBool("expand", false);
@@ -16,18 +28,28 @@ public class ComputerScreen : MonoBehaviour
 
     private void DisableScreen()
     {
-        this.gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
 }
 
 public class ComputerScreenManager : MonoBehaviour
 {
     public static ComputerScreenManager instance;
-    [SerializeField] private ComputerScreen[] screens;
+
+    [SerializeField] public static int currentSequence = 0;
+    [SerializeField] private float startingMoney = 436f;
+    [SerializeField] private float currentMoney;
+    [SerializeField] private bool resetOnPlay = true;
+    [Header("Screens")]
+    [SerializeField] public PurchaseScreenController purchaseScreenController;
+    [SerializeField] public EvidenceScreenController evidenceScreenController;
+    [SerializeField] public MessengerScreenController messengerScreenController;
+    [SerializeField] public BankingWidgetController bankingScreenController;
+
+    [Header("Definition Refs")]
     [SerializeField] public PurchasableObjectDefinition purchasableObjectDefinitionReference;
     [SerializeField] public EvidenceDefinition evidenceDefinitionReference;
     [SerializeField] public MessagesDefinition messagesDefinitionReference;
-    [SerializeField] public static int currentSequence = 0;
 
     private void Awake()
     {
@@ -36,11 +58,42 @@ public class ComputerScreenManager : MonoBehaviour
             Destroy(this);
         }
         instance = this;
+
+        if (resetOnPlay)
+        {
+            currentMoney = startingMoney;
+            foreach (PurchasableObject purchasableObject in purchasableObjectDefinitionReference.purchasableObjects)
+            {
+                purchasableObject.isPurchased = false;
+                purchasableObject.isPlaced = false;
+            }
+            foreach (Evidence evidence in evidenceDefinitionReference.evidence)
+            {
+                evidence.evidenceIsCollected = false;
+            }
+            foreach (Messages message in messagesDefinitionReference.messages)
+            {
+                message.isSent = false;
+            }
+        }
+
+        messengerScreenController.SendNextRoommateMessages();
     }
 
     public void ProgressToNextSequence()
     {
         currentSequence++;
         Debug.Log($"Progress to sequence {currentSequence}");
+        messengerScreenController.SendNextRoommateMessages();
+    }
+
+    public void UpdateCurrentMoney(float amountToAdd)
+    {
+        currentMoney += amountToAdd;
+    }
+
+    public float GetCurrentMoney()
+    {
+        return currentMoney;
     }
 }

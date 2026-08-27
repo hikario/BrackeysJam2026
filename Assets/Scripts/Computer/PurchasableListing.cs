@@ -22,7 +22,7 @@ public class PurchasableListing : MonoBehaviour, IPointerEnterHandler, IPointerE
         this.name = purchasableData.objectName + " Listing";
         objectImage.material = purchasableData.objectRTMaterial;
         objectName.text = purchasableData.objectName;
-        objectPrice.text = "$" + purchasableData.objectPrice.ToString();
+        objectPrice.text = string.Format("{0:C}", purchasableData.objectPrice);
         objectDescription.text = purchasableData.objectDescription;
 
         if (purchasableData.isPurchased)

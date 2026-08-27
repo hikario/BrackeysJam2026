@@ -15,26 +15,15 @@ public class PurchasableObjectViewer : MonoBehaviour
         rtCamera.targetTexture = purchasable.objectRT;
         GameObject model = Instantiate(purchasable.objectModel, objectContainer, false);
         model.transform.localPosition = Vector3.zero;
-        model.transform.localRotation = Quaternion.identity;
+        model.transform.localScale = model.transform.localScale * purchasable.viewerScale;
+        model.transform.localRotation = Quaternion.Euler(purchasable.viewerStartRotation);
 
         // Need to invoke so we don't turn off the camera on the first frame before it renders
-        Invoke("ForceStopViewingObject", .1f);
-    }
-
-    private void ForceStopViewingObject()
-    {
-        rtCamera.enabled = false;
-        anim.SetBool("viewObject", false);
+        Invoke("DisableCamera", .5f);
     }
 
     public void ViewObject(bool view)
     {
-        if (purchasableData.isPurchased)
-        {
-            //Debug.Log($"{gameObject.name} is already purchased!");
-            return;
-        }
-
         //Debug.Log($"View Object for {gameObject.name} is {view} at {Time.frameCount}");
         anim.SetBool("viewObject", view);
 
