@@ -3,7 +3,12 @@ guid: c2e7b88bd5bbef94ea1ae133c948f264
 ModelImporter:
   serializedVersion: 24300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plunk
+    second: {fileID: 2100000, guid: f72bf3f07bc9179489762b9d5cb75722, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
