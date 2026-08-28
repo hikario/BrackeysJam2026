@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class PurchaseScreenController : ComputerScreen
@@ -22,7 +23,21 @@ public class PurchaseScreenController : ComputerScreen
             if (ComputerScreenManager.currentSequence >= purchasableObject.objectTier && !instantiatedObjects.Contains(purchasableObject))
             {
                 //Debug.Log($"Instantiate listing for {purchasableObject.objectName} at {Time.frameCount}");
-                PurchasableListing listing = Instantiate(listingPrefab, listingParentRectTransform);
+                GameObject listingContainer = new GameObject();
+                listingContainer.name = purchasableObject.objectName + "Listing Container";
+                RectTransform listingContainerRectTransform = listingContainer.AddComponent<RectTransform>();
+                listingContainer.transform.SetParent(listingParentRectTransform);
+                listingContainerRectTransform.localPosition = Vector3.zero;
+                listingContainerRectTransform.localRotation = Quaternion.identity;
+                listingContainerRectTransform.localScale = Vector3.one;
+
+                PurchasableListing listing = Instantiate(listingPrefab);
+                listing.transform.SetParent(listingContainer.transform);
+                RectTransform listingRectTransform = listing.GetComponent<RectTransform>();
+                listingRectTransform.localPosition = Vector3.zero;
+                listingRectTransform.localRotation = Quaternion.identity;
+                listingRectTransform.localScale = Vector3.one;
+                listing.containerRectTransform = listingContainerRectTransform;
                 listing.InitListing(purchasableObject);
                 listing.purchaseButton.onClick.AddListener(() => 
                 {
@@ -35,7 +50,7 @@ public class PurchaseScreenController : ComputerScreen
                 });
                 listing.onPointerExit.AddListener(() =>
                 {
-                    GetViewerForListing(purchasableObject).ViewObject(false);
+                    SetNewHighlightedListing(null);
                 });
 
                 float newViewerXPos = 10 * viewers.Count;
@@ -77,10 +92,16 @@ public class PurchaseScreenController : ComputerScreen
 
     private void SetNewHighlightedListing(PurchasableListing listing)
     {
-        if (currentlyHighlightedListing != null)
+        if (currentlyHighlightedListing != null && currentlyHighlightedListing != listing)
         {
-            currentlyHighlightedListing.purchaseButton.gameObject.transform.SetParent(currentlyHighlightedListing.transform);
+            currentlyHighlightedListing.purchaseButton.gameObject.transform.SetParent(currentlyHighlightedListing.containerRectTransform);
             GetViewerForListing(currentlyHighlightedListing.purchasableData).ViewObject(false);
+        }
+
+        if (listing == null)
+        {
+            currentlyHighlightedListing = null;
+            return;
         }
 
         currentlyHighlightedListing = listing;

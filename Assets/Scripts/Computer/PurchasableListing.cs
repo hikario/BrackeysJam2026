@@ -7,6 +7,7 @@ using TMPro;
 public class PurchasableListing : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] public PurchasableObject purchasableData;
+    [SerializeField] public RectTransform containerRectTransform;
     [SerializeField] public Button purchaseButton;
     [SerializeField] private Image objectImage;
     [SerializeField] private TextMeshProUGUI objectName;

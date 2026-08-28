@@ -397,8 +397,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e097a23a49cfc844c85442a378924075, type: 2}
+  m_sharedMaterial: {fileID: -1678919118984025528, guid: e097a23a49cfc844c85442a378924075, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -726,8 +726,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 8/28/2026 09:00PM
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e097a23a49cfc844c85442a378924075, type: 2}
+  m_sharedMaterial: {fileID: -1678919118984025528, guid: e097a23a49cfc844c85442a378924075, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1125,8 +1125,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e097a23a49cfc844c85442a378924075, type: 2}
+  m_sharedMaterial: {fileID: -1678919118984025528, guid: e097a23a49cfc844c85442a378924075, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1375,8 +1375,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Banking
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e097a23a49cfc844c85442a378924075, type: 2}
+  m_sharedMaterial: {fileID: -1678919118984025528, guid: e097a23a49cfc844c85442a378924075, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1859,7 +1859,7 @@ GameObject:
   - component: {fileID: 1341770242}
   - component: {fileID: 1341770241}
   m_Layer: 5
-  m_Name: XText(TMP)
+  m_Name: CloseText(TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1904,10 +1904,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Exit
+  m_text: Close
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e097a23a49cfc844c85442a378924075, type: 2}
+  m_sharedMaterial: {fileID: -1678919118984025528, guid: e097a23a49cfc844c85442a378924075, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2023,6 +2023,14 @@ PrefabInstance:
     - target: {fileID: 4544791328031459960, guid: 9236624092fbfb54cb21745f57a35158, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5530658052617048108, guid: 9236624092fbfb54cb21745f57a35158, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2074098873, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
+    - target: {fileID: 5530658052617048108, guid: 9236624092fbfb54cb21745f57a35158, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5661637212520299750, guid: 9236624092fbfb54cb21745f57a35158, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2225,6 +2233,14 @@ PrefabInstance:
     - target: {fileID: 4544791328031459960, guid: 9236624092fbfb54cb21745f57a35158, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5530658052617048108, guid: 9236624092fbfb54cb21745f57a35158, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1748816144, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
+    - target: {fileID: 5530658052617048108, guid: 9236624092fbfb54cb21745f57a35158, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5661637212520299750, guid: 9236624092fbfb54cb21745f57a35158, type: 3}
       propertyPath: m_LocalPosition.x
