@@ -11,7 +11,9 @@ public class PurchaseScreenController : ComputerScreen
     private List<PurchasableObject> instantiatedObjects = new List<PurchasableObject>();
     private List<PurchasableObjectViewer> viewers = new List<PurchasableObjectViewer>();
     [SerializeField] public RectTransform listingParentRectTransform;
+    [SerializeField] public RectTransform listingDisplayRectTransform;
     [SerializeField] public Transform listingObjectsTransform;
+    [SerializeField] private PurchasableListing currentlyHighlightedListing;
 
     private void OnEnable()
     {
@@ -29,7 +31,7 @@ public class PurchaseScreenController : ComputerScreen
                 });
                 listing.onPointerEnter.AddListener(() =>
                 {
-                    GetViewerForListing(purchasableObject).ViewObject(true);
+                    SetNewHighlightedListing(listing);
                 });
                 listing.onPointerExit.AddListener(() =>
                 {
@@ -71,5 +73,19 @@ public class PurchaseScreenController : ComputerScreen
 
         Debug.LogError($"NO VIEWER FOUND FOR {_purchasableObject.objectName}!");
         return null;
+    }
+
+    private void SetNewHighlightedListing(PurchasableListing listing)
+    {
+        if (currentlyHighlightedListing != null)
+        {
+            currentlyHighlightedListing.purchaseButton.gameObject.transform.SetParent(currentlyHighlightedListing.transform);
+            GetViewerForListing(currentlyHighlightedListing.purchasableData).ViewObject(false);
+        }
+
+        currentlyHighlightedListing = listing;
+        GetViewerForListing(currentlyHighlightedListing.purchasableData).ViewObject(true);
+        currentlyHighlightedListing.purchaseButton.gameObject.transform.SetParent(listingDisplayRectTransform);
+        currentlyHighlightedListing.purchaseButton.gameObject.transform.SetAsLastSibling();
     }
 }
