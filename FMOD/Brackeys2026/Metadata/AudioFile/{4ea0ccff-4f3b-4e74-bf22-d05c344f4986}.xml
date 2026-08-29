@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{4ea0ccff-4f3b-4e74-bf22-d05c344f4986}">
+		<property name="assetPath">
+			<value>SFX_Clue 2.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>25.0293125</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{83af5857-ce9b-4c2f-a8f2-911a6e3703c8}</destination>
+		</relationship>
+	</object>
+</objects>
