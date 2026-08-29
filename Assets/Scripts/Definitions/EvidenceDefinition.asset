@@ -77,3 +77,115 @@ MonoBehaviour:
       Path: event:/SFX/Computer/SFX_Computer_Hum
     audioLength: 12
     requiredPurchasableID: Microphone Plant
+  - evidenceName: Homecoming
+    evidenceType: 1
+    catEvidence: 0
+    evidenceIsCollected: 0
+    flaggedAsRelevant: 0
+    evidencePhase: 1
+    evidenceSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
+    evidenceAudioEvent:
+      Guid:
+        Data1: 1273796853
+        Data2: 1172332165
+        Data3: 1082001558
+        Data4: 1190524594
+      Path: event:/SFX/Clues/SFX_Clue_ComeHome
+    audioLength: 24.991
+    requiredPurchasableID: Microphone Plant
+  - evidenceName: Microwave
+    evidenceType: 1
+    catEvidence: 0
+    evidenceIsCollected: 0
+    flaggedAsRelevant: 0
+    evidencePhase: 1
+    evidenceSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
+    evidenceAudioEvent:
+      Guid:
+        Data1: 800911555
+        Data2: 1340555649
+        Data3: -415185011
+        Data4: 341737789
+      Path: event:/SFX/Clues/SFX_Clue_Microwave
+    audioLength: 25.029
+    requiredPurchasableID: Microphone Plant
+  - evidenceName: Chips
+    evidenceType: 1
+    catEvidence: 0
+    evidenceIsCollected: 0
+    flaggedAsRelevant: 0
+    evidencePhase: 1
+    evidenceSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
+    evidenceAudioEvent:
+      Guid:
+        Data1: 40433336
+        Data2: 1341809288
+        Data3: 74093733
+        Data4: 1844739980
+      Path: event:/SFX/Clues/SFX_Clue_Chips
+    audioLength: 15.675
+    requiredPurchasableID: Microphone Plant
+  - evidenceName: Pickle Jar
+    evidenceType: 1
+    catEvidence: 0
+    evidenceIsCollected: 0
+    flaggedAsRelevant: 0
+    evidencePhase: 1
+    evidenceSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
+    evidenceAudioEvent:
+      Guid:
+        Data1: -1430875972
+        Data2: 1198067066
+        Data3: 1374044827
+        Data4: -1509467615
+      Path: event:/SFX/Clues/SFX_Clue_PickleJar
+    audioLength: 19.562
+    requiredPurchasableID: Microphone Plant
+  - evidenceName: Tuna Can
+    evidenceType: 1
+    catEvidence: 1
+    evidenceIsCollected: 0
+    flaggedAsRelevant: 0
+    evidencePhase: 1
+    evidenceSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
+    evidenceAudioEvent:
+      Guid:
+        Data1: -393845117
+        Data2: 1092862532
+        Data3: 150728114
+        Data4: 1586641118
+      Path: event:/SFX/Clues/SFX_Clue_CatTunaCan
+    audioLength: 8.016
+    requiredPurchasableID: Microphone Plant
+  - evidenceName: Burger
+    evidenceType: 1
+    catEvidence: 1
+    evidenceIsCollected: 0
+    flaggedAsRelevant: 0
+    evidencePhase: 1
+    evidenceSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
+    evidenceAudioEvent:
+      Guid:
+        Data1: 457854578
+        Data2: 1210829323
+        Data3: -1923376986
+        Data4: 166423604
+      Path: event:/SFX/Clues/SFX_Clue_CatBurger
+    audioLength: 7.19
+    requiredPurchasableID: Microphone Plant
+  - evidenceName: Soda
+    evidenceType: 1
+    catEvidence: 0
+    evidenceIsCollected: 0
+    flaggedAsRelevant: 0
+    evidencePhase: 1
+    evidenceSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
+    evidenceAudioEvent:
+      Guid:
+        Data1: -1907503265
+        Data2: 1214960188
+        Data3: -1395140702
+        Data4: 2032636826
+      Path: event:/SFX/Clues/SFX_Clue_Soda
+    audioLength: 12.263
+    requiredPurchasableID: Microphone Plant

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{aab690bc-0d7a-4769-9b42-e651215a07a6}">
 		<property name="name">
-			<value>SFX_Clue 4</value>
+			<value>SFX_Clue_PickleJar</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
