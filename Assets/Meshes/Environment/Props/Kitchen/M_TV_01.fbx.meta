@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0bbd4559bd17e3b47b171f674abdab6b
+guid: 5e21d8465282d8146b884a7e1994dea9
 ModelImporter:
   serializedVersion: 24300
   internalIDToNameTable: []
@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Counter
-    second: {fileID: 2100000, guid: 0d18a892c5e6c4146807ae2fb20c2fc3, type: 2}
+    second: {fileID: 2100000, guid: ea3ad61ef504dd9499faee9171185dae, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Metal
-    second: {fileID: 2100000, guid: 3419aa72a0e0edb42bea1f3e5f6dea7b, type: 2}
+    second: {fileID: 2100000, guid: 0d18a892c5e6c4146807ae2fb20c2fc3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

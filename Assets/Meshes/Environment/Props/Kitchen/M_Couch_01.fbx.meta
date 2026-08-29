@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0bbd4559bd17e3b47b171f674abdab6b
+guid: 9a7f9d413be123e4a8559d71aae4b145
 ModelImporter:
   serializedVersion: 24300
   internalIDToNameTable: []
@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Counter
-    second: {fileID: 2100000, guid: 0d18a892c5e6c4146807ae2fb20c2fc3, type: 2}
+    second: {fileID: 2100000, guid: 23922e071942286499da151f5d3fedeb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Metal
-    second: {fileID: 2100000, guid: 3419aa72a0e0edb42bea1f3e5f6dea7b, type: 2}
+      name: Plunk
+    second: {fileID: 2100000, guid: f72bf3f07bc9179489762b9d5cb75722, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
