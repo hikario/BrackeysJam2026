@@ -42,21 +42,69 @@ MonoBehaviour:
     objectTier: 0
     isPurchased: 0
     isPlaced: 0
-    objectDescription: They won't get away with this
+    objectDescription: Scientists have noted that plants love it when you speak clearly
+      and directly to them.
     objectPrice: 49.99
     objectModel: {fileID: 919132149155446097, guid: 89ffa0066bb6d1b469b1380944b55e26, type: 3}
     objectRT: {fileID: 8400000, guid: b86d9b207c2ed174c82506c1187d9430, type: 2}
     objectRTMaterial: {fileID: 2100000, guid: 71c86c116f30bb644bfac7ee7c08476e, type: 2}
     viewerScale: 1
     viewerStartRotation: {x: 0, y: 0, z: 0}
+  - objectName: Detective Fedora
+    objectTier: 0
+    isPurchased: 0
+    isPlaced: 0
+    objectDescription: Cutting edge avian surveillance technology, virtually indistinguishable
+      from the real thing.
+    objectPrice: 14.99
+    objectModel: {fileID: 919132149155446097, guid: fcbc876e5daa532468f096eb7ddf81bd, type: 3}
+    objectRT: {fileID: 8400000, guid: 3e442ac2b0995cc4d90d819a1704541e, type: 2}
+    objectRTMaterial: {fileID: 2100000, guid: 74fef022536296c4bbc5e7d7cd33f082, type: 2}
+    viewerScale: 3.5
+    viewerStartRotation: {x: 270, y: 210, z: 0}
   - objectName: X-Ray Goggles
     objectTier: 2
     isPurchased: 0
     isPlaced: 0
-    objectDescription: They won't get away with this
+    objectDescription: Sight beyond sight, vision unmatched.
     objectPrice: 699.99
     objectModel: {fileID: 919132149155446097, guid: fcbc876e5daa532468f096eb7ddf81bd, type: 3}
     objectRT: {fileID: 8400000, guid: b86d9b207c2ed174c82506c1187d9430, type: 2}
     objectRTMaterial: {fileID: 2100000, guid: 71c86c116f30bb644bfac7ee7c08476e, type: 2}
+    viewerScale: 3.5
+    viewerStartRotation: {x: 270, y: 210, z: 0}
+  - objectName: Box with Stick
+    objectTier: 1
+    isPurchased: 0
+    isPlaced: 0
+    objectDescription: A most cunning and unassuming trap.
+    objectPrice: 4.99
+    objectModel: {fileID: 919132149155446097, guid: fcbc876e5daa532468f096eb7ddf81bd, type: 3}
+    objectRT: {fileID: 8400000, guid: f7649a3fdabc32942ac138b73463bd27, type: 2}
+    objectRTMaterial: {fileID: 2100000, guid: e92459d348ad968499efa48d1036375f, type: 2}
+    viewerScale: 3.5
+    viewerStartRotation: {x: 270, y: 210, z: 0}
+  - objectName: Painting with Eyes
+    objectTier: 1
+    isPurchased: 0
+    isPlaced: 0
+    objectDescription: I once gazed upon her eyes, she watched (and recorded) my
+      every movement.
+    objectPrice: 249.99
+    objectModel: {fileID: 919132149155446097, guid: fcbc876e5daa532468f096eb7ddf81bd, type: 3}
+    objectRT: {fileID: 8400000, guid: 267fc8c24673f27439f00176247d4a02, type: 2}
+    objectRTMaterial: {fileID: 2100000, guid: 39db26c22c00b0343a79429cb6ecc21d, type: 2}
+    viewerScale: 3.5
+    viewerStartRotation: {x: 270, y: 210, z: 0}
+  - objectName: Pigeon Cam
+    objectTier: 2
+    isPurchased: 0
+    isPlaced: 0
+    objectDescription: Cutting edge avian surveillance technology, virtually indistinguishable
+      from the real thing.
+    objectPrice: 299.99
+    objectModel: {fileID: 919132149155446097, guid: fcbc876e5daa532468f096eb7ddf81bd, type: 3}
+    objectRT: {fileID: 8400000, guid: bec370a01d43f8b4e97b25eb3cc335e8, type: 2}
+    objectRTMaterial: {fileID: 2100000, guid: a8964d510f3716541a575ebbe139278e, type: 2}
     viewerScale: 3.5
     viewerStartRotation: {x: 270, y: 210, z: 0}
