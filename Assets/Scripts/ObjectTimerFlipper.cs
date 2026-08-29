@@ -10,9 +10,18 @@ public class ObjectTimerFlipper : MonoBehaviour
     public bool turnOff;
     public bool startFlipper;
     public bool finalFlip;
+
+    #region Blur
     public bool turnOnBlur;
     public bool turnOffBlur;
     public BlurScene blurScreen;
+    #endregion
+
+    #region Saturation
+    public bool turnOnDesaturation;
+    public bool turnOffDesaturation;
+    #endregion
+
     [SerializeField] private TextMeshProUGUI textToUse;
     [SerializeField] private bool fadeIn = false;
     private float timeMultiplier;
@@ -50,6 +59,10 @@ public class ObjectTimerFlipper : MonoBehaviour
             {
                 Invoke("SetDisableBlur", delay);
             }
+            if (turnOffDesaturation)
+            {
+                Invoke("SetSaturation", delay);
+            }
         }
     }
 
@@ -61,6 +74,11 @@ public class ObjectTimerFlipper : MonoBehaviour
             if (turnOnBlur)
             {
                 blurScreen.EnableBlur();
+            }
+
+            if (turnOnDesaturation)
+            {
+                blurScreen.Desaturate();
             }
         }
     }
@@ -147,6 +165,11 @@ public class ObjectTimerFlipper : MonoBehaviour
     public void SetDisableBlur()
     {
         blurScreen.DisableBlur();
+    }
+
+    public void SetSaturation()
+    {
+        blurScreen.Saturate();
     }
 
     public void RemoveNext()
