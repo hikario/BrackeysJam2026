@@ -166,10 +166,10 @@ MonoBehaviour:
   startingMoney: 436
   currentMoney: 436
   resetOnPlay: 1
-  purchaseScreenController: {fileID: 0}
-  evidenceScreenController: {fileID: 0}
-  messengerScreenController: {fileID: 0}
-  bankingScreenController: {fileID: 0}
+  purchaseScreenController: {fileID: 1197693401}
+  evidenceScreenController: {fileID: 1503517590}
+  messengerScreenController: {fileID: 914758992}
+  bankingScreenController: {fileID: 2032908247}
   purchasableObjectDefinitionReference: {fileID: 11400000, guid: 40ee62c2e674ede44a9137a8bd55af30, type: 2}
   evidenceDefinitionReference: {fileID: 11400000, guid: 2a7585e835afa834bb19fa7fbd13a469, type: 2}
   messagesDefinitionReference: {fileID: 11400000, guid: 9a985933da5aa05429a924808a5d9b66, type: 2}
@@ -637,6 +637,17 @@ Transform:
   - {fileID: 398459355}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 2, y: 0, z: 0}
+--- !u!114 &914758992 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6289632829500720818, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+  m_PrefabInstance: {fileID: 1150326386}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42eacd19792519e42b997a1865011278, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MessengerScreenController
 --- !u!1001 &1150326386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -645,6 +656,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 895503940}
     m_Modifications:
+    - target: {fileID: 2214543086236461107, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3153210082842627324, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -799,6 +814,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3153210082842627324, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
   m_PrefabInstance: {fileID: 1150326386}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1197693401 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8399097481828203392, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+  m_PrefabInstance: {fileID: 1150326386}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18fd7bbbd63979045b353e11b3355c29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PurchaseScreenController
 --- !u!1 &1210289064
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,6 +888,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1503517590 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8748486328038446698, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+  m_PrefabInstance: {fileID: 1150326386}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed1d15c41924ad44b8907b73f1ab98c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EvidenceScreenController
 --- !u!1 &1657993171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,6 +1112,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
   nonRigidbodyVelocity: 0
   attenuationObject: {fileID: 0}
+--- !u!114 &2032908247 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3745061721250067056, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+  m_PrefabInstance: {fileID: 1150326386}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e53db60b194654eb9b35074d48226a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BankingWidgetController
+--- !u!1 &2096610505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2096610507}
+  - component: {fileID: 2096610506}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2096610506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096610505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.Volume
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 411334dfa04b884489a1583b7399d542, type: 2}
+--- !u!4 &2096610507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096610505}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1920, y: 1080, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &5229730042294672073
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1171,6 +1268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OverlayCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7607051847358558816, guid: 1337d00a84059274a9abbd0c5421c2d6, type: 3}
+      propertyPath: vol
+      value: 
+      objectReference: {fileID: 2096610506}
     - target: {fileID: 8192732492084588165, guid: 1337d00a84059274a9abbd0c5421c2d6, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4281479730
@@ -1192,3 +1293,4 @@ SceneRoots:
   - {fileID: 895503940}
   - {fileID: 1210289066}
   - {fileID: 5229730042294672073}
+  - {fileID: 2096610507}

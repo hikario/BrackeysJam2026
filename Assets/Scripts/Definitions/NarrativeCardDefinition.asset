@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57bb45da4a607714eaa4a36844303d5d, type: 3}
+  m_Name: NarrativeCardDefinition
+  m_EditorClassIdentifier: Assembly-CSharp::NarrativeCardDefinition
+  narrativeCards:
+  - messageContent: At first, it was just a few little things here and there...
+    wasShown: 1
+    narrativePhase: 0
+    narrativeOrder: 0
+    cardDuration: 5
+  - messageContent: Partially consumed cracker rolls, a few misplaced fruit, and
+      a deli container of thinly sliced black forest ham that'd inexplicably diminished
+      in weight as the days passed by.
+    wasShown: 1
+    narrativePhase: 0
+    narrativeOrder: 1
+    cardDuration: 7.5
+  - messageContent: For quite some time now, I'd noticed that my food had been disappearing.
+    wasShown: 1
+    narrativePhase: 0
+    narrativeOrder: 2
+    cardDuration: 5
+  - messageContent: On most days, I would simply attribute it to any reasonable explanation
+      that came to mind.
+    wasShown: 1
+    narrativePhase: 0
+    narrativeOrder: 3
+    cardDuration: 7.5
+  - messageContent: '"Your wallet was a little light, remember? You must''ve put
+      that back on the shelf."'
+    wasShown: 1
+    narrativePhase: 0
+    narrativeOrder: 4
+    cardDuration: 5
+  - messageContent: '"You might''ve left that on your desk at work, I''ll grab it
+      tomorrow morning."'
+    wasShown: 1
+    narrativePhase: 0
+    narrativeOrder: 5
+    cardDuration: 5
+  - messageContent: At times, the losses were so severe that there was no rational
+      explanation that could account for my dwindling food supplies.
+    wasShown: 1
+    narrativePhase: 0
+    narrativeOrder: 6
+    cardDuration: 7.5
+  - messageContent: Perhaps I would have considered it just another one of life's
+      many valuable lessons. No use crying over spilt milk as it were.
+    wasShown: 1
+    narrativePhase: 0
+    narrativeOrder: 7
+    cardDuration: 7.5
+  - messageContent: However, as the rumbling in my stomach intensified and my wallet
+      began to feel as light as a drifting leaf, I realized I had no option but to
+      dig deeper into the mystery before me.
+    wasShown: 1
+    narrativePhase: 0
+    narrativeOrder: 8
+    cardDuration: 10
