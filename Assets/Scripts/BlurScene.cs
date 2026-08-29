@@ -6,7 +6,7 @@ public class BlurScene : MonoBehaviour
 {
     public Volume vol;
     private float blurFocalLength = 300;
-    private float clearFolarLength = 1;
+    private float clearFolarLength = 30;
     public float blurSpeed;
     DepthOfField dofComponent;
     private bool blurring;
@@ -39,13 +39,14 @@ public class BlurScene : MonoBehaviour
 
         if (clearing == true)
         {
-            if (dofComponent.focalLength.value > 1)
+            if (dofComponent.focalLength.value > 30)
             {
                 dofComponent.focalLength.value += dofComponent.focalLength.value * (-1 * blurSpeed) * Time.deltaTime;
             }
             else
             {
                 clearing = false;
+                dofComponent.focalLength.value = 30;
             }
         }
     }

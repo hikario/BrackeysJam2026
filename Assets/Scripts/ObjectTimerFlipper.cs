@@ -43,6 +43,7 @@ public class ObjectTimerFlipper : MonoBehaviour
     {
         if (enterAction.WasPressedThisFrame())
         {
+            StopAllCoroutines();
             StartCoroutine(OutroFade(textToUse));
             Invoke("FlipObjects", delay);
             if (turnOffBlur)
