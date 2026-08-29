@@ -23,9 +23,9 @@ public class PlaceableArea : MonoBehaviour, IPointerClickHandler, IPointerEnterH
             }
         }
 
-        ModifiableMeshFilter = GetComponent<MeshFilter>();
+        ModifiableMeshFilter = GetComponentInChildren<MeshFilter>();
         ModifiableMeshFilter.mesh = null;
-        ModifiableMeshRenderer = GetComponent<MeshRenderer>();
+        ModifiableMeshRenderer = GetComponentInChildren<MeshRenderer>();
         ModifiableMeshRenderer.material = UnplacedMaterial;
 
 

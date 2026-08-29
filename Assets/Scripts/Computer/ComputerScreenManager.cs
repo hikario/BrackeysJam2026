@@ -84,10 +84,9 @@ public class ComputerScreenManager : MonoBehaviour
         messengerScreenController.SendNextRoommateMessages();
     }
 
-    public void ProgressToNextSequence()
+    public void ProgressToNextSequence(int sequenceNumber)
     {
-        currentSequence++;
-        Debug.Log($"Progress to sequence {currentSequence}");
+        currentSequence = sequenceNumber;
         messengerScreenController.SendNextRoommateMessages();
     }
 
