@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using System.Collections;
 using TMPro;
 
@@ -9,6 +10,8 @@ public class ObjectTimerFlipper : MonoBehaviour
     public bool turnOff;
     public bool startFlipper;
     public bool finalFlip;
+    public bool blurWhenActive;
+    public BlurScene blurScreen;
     [SerializeField] private TextMeshProUGUI textToUse;
     [SerializeField] private bool fadeIn = false;
     private float timeMultiplier;
@@ -21,34 +24,56 @@ public class ObjectTimerFlipper : MonoBehaviour
 
     public float delay;
 
+    public InputActionAsset playerActions;
+    private InputAction enterAction;
+    private bool dialogueSkipped;
+
 
     void Start()
     {
+        enterAction = playerActions.FindAction("DialogueNext");
+        dialogueSkipped = false;
         if (startFlipper)
         {
             StartFlipper();
         }
     }
 
+    void Update()
+    {
+        if (enterAction.WasPressedThisFrame())
+        {
+            FlipObjects();
+        }
+    }
+
     public void StartFlipper()
     {
-        if (fadeIn)
+        if (blurWhenActive)
         {
-            StartCoroutine(IntroFade(textToUse));
-        }
-        else
-        {
-            Invoke("FlipObjects", delay);
+            blurScreen.EnableBlur();
+            if (fadeIn)
+            {
+                StartCoroutine(IntroFade(textToUse));
+            }
+            else
+            {
+                Invoke("FlipObjects", delay);
+            }
         }
     }
 
     public void FlipObjects()
     {
-        if(nextObject != null)
+        if (nextObject != null)
         {
-            nextObject.SetActive(true);
-            nextObject.GetComponent<ObjectTimerFlipper>().StartFlipper();
-            // Debug.Log("Fwip!!!!");
+            if (enterAction.WasPressedThisFrame())
+            {
+                nextObject.SetActive(true);
+                nextObject.GetComponent<ObjectTimerFlipper>().StartFlipper();
+                FadeOutText();
+                // Debug.Log("Fwip!!!!");
+            }
         }
         if (turnOff)
         {
@@ -77,6 +102,7 @@ public class ObjectTimerFlipper : MonoBehaviour
         if (finalFlip)
         {
             Debug.Log("Final fwip!!!!");
+            blurScreen.DisableBlur();
             if (fadeScreenCanvas != null && sceneLoader != null)
             {
                 Debug.Log("Loading next scene!!!!");
