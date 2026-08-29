@@ -25,4 +25,14 @@ public class CameraChangeUI : MonoBehaviour
     {
         onNextCameraButtonPressed.Invoke();
     }
+
+    public void TogglePrevCameraButtonInteraction(bool interaction)
+    {
+        prevCameraButton.interactable = interaction;
+    }
+
+    public void ToggleNextCameraButtonInteraction(bool interaction)
+    {
+        nextCameraButton.interactable = interaction;
+    }
 }
