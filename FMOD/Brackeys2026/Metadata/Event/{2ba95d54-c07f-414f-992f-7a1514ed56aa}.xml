@@ -167,6 +167,8 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{4b47f6f3-a916-4516-9932-1521eaa31c09}">
 		<relationship name="effects">
+			<destination>{b4187397-1fd5-439a-a4d1-7cdbf548a9e0}</destination>
+			<destination>{06760fe3-e271-4e88-b689-4003abef36bb}</destination>
 			<destination>{2eddeb78-a056-4ae6-89bc-ff8bf1a34bf6}</destination>
 			<destination>{51f538c7-f192-4029-92f7-2a056fca9485}</destination>
 		</relationship>
@@ -197,6 +199,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{75a4cbee-f7c7-48bc-b2e4-a5ec584c18d0}">
 		<relationship name="effects">
+			<destination>{108ba896-4448-47ac-a93a-63a8ec2b5f38}</destination>
 			<destination>{77f055d1-9239-4615-95fb-b23290ed338e}</destination>
 		</relationship>
 	</object>
@@ -211,6 +214,16 @@
 			<destination>{25c71821-91eb-41d7-843f-136338d044ac}</destination>
 			<destination>{ffeb5e81-eda7-4ad6-a9af-43edd8f29053}</destination>
 		</relationship>
+	</object>
+	<object class="GainEffect" id="{b4187397-1fd5-439a-a4d1-7cdbf548a9e0}">
+		<property name="gain">
+			<value>10</value>
+		</property>
+	</object>
+	<object class="GainEffect" id="{06760fe3-e271-4e88-b689-4003abef36bb}">
+		<property name="gain">
+			<value>10</value>
+		</property>
 	</object>
 	<object class="MixerBusFader" id="{2eddeb78-a056-4ae6-89bc-ff8bf1a34bf6}" />
 	<object class="SpatialiserEffect" id="{51f538c7-f192-4029-92f7-2a056fca9485}" />
@@ -250,6 +263,14 @@
 		</property>
 		<property name="value">
 			<value>1</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{108ba896-4448-47ac-a93a-63a8ec2b5f38}">
+		<property name="frequencyA">
+			<value>2299.42065</value>
+		</property>
+		<property name="qualityA">
+			<value>0.20465517</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{77f055d1-9239-4615-95fb-b23290ed338e}" />
