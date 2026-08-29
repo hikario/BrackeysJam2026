@@ -43,7 +43,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 13
-  m_BakeOnSceneLoad: 0
+  m_BakeOnSceneLoad: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -94,7 +94,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 80e3495241e1a694a921cdc2827bc476, type: 2}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 75b5a7c53cce4ca4fbc9c9986b46b019, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1935,7 +1935,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: a6490c0ababa3a4429b181e668e4c60f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 26772e119b2f9b34daf1c4f285cc08b2, type: 2}
+      objectReference: {fileID: 2100000, guid: 0d79524a6a4213a44bd86b67d69442c3, type: 2}
     - target: {fileID: 919132149155446097, guid: a6490c0ababa3a4429b181e668e4c60f, type: 3}
       propertyPath: m_Name
       value: M_Glas_Wine01
@@ -6433,6 +6433,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a6490c0ababa3a4429b181e668e4c60f, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a6490c0ababa3a4429b181e668e4c60f, type: 3}
       propertyPath: m_Name
       value: M_Glas_Wine01 (3)
@@ -7245,18 +7249,18 @@ ReflectionProbe:
   m_NearClip: 0.3
   m_FarClip: 1000
   m_ShadowDistance: 100
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IntensityMultiplier: 1
-  m_BlendDistance: 10
+  m_IntensityMultiplier: 1.5
+  m_BlendDistance: 0
   m_HDR: 1
   m_BoxProjection: 1
   m_RenderDynamicObjects: 0
   m_UseOcclusionCulling: 0
-  m_Importance: 1
+  m_Importance: 3296
   m_CustomBakedTexture: {fileID: 0}
 --- !u!1 &1735107584
 GameObject:
