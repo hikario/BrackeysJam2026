@@ -7,7 +7,7 @@ public class ObjectTimerFlipper : MonoBehaviour
 {
     [SerializeField]
     public GameObject nextObject;
-    public bool turnOff;
+    public bool autoTurnOff;
     public bool startFlipper;
     public bool finalFlip;
     public bool blurWhenActive;
@@ -43,7 +43,9 @@ public class ObjectTimerFlipper : MonoBehaviour
     {
         if (enterAction.WasPressedThisFrame())
         {
-            FlipObjects();
+            StartCoroutine(OutroFade(textToUse));
+            Invoke("FlipObjects", delay);
+
         }
     }
 
@@ -56,10 +58,6 @@ public class ObjectTimerFlipper : MonoBehaviour
             {
                 StartCoroutine(IntroFade(textToUse));
             }
-            else
-            {
-                Invoke("FlipObjects", delay);
-            }
         }
     }
 
@@ -67,15 +65,10 @@ public class ObjectTimerFlipper : MonoBehaviour
     {
         if (nextObject != null)
         {
-            if (enterAction.WasPressedThisFrame())
-            {
-                nextObject.SetActive(true);
-                nextObject.GetComponent<ObjectTimerFlipper>().StartFlipper();
-                FadeOutText();
-                // Debug.Log("Fwip!!!!");
-            }
+            nextObject.SetActive(true);
+            nextObject.GetComponent<ObjectTimerFlipper>().StartFlipper();
         }
-        if (turnOff)
+        if (autoTurnOff)
         {
             gameObject.SetActive(false);
         }
@@ -94,7 +87,7 @@ public class ObjectTimerFlipper : MonoBehaviour
     private IEnumerator IntroFade(TextMeshProUGUI textToUse)
     {
         yield return StartCoroutine(FadeInText(1f, textToUse));
-        if (turnOff)
+        if (autoTurnOff)
         {
             yield return new WaitForSeconds(textHangTime);
             yield return StartCoroutine(FadeOutText(1f, textToUse));
@@ -110,11 +103,12 @@ public class ObjectTimerFlipper : MonoBehaviour
                 fadeScreenCanvas.GetComponent<SceneFader>().RunFade();
             }
         }
-        else
-        {
-            Invoke("FlipObjects", delay);
-        }
         //End of transition, do some extra stuff!!
+    }
+
+    private IEnumerator OutroFade(TextMeshProUGUI textToUse)
+    {
+        yield return StartCoroutine(FadeOutText(1f, textToUse));
     }
 
     private IEnumerator FadeInText(float timeSpeed, TextMeshProUGUI text)
