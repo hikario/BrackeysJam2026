@@ -2123,11 +2123,13 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3410502860214869312, guid: 9236624092fbfb54cb21745f57a35158, type: 3}
       propertyPath: m_Name
-      value: ScamazonDesktopIcon
+      value: SpyjinksDesktopIcon
       objectReference: {fileID: 0}
     - target: {fileID: 3545393831120803570, guid: 9236624092fbfb54cb21745f57a35158, type: 3}
       propertyPath: m_text
-      value: Scamazon
+      value: 'Spyjinks
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 4544791328031459960, guid: 9236624092fbfb54cb21745f57a35158, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode

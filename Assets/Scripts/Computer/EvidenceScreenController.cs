@@ -20,6 +20,11 @@ public class EvidenceScreenController : ComputerScreen
     [SerializeField] private ScrollSnap evidenceScrollSnap;
     [SerializeField] private Animator evidenceViewerAnimator;
 
+    [Header("Conspiracy Board ;P")]
+    public UILineRenderer lineRenderer;
+    private bool firstPointSet = false;
+
+
     private void OnEnable()
     {
         evidenceViewerGameObject.SetActive(false);
@@ -38,13 +43,16 @@ public class EvidenceScreenController : ComputerScreen
                 {
                     PhotoEvidence photoEvidence = Instantiate(photoEvidencePrefab, evidenceParentRectTransform);
                     photoEvidence.InitPhotoEvidence(evidence);
+                    photoEvidence.relevantToggle.onValueChanged.AddListener((value) => UpdateLineRenderer(value, GetThumbnailForEvidence(evidence).GetComponent<RectTransform>(),
+                        ComputerScreenManager.instance.evidenceDefinitionReference.evidence.IndexOf(evidence)));
                 }
                 else if (evidence.evidenceType == EvidenceType.Audio)
                 {
                     AudioEvidence audioEvidence = Instantiate(audioEvidencePrefab, evidenceParentRectTransform);
                     audioEvidence.InitAudioEvidence(evidence);
+                    audioEvidence.relevantToggle.onValueChanged.AddListener((value) => UpdateLineRenderer(value, GetThumbnailForEvidence(evidence).GetComponent<RectTransform>(), 
+                        ComputerScreenManager.instance.evidenceDefinitionReference.evidence.IndexOf(evidence)));
                 }
-
                 evidenceToDisplay.Add(evidence);
             }
             //else
@@ -52,6 +60,60 @@ public class EvidenceScreenController : ComputerScreen
             //    Debug.Log($"{evidence.evidenceName} is NOT collected; Phase is correct is {ComputerScreenManager.currentSequence == evidence.evidencePhase} and purchasable has been placed is {evidence.CheckForRequiredPurchasable()}");
             //}
         }
+
+        for (int i = 0; i < evidenceToDisplay.Count; i++)
+        {
+            if (evidenceToDisplay[i].flaggedAsRelevant)
+            {
+                UpdateLineRenderer(true, GetThumbnailForEvidence(evidenceToDisplay[i]).GetComponent<RectTransform>(), 
+                    ComputerScreenManager.instance.evidenceDefinitionReference.evidence.IndexOf(evidenceToDisplay[i]));
+            }
+        }
+    }
+
+    private void UpdateLineRenderer(bool addVertex, RectTransform rectTransform, int iD)
+    {
+        Vector2[] positionsArray = new Vector2[lineRenderer.Points.Length];
+        positionsArray = lineRenderer.Points;
+        List<Vector2> positionsList = new List<Vector2>();
+        positionsList.AddRange(positionsArray);
+        float verticalVariation = iD;
+        if (iD%2 == 0)
+        {
+            verticalVariation = verticalVariation * 25;
+        }
+        else
+        {
+            verticalVariation = verticalVariation * -25;
+        }
+
+        Debug.Log($"ID is {iD}, vertical variation is {verticalVariation}");
+
+        if (addVertex)
+        {
+            if (!firstPointSet)
+            {
+                positionsList[0] = new Vector2(rectTransform.anchoredPosition.x, rectTransform.anchoredPosition.y + verticalVariation);
+                firstPointSet = true;
+            }
+            else
+            {
+                positionsList.Add(new Vector2(rectTransform.anchoredPosition.x, rectTransform.anchoredPosition.y + verticalVariation));
+            }
+        }
+        else
+        {
+            for (int i = 0; i < positionsList.Count - 1; i++)
+            {
+                if (positionsList[i] == new Vector2(rectTransform.anchoredPosition.x, rectTransform.anchoredPosition.y + verticalVariation))
+                {
+                    positionsList.RemoveAt(i);
+                }
+            }
+        }
+
+        positionsArray = positionsList.ToArray();
+        lineRenderer.Points = positionsArray;
     }
 
     int newPage = 0;

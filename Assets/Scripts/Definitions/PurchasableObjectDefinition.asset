@@ -15,8 +15,8 @@ MonoBehaviour:
   purchasableObjects:
   - objectName: Labels
     objectTier: 0
-    isPurchased: 1
-    isPlaced: 1
+    isPurchased: 0
+    isPlaced: 0
     objectDescription: For if your idiot roommate forgets that they <b>did not</b>
       go to your favorite Chinese place last night, and have no rights to the box
       in the fridge.
@@ -38,19 +38,8 @@ MonoBehaviour:
     objectRTMaterial: {fileID: 2100000, guid: dd1f328d03956e747b50d0eed81783d1, type: 2}
     viewerScale: 1
     viewerStartRotation: {x: 0, y: 0, z: 0}
-  - objectName: Trip Wire
-    objectTier: 1
-    isPurchased: 0
-    isPlaced: 0
-    objectDescription: Watch your step around this!
-    objectPrice: 19.99
-    objectModel: {fileID: 1855991305918741893, guid: 2deb4b7bd611e14459029146a2dbde0e, type: 3}
-    objectRT: {fileID: 8400000, guid: 267fc8c24673f27439f00176247d4a02, type: 2}
-    objectRTMaterial: {fileID: 2100000, guid: 39db26c22c00b0343a79429cb6ecc21d, type: 2}
-    viewerScale: 1
-    viewerStartRotation: {x: 0, y: 0, z: 0}
   - objectName: Microphone Plant
-    objectTier: 1
+    objectTier: 0
     isPurchased: 0
     isPlaced: 0
     objectDescription: They won't get away with this
