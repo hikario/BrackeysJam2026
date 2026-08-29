@@ -7,15 +7,15 @@ public class ObjectTimerFlipper : MonoBehaviour
 {
     [SerializeField]
     public GameObject nextObject;
-    public bool autoTurnOff;
+    public bool turnOff;
     public bool startFlipper;
     public bool finalFlip;
-    public bool blurWhenActive;
+    public bool turnOnBlur;
+    public bool turnOffBlur;
     public BlurScene blurScreen;
     [SerializeField] private TextMeshProUGUI textToUse;
     [SerializeField] private bool fadeIn = false;
     private float timeMultiplier;
-    public float textHangTime;
 
     [SerializeField]
     private GameObject sceneLoader;
@@ -45,18 +45,21 @@ public class ObjectTimerFlipper : MonoBehaviour
         {
             StartCoroutine(OutroFade(textToUse));
             Invoke("FlipObjects", delay);
-
+            if (turnOffBlur)
+            {
+                Invoke("SetDisableBlur", delay);
+            }
         }
     }
 
     public void StartFlipper()
     {
-        if (blurWhenActive)
+        if (fadeIn)
         {
-            blurScreen.EnableBlur();
-            if (fadeIn)
+            StartCoroutine(IntroFade(textToUse));
+            if (turnOnBlur)
             {
-                StartCoroutine(IntroFade(textToUse));
+                blurScreen.EnableBlur();
             }
         }
     }
@@ -68,7 +71,7 @@ public class ObjectTimerFlipper : MonoBehaviour
             nextObject.SetActive(true);
             nextObject.GetComponent<ObjectTimerFlipper>().StartFlipper();
         }
-        if (autoTurnOff)
+        if (turnOff)
         {
             gameObject.SetActive(false);
         }
@@ -87,15 +90,9 @@ public class ObjectTimerFlipper : MonoBehaviour
     private IEnumerator IntroFade(TextMeshProUGUI textToUse)
     {
         yield return StartCoroutine(FadeInText(1f, textToUse));
-        if (autoTurnOff)
-        {
-            yield return new WaitForSeconds(textHangTime);
-            yield return StartCoroutine(FadeOutText(1f, textToUse));
-        }
         if (finalFlip)
         {
             Debug.Log("Final fwip!!!!");
-            blurScreen.DisableBlur();
             if (fadeScreenCanvas != null && sceneLoader != null)
             {
                 Debug.Log("Loading next scene!!!!");
@@ -144,6 +141,11 @@ public class ObjectTimerFlipper : MonoBehaviour
             timeSpeed = timeMultiplier;
         }
         StartCoroutine(FadeOutText(timeSpeed, textToUse));
+    }
+
+    public void SetDisableBlur()
+    {
+        blurScreen.DisableBlur();
     }
 
     public void RemoveNext()

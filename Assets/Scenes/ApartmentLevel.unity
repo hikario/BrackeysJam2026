@@ -1360,7 +1360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectTimerFlipper
   nextObject: {fileID: 2068887813}
-  autoTurnOff: 0
+  turnOff: 1
   startFlipper: 1
   finalFlip: 0
   blurWhenActive: 1
@@ -1370,7 +1370,7 @@ MonoBehaviour:
   textHangTime: 5
   sceneLoader: {fileID: 0}
   fadeScreenCanvas: {fileID: 0}
-  delay: 5
+  delay: 1
   playerActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
 --- !u!1 &1047334085
 GameObject:
@@ -2963,7 +2963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectTimerFlipper
   nextObject: {fileID: 0}
-  autoTurnOff: 0
+  turnOff: 1
   startFlipper: 0
   finalFlip: 1
   blurWhenActive: 1
@@ -2973,7 +2973,7 @@ MonoBehaviour:
   textHangTime: 5
   sceneLoader: {fileID: 0}
   fadeScreenCanvas: {fileID: 0}
-  delay: 5
+  delay: 1
   playerActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
