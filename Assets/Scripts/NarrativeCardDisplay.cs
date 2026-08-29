@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 
@@ -8,12 +9,23 @@ public class NarrativeCardDisplay : MonoBehaviour
     [SerializeField] public NarrativeCardData narrativeCardData;
     [SerializeField] private CanvasGroup canvasGroup;
     [SerializeField] private TextMeshProUGUI displayText;
+    [SerializeField] private Image narrativeImage;
 
     public void InitNarrativeCard(NarrativeCardData narrative)
     {
         narrativeCardData = narrative;
         displayText.text = narrative.messageContent;
         canvasGroup.alpha = 0;
+
+        if (narrative.narrativeBeatSprite != null)
+        {
+            narrativeImage.sprite = narrative.narrativeBeatSprite;
+            narrativeImage.color = Color.white;
+        }
+        else
+        {
+            narrativeImage.color = Color.clear;
+        }
     }
 
     Coroutine coFadeCanvasGroup = null;

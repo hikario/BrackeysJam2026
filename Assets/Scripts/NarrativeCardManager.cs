@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System.Collections;
 
@@ -9,13 +10,14 @@ public class NarrativeCardManager : MonoBehaviour
     public static NarrativeCardManager instance;
     [SerializeField] public NarrativeCardDefinition narrativeCardDefinitionReference;
     [SerializeField] private List<NarrativeCardData> currentNarrativeCardsData = new List<NarrativeCardData>();
-    [SerializeField] private NarrativeCardDisplay narrativeCardPrefab;
+    //[SerializeField] private NarrativeCardDisplay narrativeCardPrefab;
     [SerializeField] private NarrativeCardDisplay currentCard;
 
     [SerializeField] private RectTransform cardParentRectTransform;
     [SerializeField] private bool useBlurEffects = true;
     [SerializeField] private BlurScene blurScreen;
     [SerializeField] private CanvasGroup canvasGroup;
+    [SerializeField] private Image narrativeBeatImage;
     [SerializeField] private float fadeInDuration = 1f;
     [SerializeField] private float fadeOutDuration = 1f;
     [SerializeField] private float quickFadeDuraton = .25f;
@@ -37,6 +39,7 @@ public class NarrativeCardManager : MonoBehaviour
         instance = this;
 
         enterAction = playerActions.FindAction("DialogueNext");
+        narrativeCardDefinitionReference.FillEmptyPrefabReferences();
 
         if (resetForDebug)
         {
@@ -73,6 +76,15 @@ public class NarrativeCardManager : MonoBehaviour
         }
     }
 
+    public void StartNewSequenceForPhase()
+    {
+        InitNewNarrativeCardsForPhaseIndex(ComputerScreenManager.currentSequence);
+        if (currentNarrativeCardsData.Count > 0)
+        {
+            StartDisplaySequence();
+        }
+    }
+
 
     public void InitNewNarrativeCardsForPhaseIndex(int phaseIndex)
     {
@@ -89,6 +101,7 @@ public class NarrativeCardManager : MonoBehaviour
         {
             if (card.narrativePhase == phaseIndex && !card.wasShown)
             {
+                // check for day 4 & check for correct ending
                 currentNarrativeCardsData.Add(card);
             }
         }
@@ -156,7 +169,7 @@ public class NarrativeCardManager : MonoBehaviour
         for (int i = 0; i < currentNarrativeCardsData.Count; i++)
         {
             //Debug.Log($"Display new card for '{currentNarrativeCardsData[i].messageContent}' at {Time.frameCount}");
-            currentCard = Instantiate(narrativeCardPrefab, cardParentRectTransform);
+            currentCard = Instantiate(currentNarrativeCardsData[i].prefab, cardParentRectTransform);
             currentCard.InitNarrativeCard(currentNarrativeCardsData[i]);
 
             currentCard.FadeCanvasGroup(true, fadeInDuration);
