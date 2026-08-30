@@ -18,7 +18,7 @@ MonoBehaviour:
     catEvidence: 0
     evidenceIsCollected: 0
     flaggedAsRelevant: 0
-    evidencePhase: 1
+    evidencePhase: 2
     evidenceSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
     evidenceAudioEvent:
       Guid:
@@ -34,7 +34,7 @@ MonoBehaviour:
     catEvidence: 0
     evidenceIsCollected: 0
     flaggedAsRelevant: 0
-    evidencePhase: 1
+    evidencePhase: 2
     evidenceSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
     evidenceAudioEvent:
       Guid:
@@ -60,7 +60,7 @@ MonoBehaviour:
         Data4: 1844739980
       Path: event:/SFX/Clues/SFX_Clue_Chips
     audioLength: 15.675
-    requiredPurchasableID: Microphone Plant
+    requiredPurchasableID: Detective Fedora
   - evidenceName: Pickle Jar
     evidenceType: 1
     catEvidence: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
     catEvidence: 1
     evidenceIsCollected: 0
     flaggedAsRelevant: 0
-    evidencePhase: 1
+    evidencePhase: 2
     evidenceSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
     evidenceAudioEvent:
       Guid:
