@@ -37,6 +37,16 @@ public class SceneLoader: MonoBehaviour
         Invoke("ApartmentScene", delay);
     }
 
+    public void RollCredits()
+    {
+        SceneManager.LoadScene("CreditRoll");
+    }
+
+    public void RollCreditsWithDelay()
+    {
+        Invoke("RollCredits", delay);
+    }
+
     public void ReloadSceneWithDelay()
     {
         Invoke("ReloadScene", delay);
