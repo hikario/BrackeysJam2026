@@ -52,14 +52,14 @@ MonoBehaviour:
     viewerStartRotation: {x: 0, y: 0, z: 0}
   - objectName: Detective Fedora
     objectTier: 0
-    isPurchased: 0
-    isPlaced: 0
+    isPurchased: 1
+    isPlaced: 1
     objectDescription: Cutting edge avian surveillance technology, virtually indistinguishable
       from the real thing.
     objectPrice: 14.99
-    objectModel: {fileID: 919132149155446097, guid: fcbc876e5daa532468f096eb7ddf81bd, type: 3}
+    objectModel: {fileID: 919132149155446097, guid: 22805482e62aaa14b94fc7df04e85487, type: 3}
     objectRT: {fileID: 8400000, guid: 3e442ac2b0995cc4d90d819a1704541e, type: 2}
-    objectRTMaterial: {fileID: 2100000, guid: 74fef022536296c4bbc5e7d7cd33f082, type: 2}
+    objectRTMaterial: {fileID: 2100000, guid: 90b232992cd8e37428b71b3b5b854568, type: 2}
     viewerScale: 3.5
     viewerStartRotation: {x: 270, y: 210, z: 0}
   - objectName: X-Ray Goggles
