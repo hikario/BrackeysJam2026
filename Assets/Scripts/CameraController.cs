@@ -1,6 +1,8 @@
 using UnityEngine;
 using Unity.Cinemachine;
 using UnityEngine.InputSystem;
+using System.Collections.Generic;
+using System;
 
 public class CameraController : MonoBehaviour
 {
@@ -17,6 +19,8 @@ public class CameraController : MonoBehaviour
     GameObject BedroomCamera;
     [SerializeField]
     GameObject ComputerCamera;
+    [SerializeField]
+    GameObject UICanvas;
 
     // Cinemachine Brain variable, so we don't have to keep looking it up
     CinemachineBrain activeBrain;
@@ -27,6 +31,10 @@ public class CameraController : MonoBehaviour
     InputAction third;
     InputAction fourth;
     InputAction fifth;
+
+    List<GameObject> cameraList;
+    int cameraListIndex;
+    int cameraListLength;
 
     bool UpdatedCurrent = false;
     [SerializeField]
@@ -49,6 +57,16 @@ public class CameraController : MonoBehaviour
         {
             EnvironmentalStateManager = GameObject.Find("/EnvironmentalStateManager");
         }
+
+        cameraList = new List<GameObject>();
+        cameraList.Add(FridgeInsideCamera);
+        cameraList.Add(KitchenCamera);
+        cameraList.Add(BedroomDoorCamera);
+        cameraList.Add(BedroomCamera);
+        cameraList.Add(ComputerCamera);
+
+        cameraListLength = cameraList.Count;
+        cameraListIndex = 1;
     }
 
     // Update is called once per frame
@@ -146,6 +164,91 @@ public class CameraController : MonoBehaviour
         if(CurrentCamera == FridgeInsideCamera)
         {
             EnvironmentalStateManager.SendMessage("CloseFridge");
+        }
+    }
+
+    public void MoveToPrevious()
+    {
+        int previous = cameraListIndex;
+        cameraListIndex = Math.Min(++cameraListIndex, cameraListLength-1);
+
+        Debug.Log(cameraListIndex);
+        Debug.Log(cameraListLength);
+        if(previous != cameraListIndex)
+        {
+            switch(cameraListIndex)
+            {
+                case 0:
+                    MoveToFridge();
+                    break;
+                case 1:
+                    MoveToKitchen();
+                    break;
+                case 2:
+                    MoveToBedroomDoor();
+                    break;
+                case 3:
+                    MoveToBedroom();
+                    break;
+                case 4:
+                    MoveToComputer();
+                    break;
+                default:
+                    Debug.Log("Oh hell.");
+                    break;
+            }
+            if(cameraListIndex == cameraListLength - 1)
+            {
+                UICanvas.SendMessage("TogglePrevCameraButtonInteraction", false);
+            }
+            if (previous == 0)
+            {
+                UICanvas.SendMessage("ToggleNextCameraButtonInteraction", true);
+            }
+        }
+
+
+    }
+
+    public void MoveToNext()
+    {
+        int previous = cameraListIndex;
+        cameraListIndex = Math.Max(--cameraListIndex, 0);
+
+        Debug.Log(cameraListIndex);
+        Debug.Log(Math.Max(cameraListIndex, 0));
+
+        if(previous != cameraListIndex)
+        {
+            switch(cameraListIndex)
+            {
+                case 0:
+                    MoveToFridge();
+                    break;
+                case 1:
+                    MoveToKitchen();
+                    break;
+                case 2:
+                    MoveToBedroomDoor();
+                    break;
+                case 3:
+                    MoveToBedroom();
+                    break;
+                case 4:
+                    MoveToComputer();
+                    break;
+                default:
+                    Debug.Log("Oh shit.");
+                    break;
+            }
+            if(cameraListIndex == 0)
+            {
+                UICanvas.SendMessage("ToggleNextCameraButtonInteraction", false);
+            }
+            if(previous == cameraListLength - 1)
+            {
+                UICanvas.SendMessage("TogglePrevCameraButtonInteraction", true);
+            }
         }
     }
 }

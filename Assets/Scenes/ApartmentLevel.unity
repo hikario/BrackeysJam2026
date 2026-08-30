@@ -875,7 +875,8 @@ MonoBehaviour:
   BedroomDoorCamera: {fileID: 1052573207}
   BedroomCamera: {fileID: 662930019}
   ComputerCamera: {fileID: 105171203}
-  EnvironmentalStateManager: {fileID: 0}
+  UICanvas: {fileID: 1303279082}
+  EnvironmentalStateManager: {fileID: 28893004}
 --- !u!1001 &133018936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3770,6 +3771,62 @@ PrefabInstance:
       propertyPath: blurScreen
       value: 
       objectReference: {fileID: 871250296}
+    - target: {fileID: 8903641608621588640, guid: 1337d00a84059274a9abbd0c5421c2d6, type: 3}
+      propertyPath: onNextCameraButtonPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8903641608621588640, guid: 1337d00a84059274a9abbd0c5421c2d6, type: 3}
+      propertyPath: onPrevCameraButtonPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8903641608621588640, guid: 1337d00a84059274a9abbd0c5421c2d6, type: 3}
+      propertyPath: onNextCameraButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8903641608621588640, guid: 1337d00a84059274a9abbd0c5421c2d6, type: 3}
+      propertyPath: onPrevCameraButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8903641608621588640, guid: 1337d00a84059274a9abbd0c5421c2d6, type: 3}
+      propertyPath: onNextCameraButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 130287896}
+    - target: {fileID: 8903641608621588640, guid: 1337d00a84059274a9abbd0c5421c2d6, type: 3}
+      propertyPath: onPrevCameraButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 130287896}
+    - target: {fileID: 8903641608621588640, guid: 1337d00a84059274a9abbd0c5421c2d6, type: 3}
+      propertyPath: onNextCameraButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8903641608621588640, guid: 1337d00a84059274a9abbd0c5421c2d6, type: 3}
+      propertyPath: onPrevCameraButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8903641608621588640, guid: 1337d00a84059274a9abbd0c5421c2d6, type: 3}
+      propertyPath: onNextCameraButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveToNext
+      objectReference: {fileID: 0}
+    - target: {fileID: 8903641608621588640, guid: 1337d00a84059274a9abbd0c5421c2d6, type: 3}
+      propertyPath: onPrevCameraButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveToPrevious
+      objectReference: {fileID: 0}
+    - target: {fileID: 8903641608621588640, guid: 1337d00a84059274a9abbd0c5421c2d6, type: 3}
+      propertyPath: onNextCameraButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CameraController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8903641608621588640, guid: 1337d00a84059274a9abbd0c5421c2d6, type: 3}
+      propertyPath: onPrevCameraButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CameraController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8903641608621588640, guid: 1337d00a84059274a9abbd0c5421c2d6, type: 3}
+      propertyPath: onNextCameraButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8903641608621588640, guid: 1337d00a84059274a9abbd0c5421c2d6, type: 3}
+      propertyPath: onPrevCameraButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8885,6 +8942,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c2e7b88bd5bbef94ea1ae133c948f264, type: 3}
   m_PrefabInstance: {fileID: 1293185468}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1303279082 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4173416087499586736, guid: 1337d00a84059274a9abbd0c5421c2d6, type: 3}
+  m_PrefabInstance: {fileID: 575398384}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1328015796
 GameObject:

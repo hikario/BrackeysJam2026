@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class CameraChangeUI : MonoBehaviour
 {
@@ -13,17 +14,19 @@ public class CameraChangeUI : MonoBehaviour
     public void OnEnable()
     {
         prevCameraButton.onClick.AddListener(OnPrevCameraButtonPressed);
-        prevCameraButton.onClick.AddListener(OnNextCameraButtonPressed);
+        nextCameraButton.onClick.AddListener(OnNextCameraButtonPressed);
     }
 
     private void OnPrevCameraButtonPressed()
     {
         onPrevCameraButtonPressed.Invoke();
+        EventSystem.current.SetSelectedGameObject(null);
     }
 
     private void OnNextCameraButtonPressed()
     {
         onNextCameraButtonPressed.Invoke();
+        EventSystem.current.SetSelectedGameObject(null);
     }
 
     public void TogglePrevCameraButtonInteraction(bool interaction)
