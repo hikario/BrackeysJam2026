@@ -60,8 +60,8 @@ public class CameraController : MonoBehaviour
         fifth = InputSystem.actions.FindAction("5");
 
         activeBrain = CinemachineBrain.GetActiveBrain(0);
-        CinemachineCamera CineCam = activeBrain.ActiveVirtualCamera as CinemachineCamera;
-        CurrentCamera = CineCam.gameObject;
+        // CinemachineCamera CineCam = activeBrain.ActiveVirtualCamera as CinemachineCamera;
+        CurrentCamera = KitchenCamera;
 
         if (EnvironmentalStateManager == null)
         {
