@@ -141,7 +141,7 @@ MonoBehaviour:
       Path: event:/SFX/Clues/SFX_Clue_CatBurger
     audioLength: 7.19
     requiredPurchasableID: Painting with Eyes
-  - evidenceName: Painting Cam
+  - evidenceName: Painting Cam 2
     evidenceType: 0
     catEvidence: 1
     evidenceIsCollected: 0
@@ -164,6 +164,22 @@ MonoBehaviour:
     flaggedAsRelevant: 0
     evidencePhase: 2
     evidenceSprite: {fileID: 21300000, guid: 3deb033a05ebfcf44aad74a518c3b055, type: 3}
+    evidenceAudioEvent:
+      Guid:
+        Data1: 457854578
+        Data2: 1210829323
+        Data3: -1923376986
+        Data4: 166423604
+      Path: event:/SFX/Clues/SFX_Clue_CatBurger
+    audioLength: 7.19
+    requiredPurchasableID: Pigeon Cam
+  - evidenceName: Pigeon Cam 2
+    evidenceType: 0
+    catEvidence: 0
+    evidenceIsCollected: 0
+    flaggedAsRelevant: 0
+    evidencePhase: 2
+    evidenceSprite: {fileID: 21300000, guid: ea3652a3ce72f514cac5f4d95f167c08, type: 3}
     evidenceAudioEvent:
       Guid:
         Data1: 457854578
