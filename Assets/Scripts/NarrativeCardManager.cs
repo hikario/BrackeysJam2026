@@ -30,11 +30,6 @@ public class NarrativeCardManager : MonoBehaviour
     [SerializeField] private bool testSequence = true;
     [SerializeField] private bool sequenceIsActive = false;
 
-    EnvironmentalStateManager ESM;
-    [SerializeField]
-    GameObject UIButtons;
-
-
     public void Start()
     {
         if (instance != null)
@@ -63,8 +58,6 @@ public class NarrativeCardManager : MonoBehaviour
                 StartDisplaySequence();
             }
         }
-
-        ESM = GameObject.Find("EnvironmentalStateManager").GetComponent<EnvironmentalStateManager>();
     }
 
     public void Update()
@@ -138,9 +131,6 @@ public class NarrativeCardManager : MonoBehaviour
                 blurScreen.Desaturate();
                 blurEffectsActive = true;
             }
-
-            UIButtons.SendMessage("TogglePrevCameraButtonInteraction", false);
-            UIButtons.SendMessage("ToggleNextCameraButtonInteraction", false);
 
             //Debug.Log($"CanvasGroupActive is {canvasGroupActive} & canvasgroup.alpha is {canvasGroup.alpha}");
             if (!canvasGroupActive || canvasGroup.alpha < 1)
@@ -261,9 +251,7 @@ public class NarrativeCardManager : MonoBehaviour
             canvasGroup.blocksRaycasts = false;
             canvasGroupActive = false;
         }
-        ESM.FadeFromBlack();
-        UIButtons.SendMessage("TogglePrevCameraButtonInteraction", true);
-        UIButtons.SendMessage("ToggleNextCameraButtonInteraction", true);
+
         currentNarrativeCardsData = new List<NarrativeCardData>();
         sequenceIsActive = false;
         coDisplaySequence = null;
@@ -302,9 +290,6 @@ public class NarrativeCardManager : MonoBehaviour
             canvasGroup.blocksRaycasts = false;
             canvasGroupActive = false;
         }
-        ESM.FadeFromBlack();
-        UIButtons.SendMessage("TogglePrevCameraButtonInteraction", true);
-        UIButtons.SendMessage("ToggleNextCameraButtonInteraction", true);
 
         currentNarrativeCardsData = new List<NarrativeCardData>();
         sequenceIsActive = false;
