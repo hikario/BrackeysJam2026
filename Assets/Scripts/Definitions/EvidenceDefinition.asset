@@ -109,13 +109,13 @@ MonoBehaviour:
       Path: event:/SFX/Clues/SFX_Clue_CatBurger
     audioLength: 7.19
     requiredPurchasableID: Microphone Plant
-  - evidenceName: Burger
-    evidenceType: 1
-    catEvidence: 1
+  - evidenceName: Roommate's Door
+    evidenceType: 0
+    catEvidence: 0
     evidenceIsCollected: 0
     flaggedAsRelevant: 0
-    evidencePhase: 1
-    evidenceSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
+    evidencePhase: 2
+    evidenceSprite: {fileID: 21300000, guid: 2aef8ac7d3793e44c89f78a8028cd30d, type: 3}
     evidenceAudioEvent:
       Guid:
         Data1: 457854578
@@ -124,4 +124,52 @@ MonoBehaviour:
         Data4: 166423604
       Path: event:/SFX/Clues/SFX_Clue_CatBurger
     audioLength: 7.19
-    requiredPurchasableID: Microphone Plant
+    requiredPurchasableID: X-Ray Goggles
+  - evidenceName: Painting Cam
+    evidenceType: 0
+    catEvidence: 0
+    evidenceIsCollected: 0
+    flaggedAsRelevant: 0
+    evidencePhase: 1
+    evidenceSprite: {fileID: 21300000, guid: 2aef8ac7d3793e44c89f78a8028cd30d, type: 3}
+    evidenceAudioEvent:
+      Guid:
+        Data1: 457854578
+        Data2: 1210829323
+        Data3: -1923376986
+        Data4: 166423604
+      Path: event:/SFX/Clues/SFX_Clue_CatBurger
+    audioLength: 7.19
+    requiredPurchasableID: Painting with Eyes
+  - evidenceName: Painting Cam
+    evidenceType: 0
+    catEvidence: 0
+    evidenceIsCollected: 0
+    flaggedAsRelevant: 0
+    evidencePhase: 2
+    evidenceSprite: {fileID: 21300000, guid: 2aef8ac7d3793e44c89f78a8028cd30d, type: 3}
+    evidenceAudioEvent:
+      Guid:
+        Data1: 457854578
+        Data2: 1210829323
+        Data3: -1923376986
+        Data4: 166423604
+      Path: event:/SFX/Clues/SFX_Clue_CatBurger
+    audioLength: 7.19
+    requiredPurchasableID: Painting with Eyes
+  - evidenceName: Pigeon Cam
+    evidenceType: 0
+    catEvidence: 0
+    evidenceIsCollected: 0
+    flaggedAsRelevant: 0
+    evidencePhase: 2
+    evidenceSprite: {fileID: 21300000, guid: 2aef8ac7d3793e44c89f78a8028cd30d, type: 3}
+    evidenceAudioEvent:
+      Guid:
+        Data1: 457854578
+        Data2: 1210829323
+        Data3: -1923376986
+        Data4: 166423604
+      Path: event:/SFX/Clues/SFX_Clue_CatBurger
+    audioLength: 7.19
+    requiredPurchasableID: Pigeon Cam
