@@ -206,12 +206,10 @@ public class CameraController : MonoBehaviour
 
     public void MoveToPrevious()
     {
-        // playerFS.PlayOneShot();
+        // cameraNextSFX.PlayOneShot();
         int previous = cameraListIndex;
         cameraListIndex = Math.Min(++cameraListIndex, cameraListLength-1);
 
-        Debug.Log(cameraListIndex);
-        Debug.Log(cameraListLength);
         if(previous != cameraListIndex)
         {
             switch(cameraListIndex)
@@ -253,12 +251,9 @@ public class CameraController : MonoBehaviour
 
     public void MoveToNext()
     {
-        // playerFS.PlayOneShot();
+        // cameraNextSFX.PlayOneShot();
         int previous = cameraListIndex;
         cameraListIndex = Math.Max(--cameraListIndex, 0);
-
-        Debug.Log(cameraListIndex);
-        Debug.Log(Math.Max(cameraListIndex, 0));
 
         if(previous != cameraListIndex)
         {

@@ -21,8 +21,6 @@ public class EnvironmentalStateManager : MonoBehaviour
     [SerializeField]
     public EventReference fridgeOpenSFX;
     [SerializeField]
-    public EventReference fridgeOpenIdleSFX;
-    [SerializeField]
     public EventReference fridgeCloseSFX;
 
     SceneFader SF;
@@ -54,14 +52,12 @@ public class EnvironmentalStateManager : MonoBehaviour
     void OpenFridge()
     {
         fridgeOpenSFX.PlayOneShot();
-        fridgeOpenIdleSFX.PlayOrResume();
         FridgeDoorController.SendMessage("SetBottomDoorOpen");
     }
 
     void CloseFridge()
     {
         fridgeCloseSFX.PlayOneShot();
-        fridgeOpenIdleSFX.Stop();
         FridgeDoorController.SendMessage("SetBottomDoorClosed");
     }
 
@@ -82,14 +78,12 @@ public class EnvironmentalStateManager : MonoBehaviour
 
     void FadeToBlack()
     {
-        Debug.Log("Fade In");
         SF.fadeDirection = SceneFader.FadeDirection.In;
         SF.RunFade();
     }
 
     public void FadeFromBlack()
     {
-        Debug.Log("Fade Out");
         SF.fadeDirection = SceneFader.FadeDirection.Out;
         SF.RunFade();
     }
