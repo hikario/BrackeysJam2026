@@ -64,7 +64,7 @@ public class PlaceableArea : MonoBehaviour, IPointerClickHandler, IPointerEnterH
         if(Highlighted && TargetObject.isPurchased)
         {
             ComputerScreenManager.instance.purchasableObjectDefinitionReference.MarkObjectAsPlaced(TargetObject.objectName);
-            ModifiableMeshRenderer.material = TargetObject.objectRTMaterial;
+            ModifiableMeshRenderer.material = TargetObject.objectMaterial;
         }
     }
 }
