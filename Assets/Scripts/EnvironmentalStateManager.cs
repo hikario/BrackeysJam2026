@@ -22,6 +22,8 @@ public class EnvironmentalStateManager : MonoBehaviour
     public EventReference fridgeOpenSFX;
     [SerializeField]
     public EventReference fridgeCloseSFX;
+    [SerializeField]
+    public StudioEventEmitter musicStudioEventEmitter;
 
     SceneFader SF;
 
@@ -44,6 +46,8 @@ public class EnvironmentalStateManager : MonoBehaviour
             narrativeManager = GameObject.Find("NarrativeManager").GetComponent<NarrativeCardManager>();
         }
         narrativeManager.StartNewSequence();
+
+        musicStudioEventEmitter.Play();
 
         SF = GameObject.Find("FaderImage").GetComponent<SceneFader>();
     }

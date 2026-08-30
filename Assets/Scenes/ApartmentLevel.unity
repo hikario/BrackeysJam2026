@@ -288,6 +288,7 @@ MonoBehaviour:
       Data3: -956352378
       Data4: 1667424962
     Path: event:/SFX/Fridge/SFX_Fridge_DoorClose
+  musicStudioEventEmitter: {fileID: 980097461}
 --- !u!4 &28893006
 Transform:
   m_ObjectHideFlags: 0
@@ -296,12 +297,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28893004}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1136499069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &32621405
 PrefabInstance:
@@ -7459,7 +7460,7 @@ MonoBehaviour:
       Data4: -1276439356
     Path: event:/MUS_Main
   Event: 
-  EventPlayTrigger: 1
+  EventPlayTrigger: 0
   EventStopTrigger: 2
   AllowFadeout: 1
   TriggerOnce: 0
@@ -8399,6 +8400,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1505591347}
+  - {fileID: 28893006}
   - {fileID: 159650156}
   - {fileID: 8048939}
   - {fileID: 682559855}
@@ -11830,7 +11832,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 4f1ef37ae953c484bbc5d5e4049147e5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14518,6 +14520,5 @@ SceneRoots:
   - {fileID: 1657068559}
   - {fileID: 73651741}
   - {fileID: 1976377481}
-  - {fileID: 28893006}
   - {fileID: 1553412758}
   - {fileID: 1839584393}
