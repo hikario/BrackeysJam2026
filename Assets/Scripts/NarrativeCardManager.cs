@@ -33,7 +33,8 @@ public class NarrativeCardManager : MonoBehaviour
     EnvironmentalStateManager ESM;
     [SerializeField]
     GameObject UIButtons;
-
+    [SerializeField]
+    SceneLoader SL;
 
     public void Start()
     {
@@ -71,7 +72,14 @@ public class NarrativeCardManager : MonoBehaviour
     {
         if (enterAction.WasPressedThisFrame() && sequenceIsActive)
         {
-            InitNewNarrativeCardsForPhaseIndex(ComputerScreenManager.currentSequence);
+            if(ComputerScreenManager.currentSequence == 4)
+            {
+                InitNewNarrativeCardsForPhaseIndex(ComputerScreenManager.currentSequence, EnvironmentalStateManager.CalculateEnding());
+            }
+            else
+            {
+                InitNewNarrativeCardsForPhaseIndex(ComputerScreenManager.currentSequence);
+            }
             if (currentNarrativeCardsData.Count > 0)
             {
                 StartDisplaySequence();
@@ -261,6 +269,10 @@ public class NarrativeCardManager : MonoBehaviour
             canvasGroup.blocksRaycasts = false;
             canvasGroupActive = false;
         }
+        if(ComputerScreenManager.currentSequence == 4)
+        {
+            SL.RollCredits();
+        }
         ESM.FadeFromBlack();
         UIButtons.SendMessage("TogglePrevCameraButtonInteraction", true);
         UIButtons.SendMessage("ToggleNextCameraButtonInteraction", true);
@@ -301,6 +313,10 @@ public class NarrativeCardManager : MonoBehaviour
             canvasGroup.interactable = false;
             canvasGroup.blocksRaycasts = false;
             canvasGroupActive = false;
+        }
+        if(ComputerScreenManager.currentSequence == 4)
+        {
+            SL.RollCredits();
         }
         ESM.FadeFromBlack();
         UIButtons.SendMessage("TogglePrevCameraButtonInteraction", true);
