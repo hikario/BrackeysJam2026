@@ -115,7 +115,7 @@ MonoBehaviour:
     evidenceIsCollected: 0
     flaggedAsRelevant: 0
     evidencePhase: 2
-    evidenceSprite: {fileID: 0}
+    evidenceSprite: {fileID: 21300000, guid: 2bcf50e6b65b1464fac182f295b9c7ff, type: 3}
     evidenceAudioEvent:
       Guid:
         Data1: 457854578
