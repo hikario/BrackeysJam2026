@@ -34,18 +34,12 @@ public class OpenFridgeDoor : MonoBehaviour
         {
             CloseDoorTop();
         }
-        if (UnityEngine.InputSystem.Keyboard.current.bKey.isPressed)
-        {
-            openDoorBottom = true;
-        }
+
         if (openDoorBottom == true)
         {
             OpenDoorBottom();
         }
-        if (UnityEngine.InputSystem.Keyboard.current.cKey.isPressed)
-        {
-            openDoorBottom = false;
-        }
+
         if (openDoorBottom == false)
         {
             CloseDoorBottom();
