@@ -95,12 +95,12 @@ MonoBehaviour:
     objectDescription: I once gazed upon her eyes, she watched (and recorded) my
       every movement.
     objectPrice: 249.99
-    objectModel: {fileID: 919132149155446097, guid: fcbc876e5daa532468f096eb7ddf81bd, type: 3}
+    objectModel: {fileID: 919132149155446097, guid: 58d11ed89675bd6478a752e62b6b1aa5, type: 3}
     objectRT: {fileID: 8400000, guid: 267fc8c24673f27439f00176247d4a02, type: 2}
     objectRTMaterial: {fileID: 2100000, guid: 39db26c22c00b0343a79429cb6ecc21d, type: 2}
-    viewerScale: 3.5
-    viewerStartPosition: {x: 0, y: 0, z: 0}
-    viewerStartRotation: {x: 270, y: 210, z: 0}
+    viewerScale: 1
+    viewerStartPosition: {x: 0, y: -1, z: 0}
+    viewerStartRotation: {x: 0, y: 190, z: 0}
   - objectName: Pigeon Cam
     objectTier: 2
     isPurchased: 0
