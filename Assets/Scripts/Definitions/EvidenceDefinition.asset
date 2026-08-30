@@ -109,3 +109,19 @@ MonoBehaviour:
       Path: event:/SFX/Clues/SFX_Clue_CatBurger
     audioLength: 7.19
     requiredPurchasableID: Microphone Plant
+  - evidenceName: Burger
+    evidenceType: 1
+    catEvidence: 1
+    evidenceIsCollected: 0
+    flaggedAsRelevant: 0
+    evidencePhase: 1
+    evidenceSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
+    evidenceAudioEvent:
+      Guid:
+        Data1: 457854578
+        Data2: 1210829323
+        Data3: -1923376986
+        Data4: 166423604
+      Path: event:/SFX/Clues/SFX_Clue_CatBurger
+    audioLength: 7.19
+    requiredPurchasableID: Microphone Plant
