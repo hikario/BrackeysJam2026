@@ -115,7 +115,7 @@ MonoBehaviour:
     evidenceIsCollected: 0
     flaggedAsRelevant: 0
     evidencePhase: 2
-    evidenceSprite: {fileID: 21300000, guid: 2aef8ac7d3793e44c89f78a8028cd30d, type: 3}
+    evidenceSprite: {fileID: 0}
     evidenceAudioEvent:
       Guid:
         Data1: 457854578
@@ -131,7 +131,7 @@ MonoBehaviour:
     evidenceIsCollected: 0
     flaggedAsRelevant: 0
     evidencePhase: 1
-    evidenceSprite: {fileID: 21300000, guid: 2aef8ac7d3793e44c89f78a8028cd30d, type: 3}
+    evidenceSprite: {fileID: 21300000, guid: b4d3a6a78604f22488effb421f5fe5f9, type: 3}
     evidenceAudioEvent:
       Guid:
         Data1: 457854578
@@ -143,11 +143,11 @@ MonoBehaviour:
     requiredPurchasableID: Painting with Eyes
   - evidenceName: Painting Cam
     evidenceType: 0
-    catEvidence: 0
+    catEvidence: 1
     evidenceIsCollected: 0
     flaggedAsRelevant: 0
     evidencePhase: 2
-    evidenceSprite: {fileID: 21300000, guid: 2aef8ac7d3793e44c89f78a8028cd30d, type: 3}
+    evidenceSprite: {fileID: 21300000, guid: 6ba8cea3b3a2ae54b982613af6335234, type: 3}
     evidenceAudioEvent:
       Guid:
         Data1: 457854578
@@ -163,7 +163,7 @@ MonoBehaviour:
     evidenceIsCollected: 0
     flaggedAsRelevant: 0
     evidencePhase: 2
-    evidenceSprite: {fileID: 21300000, guid: 2aef8ac7d3793e44c89f78a8028cd30d, type: 3}
+    evidenceSprite: {fileID: 21300000, guid: 3deb033a05ebfcf44aad74a518c3b055, type: 3}
     evidenceAudioEvent:
       Guid:
         Data1: 457854578

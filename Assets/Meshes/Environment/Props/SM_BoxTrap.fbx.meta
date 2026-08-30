@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Stick
-    second: {fileID: 2100000, guid: 0921225ff7aed304f95cb599028d5c97, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: standardSurface1
-    second: {fileID: 2100000, guid: f72bf3f07bc9179489762b9d5cb75722, type: 2}
+      name: lambert1
+    second: {fileID: 2100000, guid: 54791c204f24aec41ad00e23505308d0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

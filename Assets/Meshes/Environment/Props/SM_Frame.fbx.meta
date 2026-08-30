@@ -3,17 +3,7 @@ guid: 58d11ed89675bd6478a752e62b6b1aa5
 ModelImporter:
   serializedVersion: 24300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Frame
-    second: {fileID: 2100000, guid: 0921225ff7aed304f95cb599028d5c97, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Painting
-    second: {fileID: 2100000, guid: f82e8425a0be7de4cbf19f10d5a3735b, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

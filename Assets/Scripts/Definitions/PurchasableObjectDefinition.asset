@@ -22,6 +22,7 @@ MonoBehaviour:
     objectModel: {fileID: 919132149155446097, guid: cd111ba619bdbcc45a06ff47ae75a80c, type: 3}
     objectRT: {fileID: 8400000, guid: 1794d4a6aa48b98468712d0bc8ad4402, type: 2}
     objectRTMaterial: {fileID: 2100000, guid: 466e8d69766d06b419fbc8b33186b372, type: 2}
+    objectMaterial: {fileID: 2100000, guid: a4b47df70660e3c4f8ab83b346f872ed, type: 2}
     viewerScale: 6
     viewerStartPosition: {x: 0, y: 0, z: 0}
     viewerStartRotation: {x: -10, y: -45, z: 0}
@@ -35,6 +36,7 @@ MonoBehaviour:
     objectModel: {fileID: 919132149155446097, guid: c11ee1d7eb605804d958fdeb1ac2e116, type: 3}
     objectRT: {fileID: 8400000, guid: d421c81173f8dbc4c94d684462a2451d, type: 2}
     objectRTMaterial: {fileID: 2100000, guid: dd1f328d03956e747b50d0eed81783d1, type: 2}
+    objectMaterial: {fileID: 2100000, guid: aa6023e55d4ebb14b8c9662699de87d0, type: 2}
     viewerScale: 6
     viewerStartPosition: {x: 0, y: 0, z: 0}
     viewerStartRotation: {x: 55, y: 135, z: 0}
@@ -48,6 +50,7 @@ MonoBehaviour:
     objectModel: {fileID: 919132149155446097, guid: 8d6189eb63f2a7a4992c7c9347065747, type: 3}
     objectRT: {fileID: 8400000, guid: 35d8e9a4d8d048f47b3d09dee5918727, type: 2}
     objectRTMaterial: {fileID: 2100000, guid: 08e997353afea4045ab5482208dd61d2, type: 2}
+    objectMaterial: {fileID: 2100000, guid: e38dbce9e7032cd4298db55959f92d3d, type: 2}
     viewerScale: 1
     viewerStartPosition: {x: 0, y: -0.75, z: 0}
     viewerStartRotation: {x: -90, y: 0, z: 0}
@@ -61,6 +64,7 @@ MonoBehaviour:
     objectModel: {fileID: 919132149155446097, guid: 22805482e62aaa14b94fc7df04e85487, type: 3}
     objectRT: {fileID: 8400000, guid: 3e442ac2b0995cc4d90d819a1704541e, type: 2}
     objectRTMaterial: {fileID: 2100000, guid: 74fef022536296c4bbc5e7d7cd33f082, type: 2}
+    objectMaterial: {fileID: 2100000, guid: 90b232992cd8e37428b71b3b5b854568, type: 2}
     viewerScale: 4
     viewerStartPosition: {x: 0, y: 0, z: 0}
     viewerStartRotation: {x: -20, y: 30, z: 0}
@@ -73,6 +77,7 @@ MonoBehaviour:
     objectModel: {fileID: 919132149155446097, guid: fcbc876e5daa532468f096eb7ddf81bd, type: 3}
     objectRT: {fileID: 8400000, guid: b86d9b207c2ed174c82506c1187d9430, type: 2}
     objectRTMaterial: {fileID: 2100000, guid: 71c86c116f30bb644bfac7ee7c08476e, type: 2}
+    objectMaterial: {fileID: 2100000, guid: 56c39ffa766dfb04897e2892731b4736, type: 2}
     viewerScale: 3.5
     viewerStartPosition: {x: 0, y: 0, z: 0}
     viewerStartRotation: {x: 270, y: 210, z: 0}
@@ -85,6 +90,7 @@ MonoBehaviour:
     objectModel: {fileID: 919132149155446097, guid: 1eb4c60f823fa3343bb6db1868f32f22, type: 3}
     objectRT: {fileID: 8400000, guid: f7649a3fdabc32942ac138b73463bd27, type: 2}
     objectRTMaterial: {fileID: 2100000, guid: e92459d348ad968499efa48d1036375f, type: 2}
+    objectMaterial: {fileID: 2100000, guid: 54791c204f24aec41ad00e23505308d0, type: 2}
     viewerScale: 2.5
     viewerStartPosition: {x: 0, y: -0.75, z: 0}
     viewerStartRotation: {x: 0, y: -60, z: 0}
@@ -98,6 +104,7 @@ MonoBehaviour:
     objectModel: {fileID: 919132149155446097, guid: 58d11ed89675bd6478a752e62b6b1aa5, type: 3}
     objectRT: {fileID: 8400000, guid: 267fc8c24673f27439f00176247d4a02, type: 2}
     objectRTMaterial: {fileID: 2100000, guid: 39db26c22c00b0343a79429cb6ecc21d, type: 2}
+    objectMaterial: {fileID: 2100000, guid: f82e8425a0be7de4cbf19f10d5a3735b, type: 2}
     viewerScale: 1
     viewerStartPosition: {x: 0, y: -1, z: 0}
     viewerStartRotation: {x: 0, y: 190, z: 0}
@@ -111,6 +118,7 @@ MonoBehaviour:
     objectModel: {fileID: 919132149155446097, guid: 7a41495bcc3844248ae33921b3aac2cd, type: 3}
     objectRT: {fileID: 8400000, guid: bec370a01d43f8b4e97b25eb3cc335e8, type: 2}
     objectRTMaterial: {fileID: 2100000, guid: a8964d510f3716541a575ebbe139278e, type: 2}
+    objectMaterial: {fileID: 2100000, guid: 22774a92459b93f4db9a56c75cf3cc47, type: 2}
     viewerScale: 1.75
     viewerStartPosition: {x: 0, y: -0.5, z: 0}
     viewerStartRotation: {x: -15, y: 25, z: 0}
