@@ -106,7 +106,7 @@ public class EnvironmentalStateManager : MonoBehaviour
             if(evidence.catEvidence)
             {
                 total_correct_evidence++;
-                if(evidence.evidenceIsCollected && evidence.flaggedAsRelevant)
+                if(evidence.flaggedAsRelevant)
                 {
                     correct_evidence++;
                 }
@@ -114,7 +114,7 @@ public class EnvironmentalStateManager : MonoBehaviour
             else
             {
                 total_incorrect_evidence++;
-                if(evidence.evidenceIsCollected && evidence.flaggedAsRelevant)
+                if(evidence.flaggedAsRelevant)
                 {
                     incorrect_evidence++;
                 }
