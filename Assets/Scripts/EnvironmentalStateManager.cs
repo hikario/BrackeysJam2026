@@ -1,4 +1,5 @@
 using UnityEngine;
+using FMODUnity;
 
 public enum Ending
 {
@@ -17,6 +18,13 @@ public class EnvironmentalStateManager : MonoBehaviour
     GameObject compScreenManager;
     [SerializeField]
     NarrativeCardManager narrativeManager;
+    [SerializeField]
+    public EventReference fridgeOpenSFX;
+    [SerializeField]
+    public EventReference fridgeOpenIdleSFX;
+    [SerializeField]
+    public EventReference fridgeCloseSFX;
+
     SceneFader SF;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -45,11 +53,15 @@ public class EnvironmentalStateManager : MonoBehaviour
     // Open Fridge Door
     void OpenFridge()
     {
+        fridgeOpenSFX.PlayOneShot();
+        fridgeOpenIdleSFX.PlayOrResume();
         FridgeDoorController.SendMessage("SetBottomDoorOpen");
     }
 
     void CloseFridge()
     {
+        fridgeCloseSFX.PlayOneShot();
+        fridgeOpenIdleSFX.Stop();
         FridgeDoorController.SendMessage("SetBottomDoorClosed");
     }
 

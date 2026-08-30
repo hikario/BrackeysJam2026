@@ -274,6 +274,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   FridgeDoorController: {fileID: 1238524678}
   narrativeManager: {fileID: 8048940}
+  fridgeOpenSFX:
+    Guid:
+      Data1: 2045296271
+      Data2: 1089882538
+      Data3: -1006655336
+      Data4: 1145401456
+    Path: event:/SFX/Fridge/SFX_Fridge_DoorOpen
+  fridgeOpenIdleSFX:
+    Guid:
+      Data1: 1829654876
+      Data2: 1305492692
+      Data3: 1312800424
+      Data4: -467480755
+    Path: event:/SFX/Fridge/SFX_Fridge_OpenLoop
+  fridgeCloseSFX:
+    Guid:
+      Data1: -531833172
+      Data2: 1169830145
+      Data3: -956352378
+      Data4: 1667424962
+    Path: event:/SFX/Fridge/SFX_Fridge_DoorClose
 --- !u!4 &28893006
 Transform:
   m_ObjectHideFlags: 0
