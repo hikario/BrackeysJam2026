@@ -13,70 +13,6 @@ MonoBehaviour:
   m_Name: EvidenceDefinition
   m_EditorClassIdentifier: Assembly-CSharp::EvidenceDefinition
   evidence:
-  - evidenceName: Pigeon Photo Night 1
-    evidenceType: 0
-    catEvidence: 1
-    evidenceIsCollected: 0
-    flaggedAsRelevant: 0
-    evidencePhase: 0
-    evidenceSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-    evidenceAudioEvent:
-      Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
-    audioLength: 0
-    requiredPurchasableID: Labels
-  - evidenceName: Pigeon Photo Night 2
-    evidenceType: 0
-    catEvidence: 0
-    evidenceIsCollected: 0
-    flaggedAsRelevant: 0
-    evidencePhase: 0
-    evidenceSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-    evidenceAudioEvent:
-      Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
-    audioLength: 0
-    requiredPurchasableID: Labels
-  - evidenceName: Loud Clank
-    evidenceType: 1
-    catEvidence: 0
-    evidenceIsCollected: 0
-    flaggedAsRelevant: 0
-    evidencePhase: 0
-    evidenceSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
-    evidenceAudioEvent:
-      Guid:
-        Data1: 2045296271
-        Data2: 1089882538
-        Data3: -1006655336
-        Data4: 1145401456
-      Path: event:/SFX/Fridge/SFX_Fridge_DoorOpen
-    audioLength: 1
-    requiredPurchasableID: Microphone Plant
-  - evidenceName: Mysterious Gurgle
-    evidenceType: 1
-    catEvidence: 0
-    evidenceIsCollected: 0
-    flaggedAsRelevant: 0
-    evidencePhase: 1
-    evidenceSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
-    evidenceAudioEvent:
-      Guid:
-        Data1: -494170296
-        Data2: 1248741698
-        Data3: -88594536
-        Data4: -1073792648
-      Path: event:/SFX/Computer/SFX_Computer_Hum
-    audioLength: 12
-    requiredPurchasableID: Microphone Plant
   - evidenceName: Homecoming
     evidenceType: 1
     catEvidence: 0
@@ -172,20 +108,4 @@ MonoBehaviour:
         Data4: 166423604
       Path: event:/SFX/Clues/SFX_Clue_CatBurger
     audioLength: 7.19
-    requiredPurchasableID: Microphone Plant
-  - evidenceName: Soda
-    evidenceType: 1
-    catEvidence: 0
-    evidenceIsCollected: 0
-    flaggedAsRelevant: 0
-    evidencePhase: 1
-    evidenceSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
-    evidenceAudioEvent:
-      Guid:
-        Data1: -1907503265
-        Data2: 1214960188
-        Data3: -1395140702
-        Data4: 2032636826
-      Path: event:/SFX/Clues/SFX_Clue_Soda
-    audioLength: 12.263
     requiredPurchasableID: Microphone Plant
