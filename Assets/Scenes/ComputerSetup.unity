@@ -656,6 +656,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 895503940}
     m_Modifications:
+    - target: {fileID: 698891549103627902, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 698891549103627902, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 698891549103627902, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732508737603393649, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732508737603393649, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854847821877098613, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854847821877098613, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2025499331554577435, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2025499331554577435, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214543086236461107, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3153210082842627324, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -680,6 +720,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 299420804}
+    - target: {fileID: 4235319045919727677, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4382160161141230343, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -703,6 +747,10 @@ PrefabInstance:
     - target: {fileID: 5191435075237766346, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6200398618564141129, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00012896708
       objectReference: {fileID: 0}
     - target: {fileID: 7489166739209995427, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -752,6 +800,18 @@ PrefabInstance:
       propertyPath: listingObjectsTransform
       value: 
       objectReference: {fileID: 317554805}
+    - target: {fileID: 8513549885638923523, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513549885638923523, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513549885638923523, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -773,69 +833,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18fd7bbbd63979045b353e11b3355c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PurchaseScreenController
---- !u!1 &1210289064
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1210289066}
-  - component: {fileID: 1210289065}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1210289065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210289064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 911645609
-      Data2: 1151423509
-      Data3: 646952107
-      Data4: -2132536467
-    Path: event:/SFX_FlowerpotCamera_Setup
-  Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!4 &1210289066
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210289064}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1503517590 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8748486328038446698, guid: 1c12f78ce56bfc84c97d8b0aadffad2d, type: 3}
@@ -1245,10 +1242,6 @@ PrefabInstance:
       propertyPath: blurScreen
       value: 
       objectReference: {fileID: 2096610508}
-    - target: {fileID: 8606072591048524783, guid: 1337d00a84059274a9abbd0c5421c2d6, type: 3}
-      propertyPath: testSequence
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1264,6 +1257,5 @@ SceneRoots:
   - {fileID: 524104229}
   - {fileID: 392042635}
   - {fileID: 895503940}
-  - {fileID: 1210289066}
   - {fileID: 5229730042294672073}
   - {fileID: 2096610507}

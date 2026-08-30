@@ -1009,12 +1009,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MessengerScreenController
   screenAnimator: {fileID: 3249079264309555458}
+  containerObject: {fileID: 3981646449777332373}
   playerMessagePrefab: {fileID: 9150509979174638088, guid: 7e5380e18aaa00e4d927c6933dd8e1fc, type: 3}
   responseMessagePrefab: {fileID: 4200082577758867129, guid: 91cceb031ecb7f8478531b5fd52a06fa, type: 3}
   nextMessageText: {fileID: 8306025977038751227}
+  sendButton: {fileID: 5863580643440991736}
   newMessageAlertImage: {fileID: 0}
   newMessageCountText: {fileID: 0}
   messageContainer: {fileID: 2363133336650469666}
+  timeToWaitForResponse: 3
+  queuedMessage:
+    messageText: 
+    messagePhase: 0
+    isPlayerMessage: 0
+    isSent: 0
+    isResponse: 0
+    isResponseTo: 
+    hasResponse: 0
+    responseIs: 
 --- !u!95 &3249079264309555458
 Animator:
   serializedVersion: 7

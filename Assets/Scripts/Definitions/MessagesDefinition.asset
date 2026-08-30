@@ -13,19 +13,112 @@ MonoBehaviour:
   m_Name: MessagesDefinition
   m_EditorClassIdentifier: Assembly-CSharp::MessagesDefinition
   messages:
-  - messageText: Are you okay?
+  - messageText: Hey! Just wanted to give you a heads-up, I left for work while you
+      were asleep. I'll be home late, so you'll have the house to yourself as usual.
+      See you later. :)
     messagePhase: 0
     isPlayerMessage: 0
     isSent: 0
-  - messageText: Stop pretending you don't know what you did
+    isResponse: 0
+    isResponseTo: 
+    hasResponse: 0
+    responseIs: 
+  - messageText: Thanks for the heads-up, maybe you could give me a heads-up next
+      time you take what isn't yours
     messagePhase: 0
     isPlayerMessage: 1
-    isSent: 0
-  - messageText: I'm going to expose you
-    messagePhase: 0
-    isPlayerMessage: 1
-    isSent: 0
-  - messageText: ????????
+    isSent: 1
+    isResponse: 0
+    isResponseTo: 
+    hasResponse: 1
+    responseIs: Yeah, uh sure thing???
+  - messageText: Yeah, uh sure thing???
     messagePhase: 1
     isPlayerMessage: 0
     isSent: 0
+    isResponse: 1
+    isResponseTo: Thanks for the heads-up, maybe you could give me a heads-up next
+      time you take what isn't yours
+    hasResponse: 0
+    responseIs: 
+  - messageText: Hey, I had to leave the house a little earlier than usual since
+      traffic was backed up. The cat should be wandering around. I won't be home
+      till late again. Hope you have a good day.
+    messagePhase: 1
+    isPlayerMessage: 0
+    isSent: 0
+    isResponse: 0
+    isResponseTo: 
+    hasResponse: 0
+    responseIs: 
+  - messageText: "We always seem to miss each other lately. We\u2019ll have to make
+      some time to chat soon."
+    messagePhase: 1
+    isPlayerMessage: 1
+    isSent: 0
+    isResponse: 0
+    isResponseTo: 
+    hasResponse: 1
+    responseIs: Yeah, we probably should,  maybe over lunch or something.
+  - messageText: Yeah, we probably should,  maybe over lunch or something.
+    messagePhase: 1
+    isPlayerMessage: 0
+    isSent: 0
+    isResponse: 1
+    isResponseTo: "We always seem to miss each other lately. We\u2019ll have to make
+      some time to chat soon."
+    hasResponse: 1
+    responseIs: You'd take what little I have left?
+  - messageText: You'd take what little I have left?
+    messagePhase: 1
+    isPlayerMessage: 1
+    isSent: 0
+    isResponse: 1
+    isResponseTo: Yeah, we probably should,  maybe over lunch or something.
+    hasResponse: 1
+    responseIs: ... What?
+  - messageText: ... What?
+    messagePhase: 1
+    isPlayerMessage: 0
+    isSent: 0
+    isResponse: 1
+    isResponseTo: You'd take what little I have left?
+    hasResponse: 0
+    responseIs: 
+  - messageText: Left for work, I noticed all the new additions to the apartment.
+      They look... good. We should probably talk soon though. I think we should go
+      over some things.
+    messagePhase: 2
+    isPlayerMessage: 0
+    isSent: 0
+    isResponse: 0
+    isResponseTo: 
+    hasResponse: 0
+    responseIs: 
+  - messageText: I agree. We need to talk.
+    messagePhase: 2
+    isPlayerMessage: 1
+    isSent: 1
+    isResponse: 0
+    isResponseTo: 
+    hasResponse: 1
+    responseIs: "Yeah\u2026 I'll be home tomorrow morning. We can chat then. See
+      ya."
+  - messageText: "Yeah\u2026 I'll be home tomorrow morning. We can chat then. See
+      ya."
+    messagePhase: 2
+    isPlayerMessage: 0
+    isSent: 0
+    isResponse: 1
+    isResponseTo: I agree. We need to talk.
+    hasResponse: 1
+    responseIs: Works for me.
+  - messageText: Works for me.
+    messagePhase: 2
+    isPlayerMessage: 0
+    isSent: 1
+    isResponse: 1
+    isResponseTo: "Yeah\u2026 I'll be home tomorrow morning. We can chat then. See
+      ya."
+    hasResponse: 0
+    responseIs: 

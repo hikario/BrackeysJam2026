@@ -1054,6 +1054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BankingWidgetController
   screenAnimator: {fileID: 9094490096916341758}
+  containerObject: {fileID: 1399158817332924927}
   bankingLineItemPrefab: {fileID: 5020823074459233280, guid: d60eea396de1c034fa70c8362810aeed, type: 3}
   currentBalanceTextDisplay: {fileID: 7090699313754644002}
   positiveValueColor: {r: 0.114512846, g: 0.18867922, b: 0.15538287, a: 1}

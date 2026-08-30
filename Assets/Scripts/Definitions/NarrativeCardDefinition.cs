@@ -16,6 +16,7 @@ public class NarrativeCardData
     public Sprite narrativeBeatSprite;
 
     public NarrativeCardDisplay prefab;
+    public Ending ending;
 }
 
 [CreateAssetMenu(fileName = "NarrativeCardDefinition", menuName = "Scriptable Objects/NarrativeCardDefinition")]

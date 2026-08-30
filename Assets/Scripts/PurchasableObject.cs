@@ -14,5 +14,6 @@ public class PurchasableObject
     public RenderTexture objectRT;
     public Material objectRTMaterial;
     public float viewerScale = 1;
+    public Vector3 viewerStartPosition = Vector3.zero;
     public Vector3 viewerStartRotation = Vector3.zero;
 }
