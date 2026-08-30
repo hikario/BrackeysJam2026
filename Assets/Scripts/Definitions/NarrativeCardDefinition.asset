@@ -678,4 +678,120 @@ MonoBehaviour:
     narrativeBeatSprite: {fileID: 0}
     prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
     ending: 3
+  - messageContent: '"I need to confess." I said, as I averted my gaze towards the
+      table.<br><br>"I wasn''t sure what was going on and I didn''t want to risk
+      what we''ve got here so I figured I''d just try and catch you instead of confronting
+      you about it."'
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
+  - messageContent: "\u201CAt first, I was so sure it was you. Everything sort of
+      indicated that it had to be you.\u201D<br><br>\u201CThat was my suspicion at
+      least.\u201D<br><br>I pulled my phone out of my pocket and opened the gallery."
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
+  - messageContent: "\u201CThe equipment I bought was questionable at best. It only
+      lead me towards more questions.\u201D<br><br>\u201CThat was until I took a
+      good hard look at the situation and realized that it couldn\u2019t be you.\u201D<br><br>I
+      passed my phone to my roommate."
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
+  - messageContent: "\u201CWhat does that look like to you?\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
+  - messageContent: They winced.<br><br>"Ugh, looks like one of those bagged chickens
+      you like to eat from time to time."<br><br>"You know I hate this kind of thing,
+      why are you showing me that?"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
+  - messageContent: '"I''m showing you this, because you''re a vegan. You wouldn''t
+      eat this kind of thing to begin with."<br><br>I leaned back in my chair, arms
+      crossed.'
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
+  - messageContent: '"No, this kind of thing doesn''t interest you. But that doesn''t
+      mean that it wouldn''t interest someone else."'
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
+  - messageContent: Suddenly, a low growl was heard emanating from underneath the
+      couch.<br><br>I turned my head towards the direction of the living room couch.
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
+  - messageContent: '"It''s going to sound insane, but I think I know the answer
+      to this mystery.<br><br>My roommate looked at me with a puzzled expression.'
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
+  - messageContent: I had enough. We rose from the table and walked towards the living
+      room.<br><br>Standing before the couch, I kneeled down and decided to confront
+      the source of the noise.
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
+  - messageContent: Hidden beneath the couch was our pet cat, who sat there surrounded
+      on all sides by piles and piles of empty chip bags, chicken bones and half-chewed
+      takeout containers.
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
+  - messageContent: It had never been my roommate. It simply could not be them. It
+      was instead one, abnormally hungry cat.
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
   defaultNarrativeCardPrefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
