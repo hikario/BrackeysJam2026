@@ -450,4 +450,232 @@ MonoBehaviour:
     narrativeBeatSprite: {fileID: 0}
     prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
     ending: 4
+  - messageContent: '"You <i>what???</i>'
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 4
+  - messageContent: "\u201CAre you really going to try and play it off like you don\u2019t
+      know?\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: '"Whoa, listen. What''s your deal? You''ve been acting so strange
+      lately."'
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: '"I know it''s you. I know it''s always been you. You''ve been
+      stealing from me, stealing my food and mocking me all along the way."'
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: '"Stealing food? Why would I steal food from you?! I''m not a
+      thief!"'
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: '"I knew you''d say that. I know how you are, but I''ve got evidence,
+      see?"'
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: "I pulled out my phone that had been loaded with every trace
+      of evidence I had gathered in the previous days.<br><br>The set-up was perfect.
+      All they needed to do was admit that they had been caught red-handed.<br><br>I
+      turned my phone towards my roommate. \u201CThere, there\u2019s your proof\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: '"This is your evidence? Some blurry photos of leftover chip
+      bags and a noisy audio clip? How did you even get this stuff?"'
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: '"I-I set up some surveillance equipment. I knew you''d never
+      confess to it, so I did what I had to do to make sure you couldn''t lie your
+      way out of it."'
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: '"So instead of asking me directly, you figured you''d catch
+      me stealing...<br><br>I wish you had mentioned something sooner or directly
+      to me. There''s something you should see."<br><br>My roommate pulled their
+      phone out from within their pocket and scrolled their finger on the screen
+      in search of something.'
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: '"Tell me if I''m wrong, but do any of these look familiar?"<br><br>It
+      was a picture of piles of discarded wrappers, a moldy takeout container and
+      what I could only describe as clumps of thin black and white hair that appeared
+      to be hastily shoved underneath the couch. <br><br>"I haven''t been eating
+      your food, but I suspect someone here has been."'
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: "\u201CHave you been feeding the cat lately? I haven\u2019t had
+      the time.\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: It was as if I had been hit by a truck. All of my planning, all
+      of my efforts, all for nothing. I was in shock. It had all come crashing down
+      and I was the only one to blame.   And in that moment, somewhere between here
+      and there, in the distance I heard a single sound...
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: '"Meow"'
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: '"...surveil? I''m not sure I follow you."'
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 3
+  - messageContent: "\"Yeah, surveil... For evidence\u2026 Of wrongdoing\u2026<br><br>I
+      didn't know how to confront you because I didn't have any proof that you'd
+      been taking my food in the first place. Accusing you outright didn't make sense.
+      So I bought a bunch of spy gear and placed it around the house.\""
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 3
+  - messageContent: My roommate rose from their seat and slammed their hands down
+      with a loud bang.<br><br>"Wait, your food has been going missing? <i>So has
+      mine!</i>"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 3
+  - messageContent: '"I''ve been meaning to ask you about it for so long but I just
+      couldn''t figure out how to approach the subject.<br><br>I thought you set
+      this up so you could confess, but clearly something else is going on."'
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 3
+  - messageContent: I was shocked and confused. I tried to make sense of this new
+      revelation but could barely form a sentence before my roommate interjected.
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 3
+  - messageContent: "\"I thought maybe you were sneaking food away for some reason.
+      I kept finding wrappers and half eaten takeout in the weirdest places and figured
+      maybe you were going through something.   I only decided to finally confront
+      you because I found scraps of rotisserie chicken near the cat tree. I was kinda
+      concerned\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 3
+  - messageContent: This new information floored me. If I could describe the way
+      I felt at that moment, I'd probably say it was like watching a firework fly
+      deep into the open night sky. You know what's going to happen, but sometimes
+      the trajectory is a mystery. It was some strange combination of uncertainty,
+      acceptance and sudden realization wrapped all into one neat little explosion
+      of a package.
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 3
+  - messageContent: I'd spent all of my time scheming, I'd let the whole thing possess
+      me. I was just like the rotisserie rascal I wanted to catch. Incapable of giving
+      anyone a single morsel of doubt.
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 3
+  - messageContent: We sank into our chairs defeated. Perhaps this was simply a matter
+      of a mystery that would remain unsolved. I had tried everything in my power,
+      but maybe it was simply not to be.
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 3
   defaultNarrativeCardPrefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
