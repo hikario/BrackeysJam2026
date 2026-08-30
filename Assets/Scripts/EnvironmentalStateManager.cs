@@ -15,10 +15,14 @@ public class EnvironmentalStateManager : MonoBehaviour
     GameObject FridgeDoorController;
     int GamePhase;
     GameObject compScreenManager;
+    [SerializeField]
+    NarrativeCardManager narrativeManager;
+    SceneFader SF;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        GamePhase = 0;
         if (FridgeDoorController == null)
         {
             FridgeDoorController = GameObject.Find("SM_Fridge/Cube");
@@ -28,6 +32,14 @@ public class EnvironmentalStateManager : MonoBehaviour
         {
             compScreenManager = GameObject.Find("ComputerScreenManager");
         }
+
+        if (narrativeManager == null)
+        {
+            narrativeManager = GameObject.Find("NarrativeManager").GetComponent<NarrativeCardManager>();
+        }
+        narrativeManager.StartNewSequence();
+
+        SF = GameObject.Find("FaderImage").GetComponent<SceneFader>();
     }
 
     // Open Fridge Door
@@ -41,10 +53,33 @@ public class EnvironmentalStateManager : MonoBehaviour
         FridgeDoorController.SendMessage("SetBottomDoorClosed");
     }
 
-    void AdvanceTime()
+    public void AdvanceTime()
     {
+        FadeToBlack();
         GamePhase++;
         compScreenManager.SendMessage("ProgressToNextSequence",GamePhase);
+        if (GamePhase == 4)
+        {
+            narrativeManager.StartNewSequence(CalculateEnding());
+        }
+        else
+        {
+            narrativeManager.StartNewSequence();
+        }
+    }
+
+    void FadeToBlack()
+    {
+        Debug.Log("Fade In");
+        SF.fadeDirection = SceneFader.FadeDirection.In;
+        SF.RunFade();
+    }
+
+    public void FadeFromBlack()
+    {
+        Debug.Log("Fade Out");
+        SF.fadeDirection = SceneFader.FadeDirection.Out;
+        SF.RunFade();
     }
 
     int GetTime()

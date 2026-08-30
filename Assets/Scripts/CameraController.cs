@@ -10,6 +10,8 @@ public class CameraController : MonoBehaviour
     GameObject CurrentCamera;
     GameObject TargetCamera;
     [SerializeField]
+    GameObject LivingRoomCamera;
+    [SerializeField]
     GameObject FridgeInsideCamera;
     [SerializeField]
     GameObject KitchenCamera;
@@ -59,6 +61,7 @@ public class CameraController : MonoBehaviour
         }
 
         cameraList = new List<GameObject>();
+        cameraList.Add(LivingRoomCamera);
         cameraList.Add(FridgeInsideCamera);
         cameraList.Add(KitchenCamera);
         cameraList.Add(BedroomDoorCamera);
@@ -66,7 +69,7 @@ public class CameraController : MonoBehaviour
         cameraList.Add(ComputerCamera);
 
         cameraListLength = cameraList.Count;
-        cameraListIndex = 1;
+        cameraListIndex = 2;
     }
 
     // Update is called once per frame
@@ -106,6 +109,18 @@ public class CameraController : MonoBehaviour
         }
     }
 
+    void MoveToLivingRoom()
+    {
+        LivingRoomCamera.SetActive(true);
+        TargetCamera = LivingRoomCamera;
+        UpdatedCurrent = false;
+
+        if(CurrentCamera == FridgeInsideCamera)
+        {
+            EnvironmentalStateManager.SendMessage("CloseFridge");
+        }
+    }
+
     void MoveToFridge()
     {
         FridgeInsideCamera.SetActive(true);
@@ -114,7 +129,6 @@ public class CameraController : MonoBehaviour
 
         if(CurrentCamera != FridgeInsideCamera)
         {
-            Debug.Log("Opening Fridge");
             EnvironmentalStateManager.SendMessage("OpenFridge");
         }
     }
@@ -179,18 +193,21 @@ public class CameraController : MonoBehaviour
             switch(cameraListIndex)
             {
                 case 0:
-                    MoveToFridge();
+                    MoveToLivingRoom();
                     break;
                 case 1:
-                    MoveToKitchen();
+                    MoveToFridge();
                     break;
                 case 2:
-                    MoveToBedroomDoor();
+                    MoveToKitchen();
                     break;
                 case 3:
-                    MoveToBedroom();
+                    MoveToBedroomDoor();
                     break;
                 case 4:
+                    MoveToBedroom();
+                    break;
+                case 5:
                     MoveToComputer();
                     break;
                 default:
@@ -223,18 +240,21 @@ public class CameraController : MonoBehaviour
             switch(cameraListIndex)
             {
                 case 0:
-                    MoveToFridge();
+                    MoveToLivingRoom();
                     break;
                 case 1:
-                    MoveToKitchen();
+                    MoveToFridge();
                     break;
                 case 2:
-                    MoveToBedroomDoor();
+                    MoveToKitchen();
                     break;
                 case 3:
-                    MoveToBedroom();
+                    MoveToBedroomDoor();
                     break;
                 case 4:
+                    MoveToBedroom();
+                    break;
+                case 5:
                     MoveToComputer();
                     break;
                 default:
