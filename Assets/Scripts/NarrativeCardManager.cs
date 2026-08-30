@@ -77,17 +77,16 @@ public class NarrativeCardManager : MonoBehaviour
         }
     }
 
-    public void StartNewSequenceForPhase()
+    public void StartNewSequence(Ending ending = Ending.NONE)
     {
-        InitNewNarrativeCardsForPhaseIndex(ComputerScreenManager.currentSequence);
+        InitNewNarrativeCardsForPhaseIndex(ComputerScreenManager.currentSequence, ending);
         if (currentNarrativeCardsData.Count > 0)
         {
             StartDisplaySequence();
         }
     }
 
-
-    public void InitNewNarrativeCardsForPhaseIndex(int phaseIndex)
+    public void InitNewNarrativeCardsForPhaseIndex(int phaseIndex, Ending ending = Ending.NONE)
     {
         if (currentNarrativeCardsData != null)
         {
@@ -100,9 +99,8 @@ public class NarrativeCardManager : MonoBehaviour
 
         foreach (NarrativeCardData card in narrativeCardDefinitionReference.narrativeCards)
         {
-            if (card.narrativePhase == phaseIndex && !card.wasShown)
+            if (card.narrativePhase == phaseIndex && !card.wasShown && card.ending == ending)
             {
-                // check for day 4 & check for correct ending
                 currentNarrativeCardsData.Add(card);
             }
         }

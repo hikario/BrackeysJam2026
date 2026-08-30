@@ -9,6 +9,10 @@ public class Messages
     public int messagePhase;
     public bool isPlayerMessage;
     public bool isSent;
+    public bool isResponse;
+    public string isResponseTo;
+    public bool hasResponse;
+    public string responseIs;
 }
 
 [CreateAssetMenu(fileName = "MessagesDefinition", menuName = "Scriptable Objects/MessagesDefinition")]

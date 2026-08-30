@@ -14,7 +14,7 @@ public class PurchasableObjectViewer : MonoBehaviour
         this.name = purchasableData.objectName + " Viewer";
         rtCamera.targetTexture = purchasable.objectRT;
         GameObject model = Instantiate(purchasable.objectModel, objectContainer, false);
-        model.transform.localPosition = Vector3.zero;
+        model.transform.localPosition = purchasable.viewerStartPosition;
         model.transform.localScale = model.transform.localScale * purchasable.viewerScale;
         model.transform.localRotation = Quaternion.Euler(purchasable.viewerStartRotation);
 

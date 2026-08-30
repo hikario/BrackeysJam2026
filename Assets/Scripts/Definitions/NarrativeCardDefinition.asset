@@ -18,7 +18,7 @@ MonoBehaviour:
     narrativePhase: 0
     narrativeOrder: 0
     cardDuration: 5
-    narrativeBeatSprite: {fileID: -1193240897, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
+    narrativeBeatSprite: {fileID: 0}
     prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
   - messageContent: Partially consumed cracker rolls, a few misplaced fruit, and
       a deli container of thinly sliced black forest ham that'd inexplicably diminished
@@ -27,10 +27,10 @@ MonoBehaviour:
     narrativePhase: 0
     narrativeOrder: 1
     cardDuration: 7.5
-    narrativeBeatSprite: {fileID: -1193240897, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
+    narrativeBeatSprite: {fileID: 0}
     prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
   - messageContent: For quite some time now, I'd noticed that my food had been disappearing.
-    wasShown: 0
+    wasShown: 1
     narrativePhase: 0
     narrativeOrder: 2
     cardDuration: 5
@@ -38,23 +38,23 @@ MonoBehaviour:
     prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
   - messageContent: On most days, I would simply attribute it to any reasonable explanation
       that came to mind.
-    wasShown: 0
+    wasShown: 1
     narrativePhase: 0
     narrativeOrder: 3
     cardDuration: 7.5
-    narrativeBeatSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
+    narrativeBeatSprite: {fileID: 0}
     prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
   - messageContent: '"Your wallet was a little light, remember? You must''ve put
       that back on the shelf."'
-    wasShown: 0
+    wasShown: 1
     narrativePhase: 0
     narrativeOrder: 4
     cardDuration: 5
-    narrativeBeatSprite: {fileID: -207026188, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
+    narrativeBeatSprite: {fileID: 0}
     prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
   - messageContent: '"You might''ve left that on your desk at work, I''ll grab it
       tomorrow morning."'
-    wasShown: 0
+    wasShown: 1
     narrativePhase: 0
     narrativeOrder: 5
     cardDuration: 5
@@ -62,7 +62,7 @@ MonoBehaviour:
     prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
   - messageContent: At times, the losses were so severe that there was no rational
       explanation that could account for my dwindling food supplies.
-    wasShown: 0
+    wasShown: 1
     narrativePhase: 0
     narrativeOrder: 6
     cardDuration: 7.5
@@ -70,7 +70,7 @@ MonoBehaviour:
     prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
   - messageContent: Perhaps I would have considered it just another one of life's
       many valuable lessons. No use crying over spilt milk as it were.
-    wasShown: 0
+    wasShown: 1
     narrativePhase: 0
     narrativeOrder: 7
     cardDuration: 7.5
@@ -79,7 +79,7 @@ MonoBehaviour:
   - messageContent: However, as the rumbling in my stomach intensified and my wallet
       began to feel as light as a drifting leaf, I realized I had no option but to
       dig deeper into the mystery before me.
-    wasShown: 0
+    wasShown: 1
     narrativePhase: 0
     narrativeOrder: 8
     cardDuration: 10

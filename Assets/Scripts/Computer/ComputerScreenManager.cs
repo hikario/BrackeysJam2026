@@ -7,16 +7,18 @@ using UnityEngine.EventSystems;
 public class ComputerScreen : MonoBehaviour
 {
     [SerializeField] private Animator screenAnimator;
+    [SerializeField] public GameObject containerObject;
 
     public void ToggleScreenVisibility()
     {
-        if (gameObject.activeInHierarchy)
+        if (containerObject.activeInHierarchy)
         {
             CloseScreen();
         }
         else
         {
-            gameObject.SetActive(true);
+            screenAnimator.SetBool("expand", true);
+            containerObject.SetActive(true);
         }
     }
 
@@ -28,7 +30,7 @@ public class ComputerScreen : MonoBehaviour
 
     private void DisableScreen()
     {
-        gameObject.SetActive(false);
+        containerObject.SetActive(false);
     }
 }
 
