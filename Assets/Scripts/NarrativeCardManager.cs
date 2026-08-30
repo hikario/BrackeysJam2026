@@ -40,6 +40,7 @@ public class NarrativeCardManager : MonoBehaviour
 
         enterAction = playerActions.FindAction("DialogueNext");
         narrativeCardDefinitionReference.FillEmptyPrefabReferences();
+        narrativeBeatImage.color = Color.clear;
 
         if (resetForDebug)
         {
@@ -171,6 +172,53 @@ public class NarrativeCardManager : MonoBehaviour
             //Debug.Log($"Display new card for '{currentNarrativeCardsData[i].messageContent}' at {Time.frameCount}");
             currentCard = Instantiate(currentNarrativeCardsData[i].prefab, cardParentRectTransform);
             currentCard.InitNarrativeCard(currentNarrativeCardsData[i]);
+
+
+            ///// IMAGE HANDLING LOGIC
+            //Debug.Log($"Current narrative beat sprite is {currentNarrativeCardsData[i].narrativeBeatSprite}, " +
+            //    $"image alpha is {narrativeBeatImage.color.a}, " +
+            //    $"next image sprite is the same as current is {narrativeBeatImage.sprite == currentNarrativeCardsData[i].narrativeBeatSprite}");
+            if (currentNarrativeCardsData[i].narrativeBeatSprite != null && narrativeBeatImage.sprite != currentNarrativeCardsData[i].narrativeBeatSprite)
+            {
+                float narrativeBeatImageAlpha = narrativeBeatImage.color.a;
+                float duration = quickFadeDuraton * narrativeBeatImage.color.a;
+                float fadeInCanvasDuration = 0;
+                if (narrativeBeatImage.color.a > 0)
+                {
+                    while (fadeInCanvasDuration < duration)
+                    {
+                        fadeInCanvasDuration += Time.deltaTime;
+                        narrativeBeatImage.color = new Color(1,1,1, Mathf.Lerp(narrativeBeatImageAlpha, 0, fadeInCanvasDuration / duration));
+                        yield return null;
+                    }
+                }
+
+                narrativeBeatImage.sprite = currentNarrativeCardsData[i].narrativeBeatSprite;
+
+                narrativeBeatImageAlpha = narrativeBeatImage.color.a;
+                duration = longFadeDuraton * (1 - narrativeBeatImage.color.a);
+                fadeInCanvasDuration = 0;
+                while (fadeInCanvasDuration < duration)
+                {
+                    fadeInCanvasDuration += Time.deltaTime;
+                    narrativeBeatImage.color = new Color(1, 1, 1, Mathf.Lerp(narrativeBeatImageAlpha, 1, fadeInCanvasDuration / duration));
+                    yield return null;
+                }
+            }
+            else if (currentNarrativeCardsData[i].narrativeBeatSprite == null && narrativeBeatImage.color.a > 0)
+            {
+                //Debug.Log($"Clear current image");
+                float narrativeBeatImageAlpha = narrativeBeatImage.color.a;
+                float duration = quickFadeDuraton * narrativeBeatImage.color.a;
+                float fadeInCanvasDuration = 0;
+                while (fadeInCanvasDuration < duration)
+                {
+                    fadeInCanvasDuration += Time.deltaTime;
+                    narrativeBeatImage.color = new Color(1, 1, 1, Mathf.Lerp(narrativeBeatImageAlpha, 0, fadeInCanvasDuration / duration));
+                    yield return null;
+                }
+            }
+            /////
 
             currentCard.FadeCanvasGroup(true, fadeInDuration);
 

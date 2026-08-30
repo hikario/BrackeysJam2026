@@ -18,7 +18,7 @@ MonoBehaviour:
     narrativePhase: 0
     narrativeOrder: 0
     cardDuration: 5
-    narrativeBeatSprite: {fileID: 0}
+    narrativeBeatSprite: {fileID: -1193240897, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
     prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
   - messageContent: Partially consumed cracker rolls, a few misplaced fruit, and
       a deli container of thinly sliced black forest ham that'd inexplicably diminished
@@ -27,10 +27,10 @@ MonoBehaviour:
     narrativePhase: 0
     narrativeOrder: 1
     cardDuration: 7.5
-    narrativeBeatSprite: {fileID: 0}
+    narrativeBeatSprite: {fileID: -1193240897, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
     prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
   - messageContent: For quite some time now, I'd noticed that my food had been disappearing.
-    wasShown: 1
+    wasShown: 0
     narrativePhase: 0
     narrativeOrder: 2
     cardDuration: 5
@@ -42,7 +42,7 @@ MonoBehaviour:
     narrativePhase: 0
     narrativeOrder: 3
     cardDuration: 7.5
-    narrativeBeatSprite: {fileID: 0}
+    narrativeBeatSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
     prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
   - messageContent: '"Your wallet was a little light, remember? You must''ve put
       that back on the shelf."'
@@ -50,7 +50,7 @@ MonoBehaviour:
     narrativePhase: 0
     narrativeOrder: 4
     cardDuration: 5
-    narrativeBeatSprite: {fileID: 0}
+    narrativeBeatSprite: {fileID: -207026188, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
     prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
   - messageContent: '"You might''ve left that on your desk at work, I''ll grab it
       tomorrow morning."'

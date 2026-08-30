@@ -790,7 +790,7 @@ MonoBehaviour:
   useBlurEffects: 1
   blurScreen: {fileID: 0}
   canvasGroup: {fileID: 748551406048551326}
-  narrativeBeatImage: {fileID: 0}
+  narrativeBeatImage: {fileID: 8596197812367938144}
   fadeInDuration: 1
   fadeOutDuration: 1
   quickFadeDuraton: 0.25
@@ -820,7 +820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.13725491, g: 0.13333334, b: 0.13333334, a: 0.78431374}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
