@@ -10,13 +10,14 @@ public class PurchaseScreenController : ComputerScreen
     [SerializeField] public PurchasableListing listingPrefab;
     [SerializeField] public PurchasableObjectViewer rtCameraPrefab;
     private List<PurchasableObject> instantiatedObjects = new List<PurchasableObject>();
+    private List<PurchasableListing> listings = new List<PurchasableListing>();
     private List<PurchasableObjectViewer> viewers = new List<PurchasableObjectViewer>();
     [SerializeField] public RectTransform listingParentRectTransform;
     [SerializeField] public RectTransform listingDisplayRectTransform;
     [SerializeField] public Transform listingObjectsTransform;
     [SerializeField] private PurchasableListing currentlyHighlightedListing;
 
-    private void OnEnable()
+    public void UpdatePurchasableObjects()
     {
         foreach (PurchasableObject purchasableObject in ComputerScreenManager.instance.purchasableObjectDefinitionReference.purchasableObjects)
         {
@@ -59,7 +60,16 @@ public class PurchaseScreenController : ComputerScreen
                 viewer.InitViewer(purchasableObject);
                 viewers.Add(viewer);
 
+                listings.Add(listing);
                 instantiatedObjects.Add(purchasableObject);
+            }
+        }
+
+        if (ComputerScreenManager.currentSequence == 3)
+        {
+            foreach (PurchasableListing listing in listings)
+            {
+                listing.purchaseButton.interactable = false;
             }
         }
 

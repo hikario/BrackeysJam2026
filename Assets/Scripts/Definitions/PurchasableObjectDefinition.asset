@@ -52,8 +52,8 @@ MonoBehaviour:
     viewerStartRotation: {x: 0, y: 0, z: 0}
   - objectName: Detective Fedora
     objectTier: 0
-    isPurchased: 1
-    isPlaced: 1
+    isPurchased: 0
+    isPlaced: 0
     objectDescription: Cutting edge avian surveillance technology, virtually indistinguishable
       from the real thing.
     objectPrice: 14.99

@@ -4,9 +4,10 @@ using TMPro;
 public class BankingWidgetController : ComputerScreen
 {
     [SerializeField] private BankingLineItem bankingLineItemPrefab;
-    [SerializeField] public TextMeshProUGUI currentBalanceTextDisplay;
-    [SerializeField] public Color positiveValueColor = Color.darkSlateGray;
-    [SerializeField] public Color negativeValueColor = Color.darkRed;
+    [SerializeField] private TextMeshProUGUI currentBalanceTextDisplay;
+    [SerializeField] private Color positiveValueColor = Color.darkSlateGray;
+    [SerializeField] private Color negativeValueColor = Color.darkRed;
+    [SerializeField] private GameObject[] finalDayLockoutObjects;
     [SerializeField] private RectTransform lineItemContainer;
 
     private void OnEnable()
@@ -16,6 +17,14 @@ public class BankingWidgetController : ComputerScreen
 
     public void UpdateCurrentMoneyTextDisplay()
     {
+        if (ComputerScreenManager.currentSequence == 3)
+        {
+            foreach (GameObject obj in finalDayLockoutObjects)
+            {
+                obj.SetActive(true);
+            }
+        }
+
         currentBalanceTextDisplay.text = string.Format("{0:C}", ComputerScreenManager.instance.GetCurrentMoney());
 
         if (ComputerScreenManager.instance.GetCurrentMoney() > 0)

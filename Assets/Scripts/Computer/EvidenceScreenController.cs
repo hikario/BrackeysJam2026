@@ -25,7 +25,7 @@ public class EvidenceScreenController : ComputerScreen
     private bool firstPointSet = false;
 
 
-    private void OnEnable()
+    public void UpdateCollectedEvidence()
     {
         evidenceViewerGameObject.SetActive(false);
 

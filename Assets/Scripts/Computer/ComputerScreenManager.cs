@@ -81,13 +81,16 @@ public class ComputerScreenManager : MonoBehaviour
             }
         }
 
-        messengerScreenController.SendNextRoommateMessages();
+        ProgressToNextSequence(0);
     }
 
     public void ProgressToNextSequence(int sequenceNumber)
     {
         currentSequence = sequenceNumber;
         messengerScreenController.SendNextRoommateMessages();
+        evidenceScreenController.UpdateCollectedEvidence();
+        purchaseScreenController.UpdatePurchasableObjects();
+        bankingScreenController.UpdateCurrentMoneyTextDisplay();
     }
 
     public void UpdateCurrentMoney(float amountToAdd)
