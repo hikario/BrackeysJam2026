@@ -86,7 +86,7 @@ public class NarrativeCardManager : MonoBehaviour
             }
             else if (currentNarrativeCardsData.Count == 0 && sequenceIsActive)
             {
-                cardParentRectTransform.GetComponentInChildren<NarrativeCardDisplay>().FadeCanvasGroup(false, quickFadeDuraton);
+                //cardParentRectTransform.GetComponentInChildren<NarrativeCardDisplay>().FadeCanvasGroup(false, quickFadeDuraton);
                 ForceEndSequence();
             }
         }
@@ -294,6 +294,13 @@ public class NarrativeCardManager : MonoBehaviour
 
     private IEnumerator CoForceEndSequence()
     {
+        if (cardParentRectTransform.childCount > 0)
+        {
+            foreach (Transform transform in cardParentRectTransform.transform)
+            {
+                Destroy(transform.gameObject);
+            }
+        }
         if (useBlurEffects && blurEffectsActive)
         {
             blurScreen.DisableBlur();
