@@ -27,6 +27,16 @@ public class SceneLoader: MonoBehaviour
         Invoke("NextScene", delay);
     }
 
+    public void ApartmentScene()
+    {
+        SceneManager.LoadScene("ApartmentLevel");
+    }
+
+    public void ApartmentSceneWithDelay()
+    {
+        Invoke("ApartmentScene", delay);
+    }
+
     public void ReloadSceneWithDelay()
     {
         Invoke("ReloadScene", delay);
