@@ -940,6 +940,13 @@ MonoBehaviour:
   BedroomCamera: {fileID: 662930019}
   ComputerCamera: {fileID: 105171203}
   UICanvas: {fileID: 1303279082}
+  playerFS:
+    Guid:
+      Data1: -1164117444
+      Data2: 1324431534
+      Data3: 1475043753
+      Data4: -1021481779
+    Path: event:/SFX/Player/SFX_FS
   EnvironmentalStateManager: {fileID: 28893004}
 --- !u!1001 &133018936
 PrefabInstance:

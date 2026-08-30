@@ -3,6 +3,7 @@ using Unity.Cinemachine;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
 using System;
+using FMODUnity;
 
 public class CameraController : MonoBehaviour
 {
@@ -24,6 +25,9 @@ public class CameraController : MonoBehaviour
     [SerializeField]
     GameObject UICanvas;
 
+    [SerializeField]
+    public EventReference playerFS;
+
     // Cinemachine Brain variable, so we don't have to keep looking it up
     CinemachineBrain activeBrain;
 
@@ -39,6 +43,10 @@ public class CameraController : MonoBehaviour
     int cameraListLength;
 
     bool UpdatedCurrent = false;
+    bool playingAudio = false;
+
+    float elapsedTime = 0.0f;
+    float timeBetweenPlays = 0.8f;
     [SerializeField]
     GameObject EnvironmentalStateManager;
 
@@ -100,6 +108,21 @@ public class CameraController : MonoBehaviour
         }
         else
         {
+            if(!playingAudio)
+            {
+                playerFS.PlayOneShot();
+                playingAudio = true;
+            }
+            else
+            {
+                elapsedTime += Time.deltaTime;
+                if(elapsedTime >= timeBetweenPlays)
+                {
+                    playingAudio = false;
+                    elapsedTime = 0.0f;
+                }
+            }
+
             if (!UpdatedCurrent)
             {
                 CurrentCamera.SetActive(false);
@@ -183,6 +206,7 @@ public class CameraController : MonoBehaviour
 
     public void MoveToPrevious()
     {
+        // playerFS.PlayOneShot();
         int previous = cameraListIndex;
         cameraListIndex = Math.Min(++cameraListIndex, cameraListLength-1);
 
@@ -229,6 +253,7 @@ public class CameraController : MonoBehaviour
 
     public void MoveToNext()
     {
+        // playerFS.PlayOneShot();
         int previous = cameraListIndex;
         cameraListIndex = Math.Max(--cameraListIndex, 0);
 
