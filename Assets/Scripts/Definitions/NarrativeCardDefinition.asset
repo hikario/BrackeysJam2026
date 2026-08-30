@@ -13,76 +13,441 @@ MonoBehaviour:
   m_Name: NarrativeCardDefinition
   m_EditorClassIdentifier: Assembly-CSharp::NarrativeCardDefinition
   narrativeCards:
-  - messageContent: At first, it was just a few little things here and there...
+  - messageContent: At first, it was just a few little things here and there...<br><br>Partially
+      consumed cracker rolls, a few misplaced fruit, and a deli container of thinly
+      sliced black forest ham that'd inexplicably diminished in weight as the days
+      passed by.
     wasShown: 1
     narrativePhase: 0
     narrativeOrder: 0
     cardDuration: 5
     narrativeBeatSprite: {fileID: 0}
     prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
-  - messageContent: Partially consumed cracker rolls, a few misplaced fruit, and
-      a deli container of thinly sliced black forest ham that'd inexplicably diminished
-      in weight as the days passed by.
-    wasShown: 1
-    narrativePhase: 0
-    narrativeOrder: 1
-    cardDuration: 7.5
-    narrativeBeatSprite: {fileID: 0}
-    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
-  - messageContent: For quite some time now, I'd noticed that my food had been disappearing.
+    ending: 0
+  - messageContent: For quite some time now, I'd noticed that my food had been disappearing.<br><br>On
+      most days, I would simply attribute it to any reasonable explanation that came
+      to mind.
     wasShown: 1
     narrativePhase: 0
     narrativeOrder: 2
     cardDuration: 5
     narrativeBeatSprite: {fileID: 0}
     prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
-  - messageContent: On most days, I would simply attribute it to any reasonable explanation
-      that came to mind.
-    wasShown: 1
-    narrativePhase: 0
-    narrativeOrder: 3
-    cardDuration: 7.5
-    narrativeBeatSprite: {fileID: 0}
-    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
-  - messageContent: '"Your wallet was a little light, remember? You must''ve put
-      that back on the shelf."'
-    wasShown: 1
-    narrativePhase: 0
-    narrativeOrder: 4
-    cardDuration: 5
-    narrativeBeatSprite: {fileID: 0}
-    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
-  - messageContent: '"You might''ve left that on your desk at work, I''ll grab it
-      tomorrow morning."'
-    wasShown: 1
-    narrativePhase: 0
-    narrativeOrder: 5
-    cardDuration: 5
-    narrativeBeatSprite: {fileID: 0}
-    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 0
   - messageContent: At times, the losses were so severe that there was no rational
-      explanation that could account for my dwindling food supplies.
+      explanation that could account for my dwindling food supplies.<br><br>However,
+      as the rumbling in my stomach intensified and my wallet began to feel as light
+      as a drifting leaf, I realized I had no option but to dig deeper into the mystery
+      before me.
     wasShown: 1
     narrativePhase: 0
     narrativeOrder: 6
     cardDuration: 7.5
     narrativeBeatSprite: {fileID: 0}
     prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
-  - messageContent: Perhaps I would have considered it just another one of life's
-      many valuable lessons. No use crying over spilt milk as it were.
+    ending: 0
+  - messageContent: The way I saw it, there could only be one explanation for the
+      missing food.
     wasShown: 1
     narrativePhase: 0
-    narrativeOrder: 7
-    cardDuration: 7.5
+    narrativeOrder: 9
+    cardDuration: 5
     narrativeBeatSprite: {fileID: 0}
     prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
-  - messageContent: However, as the rumbling in my stomach intensified and my wallet
-      began to feel as light as a drifting leaf, I realized I had no option but to
-      dig deeper into the mystery before me.
+    ending: 0
+  - messageContent: "The way I saw it, there could only be one explanation for the
+      missing food.<br><br>My roommate\u2026"
     wasShown: 1
     narrativePhase: 0
-    narrativeOrder: 8
+    narrativeOrder: 9
+    cardDuration: 5
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 0
+  - messageContent: We had met in college and decided to live in an apartment together
+      after graduation out of convenience. Though we spent little time together due
+      to our schedules, our living situation was remarkably easygoing. So much in
+      fact that we went as far as to adopt an adorable pet cat that we cared for
+      equally.
+    wasShown: 1
+    narrativePhase: 0
+    narrativeOrder: 10
+    cardDuration: 25
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 0
+  - messageContent: They were the ideal roommate. Considerate, helpful, always timely.
+      Flawless in every way. It was ideal given the circumstances.<br><br>And yet,
+      as I once again stared into the pale white emptiness that was our communal
+      refrigerator; I couldn't escape the nagging feeling that our perfect arrangement
+      had begun to unravel.
+    wasShown: 0
+    narrativePhase: 0
+    narrativeOrder: 11
+    cardDuration: 5
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 0
+  - messageContent: "My first instinct was to confront them directly, but perhaps
+      that kind of approach wasn\u2019t quite my style.<br><br> No, perhaps this
+      situation required more finesse."
+    wasShown: 0
+    narrativePhase: 0
+    narrativeOrder: 10
+    cardDuration: 5
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 0
+  - messageContent: '"Have you been unfairly wronged?  Are you in need of justice? 
+      Do you seek PEACE? OF? MIND?<br><br>For all that and more, look no further
+      than the latest and greatest tactical innovations from The Spy jinks Co.<br><br>From
+      hidden cameras, audio recorders and everything in between, Spy Jinks has the
+      tools YOU need to Uncover the Truth." '
+    wasShown: 0
+    narrativePhase: 0
+    narrativeOrder: 11
+    cardDuration: 5
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 0
+  - messageContent: "The timing was perfect\u2026 I knew then that if I had any hope
+      of catching the culprit, I'd need a little help."
+    wasShown: 0
+    narrativePhase: 0
+    narrativeOrder: 12
+    cardDuration: 5
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 0
+  - messageContent: Now that they're out of the house. I should use this time to
+      gather up some clues.<br><br>Maybe I can also use this time to take a look
+      around at that spy website and <b>make a purchase or two</b>.<br><br>Also,
+      if I purchase something in the shop, I should <b>set it up in the apartment<b>.<br><br>Lastly,
+      If I find anything of note, I should <br>make sure to file it as an important
+      clue in my evidence folder</b>.
+    wasShown: 0
+    narrativePhase: 0
+    narrativeOrder: 12
+    cardDuration: 600
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 0
+  - messageContent: "There\u2019s not much else to do now except wait. I should get
+      some rest, only a few hours before my shift."
+    wasShown: 0
+    narrativePhase: 1
+    narrativeOrder: 12
+    cardDuration: 5
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 0
+  - messageContent: "These new traps should help out. It\u2019s time for bed."
+    wasShown: 0
+    narrativePhase: 2
+    narrativeOrder: 12
+    cardDuration: 5
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 0
+  - messageContent: 
+    wasShown: 0
+    narrativePhase: 2
+    narrativeOrder: 12
+    cardDuration: 5
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 0
+  - messageContent: Looks like today is the last day to get any proof. I'll need
+      to review what I've got so far and be prepared for tomorrow.
+    wasShown: 0
+    narrativePhase: 2
+    narrativeOrder: 12
+    cardDuration: 5
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 0
+  - messageContent: I should make sure that I've got all of my clues ready before
+      I head to bed.
+    wasShown: 0
+    narrativePhase: 3
+    narrativeOrder: 12
     cardDuration: 10
     narrativeBeatSprite: {fileID: 0}
     prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 0
+  - messageContent: I could barely sleep.<br><br>I wondered if they'd attempt to
+      wash their hands of it all and throw the blame back at me. Even if they tried,
+      I'd prepared for just that sort of tactic.<br><br>I had my evidence, it was
+      up to them to prove me wrong.
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 12
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 0
+  - messageContent: "\u201CMorning. I've got some coffee on the pot if you'd like
+      some\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 12
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
+  - messageContent: "\u201CMorning. I've got some coffee on the pot if you'd like
+      some\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 12
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: "\u201CMorning. I've got some coffee on the pot if you'd like
+      some\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 12
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 3
+  - messageContent: "\u201CMorning. I've got some coffee on the pot if you'd like
+      some\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 12
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 4
+  - messageContent: I took a seat at the table across from my roommate. I could tell
+      that things between us had grown tense, but this would likely be my only opportunity
+      to lay it all out.
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
+  - messageContent: I took a seat at the table across from my roommate. I could tell
+      that things between us had grown tense, but this would likely be my only opportunity
+      to lay it all out.
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: I took a seat at the table across from my roommate. I could tell
+      that things between us had grown tense, but this would likely be my only opportunity
+      to lay it all out.
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 3
+  - messageContent: I took a seat at the table across from my roommate. I could tell
+      that things between us had grown tense, but this would likely be my only opportunity
+      to lay it all out.
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 4
+  - messageContent: "\u201CI\u2019ve been meaning to talk to you, but I just haven\u2019t
+      had the time lately. I\u2019m sure you\u2019ve noticed a few changes around
+      the place.\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
+  - messageContent: "\u201CI\u2019ve been meaning to talk to you, but I just haven\u2019t
+      had the time lately. I\u2019m sure you\u2019ve noticed a few changes around
+      the place.\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: "\u201CI\u2019ve been meaning to talk to you, but I just haven\u2019t
+      had the time lately. I\u2019m sure you\u2019ve noticed a few changes around
+      the place.\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 3
+  - messageContent: "\u201CI\u2019ve been meaning to talk to you, but I just haven\u2019t
+      had the time lately. I\u2019m sure you\u2019ve noticed a few changes around
+      the place.\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 4
+  - messageContent: "\u201CI have actually. I've noticed a few changes to be honest.
+      Is everything alright? Our messages lately have been feeling a bit tense.\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
+  - messageContent: "\u201CI have actually. I've noticed a few changes to be honest.
+      Is everything alright? Our messages lately have been feeling a bit tense.\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: "\u201CI have actually. I've noticed a few changes to be honest.
+      Is everything alright? Our messages lately have been feeling a bit tense.\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 3
+  - messageContent: "\u201CI have actually. I've noticed a few changes to be honest.
+      Is everything alright? Our messages lately have been feeling a bit tense.\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 4
+  - messageContent: It was now or never.
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
+  - messageContent: It was now or never.
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: It was now or never.
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 3
+  - messageContent: It was now or never.
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 4
+  - messageContent: "\u201CWell, truthfully. There\u2019s something you should know.<br><br>My
+      food's been going missing for some time now. A lot of it in fact. Usually when
+      I'm asleep or out of the apartment.\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
+  - messageContent: "\u201CWell, truthfully. There\u2019s something you should know.<br><br>My
+      food's been going missing for some time now. A lot of it in fact. Usually when
+      I'm asleep or out of the apartment.\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: "\u201CWell, truthfully. There\u2019s something you should know.<br><br>My
+      food's been going missing for some time now. A lot of it in fact. Usually when
+      I'm asleep or out of the apartment.\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 3
+  - messageContent: "\u201CWell, truthfully. There\u2019s something you should know.<br><br>My
+      food's been going missing for some time now. A lot of it in fact. Usually when
+      I'm asleep or out of the apartment.\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 4
+  - messageContent: "\u201CI couldn\u2019t figure out why this kept happening, and
+      it was making me crazy.<br><br>I had my suspicions, but I needed to be sure.
+      So I ordered some equipment to\u2026 surveil the apartment.\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 1
+  - messageContent: "\u201CI couldn\u2019t figure out why this kept happening, and
+      it was making me crazy.<br><br>I had my suspicions, but I needed to be sure.
+      So I ordered some equipment to\u2026 surveil the apartment.\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 2
+  - messageContent: "\u201CI couldn\u2019t figure out why this kept happening, and
+      it was making me crazy.<br><br>I had my suspicions, but I needed to be sure.
+      So I ordered some equipment to\u2026 surveil the apartment.\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 3
+  - messageContent: "\u201CI couldn\u2019t figure out why this kept happening, and
+      it was making me crazy.<br><br>I had my suspicions, but I needed to be sure.
+      So I ordered some equipment to\u2026 surveil the apartment.\u201D"
+    wasShown: 0
+    narrativePhase: 4
+    narrativeOrder: 0
+    cardDuration: 10
+    narrativeBeatSprite: {fileID: 0}
+    prefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
+    ending: 4
   defaultNarrativeCardPrefab: {fileID: 8031229054714573727, guid: 46144ee6793e7274fad2d555075b3d10, type: 3}
