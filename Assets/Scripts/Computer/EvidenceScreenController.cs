@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UI.Extensions;
 using TMPro;
+using FMODUnity;
 
 public class EvidenceScreenController : ComputerScreen
 {
@@ -19,6 +20,7 @@ public class EvidenceScreenController : ComputerScreen
     [SerializeField] private RectTransform evidenceParentRectTransform;
     [SerializeField] private ScrollSnap evidenceScrollSnap;
     [SerializeField] private Animator evidenceViewerAnimator;
+    [SerializeField] private EventReference clickAudioEvent;
 
     [Header("Conspiracy Board ;P")]
     public UILineRenderer lineRenderer;
@@ -121,7 +123,7 @@ public class EvidenceScreenController : ComputerScreen
     {
         //Debug.Log($"Display {_evidence.evidenceName}");
         evidenceViewerGameObject.SetActive(true);
-
+        openWindowAudioEvent.PlayOneShot();
         foreach (Evidence evidence in evidenceToDisplay)
         {
             if (evidence.evidenceName == _evidence.evidenceName)
@@ -134,6 +136,7 @@ public class EvidenceScreenController : ComputerScreen
     }
     private void ChangePage()
     {
+        clickAudioEvent.PlayOneShot();
         evidenceScrollSnap.ChangePage(newPage);
     }
 

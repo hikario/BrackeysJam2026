@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using FMODUnity;
 
 public class PurchaseScreenController : ComputerScreen
 {
@@ -16,6 +17,7 @@ public class PurchaseScreenController : ComputerScreen
     [SerializeField] public RectTransform listingDisplayRectTransform;
     [SerializeField] public Transform listingObjectsTransform;
     [SerializeField] private PurchasableListing currentlyHighlightedListing;
+    [SerializeField] private EventReference purchaseAudioEvent;
 
     public void UpdatePurchasableObjects()
     {
@@ -80,6 +82,7 @@ public class PurchaseScreenController : ComputerScreen
     {
         //Debug.Log($"Purchase {_purchasableObject.objectName} at {Time.frameCount}");
         _purchasableObject.isPurchased = true;
+        purchaseAudioEvent.PlayOneShot();
         ComputerScreenManager.instance.purchasableObjectDefinitionReference.MarkObjectAsPurchased(_purchasableObject.objectName);
         ComputerScreenManager.instance.UpdateCurrentMoney(-_purchasableObject.objectPrice);
         ComputerScreenManager.instance.bankingScreenController.AddNewLineItem(_purchasableObject);

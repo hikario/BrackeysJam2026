@@ -81,7 +81,7 @@ MonoBehaviour:
     evidenceType: 1
     catEvidence: 1
     evidenceIsCollected: 0
-    flaggedAsRelevant: 0
+    flaggedAsRelevant: 1
     evidencePhase: 2
     evidenceSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
     evidenceAudioEvent:
@@ -97,7 +97,7 @@ MonoBehaviour:
     evidenceType: 1
     catEvidence: 1
     evidenceIsCollected: 0
-    flaggedAsRelevant: 0
+    flaggedAsRelevant: 1
     evidencePhase: 1
     evidenceSprite: {fileID: 70583373, guid: 0bc6dfaf8e58aeb408e8da69e66b7cbf, type: 3}
     evidenceAudioEvent:
@@ -111,7 +111,7 @@ MonoBehaviour:
     requiredPurchasableID: Microphone Plant
   - evidenceName: Roommate's Door
     evidenceType: 0
-    catEvidence: 0
+    catEvidence: 1
     evidenceIsCollected: 0
     flaggedAsRelevant: 0
     evidencePhase: 2
@@ -130,7 +130,7 @@ MonoBehaviour:
     catEvidence: 0
     evidenceIsCollected: 0
     flaggedAsRelevant: 0
-    evidencePhase: 1
+    evidencePhase: 2
     evidenceSprite: {fileID: 21300000, guid: b4d3a6a78604f22488effb421f5fe5f9, type: 3}
     evidenceAudioEvent:
       Guid:
@@ -145,8 +145,8 @@ MonoBehaviour:
     evidenceType: 0
     catEvidence: 1
     evidenceIsCollected: 0
-    flaggedAsRelevant: 0
-    evidencePhase: 2
+    flaggedAsRelevant: 1
+    evidencePhase: 3
     evidenceSprite: {fileID: 21300000, guid: 6ba8cea3b3a2ae54b982613af6335234, type: 3}
     evidenceAudioEvent:
       Guid:
@@ -175,10 +175,10 @@ MonoBehaviour:
     requiredPurchasableID: Pigeon Cam
   - evidenceName: Pigeon Cam 2
     evidenceType: 0
-    catEvidence: 0
+    catEvidence: 1
     evidenceIsCollected: 0
     flaggedAsRelevant: 0
-    evidencePhase: 2
+    evidencePhase: 3
     evidenceSprite: {fileID: 21300000, guid: ea3652a3ce72f514cac5f4d95f167c08, type: 3}
     evidenceAudioEvent:
       Guid:

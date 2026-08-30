@@ -1055,6 +1055,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BankingWidgetController
   screenAnimator: {fileID: 9094490096916341758}
   containerObject: {fileID: 1399158817332924927}
+  openWindowAudioEvent:
+    Guid:
+      Data1: 1169153924
+      Data2: 1330926775
+      Data3: 1430775169
+      Data4: -330959607
+    Path: event:/SFX/Computer/SFX_Computer_Window_Open
+  closeWindowAudioEvent:
+    Guid:
+      Data1: -1564591078
+      Data2: 1079287511
+      Data3: -1362968943
+      Data4: -2038132396
+    Path: event:/SFX/Computer/SFX_Computer_Window_Close
   bankingLineItemPrefab: {fileID: 5020823074459233280, guid: d60eea396de1c034fa70c8362810aeed, type: 3}
   currentBalanceTextDisplay: {fileID: 7090699313754644002}
   positiveValueColor: {r: 0.114512846, g: 0.18867922, b: 0.15538287, a: 1}

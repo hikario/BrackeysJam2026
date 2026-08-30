@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using FMODUnity;
 
 public class MessengerScreenController : ComputerScreen
 {
@@ -15,6 +16,7 @@ public class MessengerScreenController : ComputerScreen
     [SerializeField] public TextMeshProUGUI newMessageCountText;
     [SerializeField] private RectTransform messageContainer;
     [SerializeField] private float timeToWaitForResponse = 1f;
+    [SerializeField] private EventReference typingEventReference;
     [SerializeField] private Messages queuedMessage;
     private bool isOpen = false;
 
@@ -104,6 +106,9 @@ public class MessengerScreenController : ComputerScreen
         //    }
         //}
 
+        typingEventReference.PlayOneShot();
+        typingEventReference.PlayOneShot();
+        typingEventReference.PlayOneShot();
         GameObject newMessage = Instantiate(playerMessagePrefab, messageContainer);
         newMessage.GetComponentInChildren<TextMeshProUGUI>().text = queuedMessage.messageText;
         ComputerScreenManager.instance.messagesDefinitionReference.MarkMessageAsSent(queuedMessage);

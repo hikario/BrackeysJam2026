@@ -2,12 +2,15 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using FMODUnity;
 
 [Serializable]
 public class ComputerScreen : MonoBehaviour
 {
     [SerializeField] private Animator screenAnimator;
     [SerializeField] public GameObject containerObject;
+    [SerializeField] public EventReference openWindowAudioEvent;
+    [SerializeField] public EventReference closeWindowAudioEvent;
 
     public void ToggleScreenVisibility()
     {
@@ -17,6 +20,7 @@ public class ComputerScreen : MonoBehaviour
         }
         else
         {
+            openWindowAudioEvent.PlayOneShot();
             screenAnimator.SetBool("expand", true);
             containerObject.SetActive(true);
         }
@@ -24,6 +28,7 @@ public class ComputerScreen : MonoBehaviour
 
     public void CloseScreen()
     {
+        closeWindowAudioEvent.PlayOneShot();
         screenAnimator.SetBool("expand", false);
         Invoke("DisableScreen", .5f);
     }
@@ -74,7 +79,7 @@ public class ComputerScreenManager : MonoBehaviour
             }
             foreach (Evidence evidence in evidenceDefinitionReference.evidence)
             {
-                evidence.evidenceIsCollected = false;
+                //evidence.evidenceIsCollected = false;
                 evidence.flaggedAsRelevant = false;
             }
             foreach (Messages message in messagesDefinitionReference.messages)

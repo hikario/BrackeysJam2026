@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MessagesDefinition
   m_EditorClassIdentifier: Assembly-CSharp::MessagesDefinition
   messages:
-  - messageText: Hey! Just wanted to give you a heads-up, I left for work while you
+  - messageText: Hey! just wanted to give you a heads-up, I left for work while you
       were asleep. I'll be home late, so you'll have the house to yourself as usual.
       Help yourself to some fruit. See you later. :)
     messagePhase: 0

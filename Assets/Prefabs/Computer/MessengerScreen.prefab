@@ -1010,6 +1010,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MessengerScreenController
   screenAnimator: {fileID: 3249079264309555458}
   containerObject: {fileID: 3981646449777332373}
+  openWindowAudioEvent:
+    Guid:
+      Data1: 1169153924
+      Data2: 1330926775
+      Data3: 1430775169
+      Data4: -330959607
+    Path: event:/SFX/Computer/SFX_Computer_Window_Open
+  closeWindowAudioEvent:
+    Guid:
+      Data1: -1564591078
+      Data2: 1079287511
+      Data3: -1362968943
+      Data4: -2038132396
+    Path: event:/SFX/Computer/SFX_Computer_Window_Close
   playerMessagePrefab: {fileID: 9150509979174638088, guid: 7e5380e18aaa00e4d927c6933dd8e1fc, type: 3}
   responseMessagePrefab: {fileID: 4200082577758867129, guid: 91cceb031ecb7f8478531b5fd52a06fa, type: 3}
   nextMessageText: {fileID: 8306025977038751227}
@@ -1018,6 +1032,13 @@ MonoBehaviour:
   newMessageCountText: {fileID: 0}
   messageContainer: {fileID: 2363133336650469666}
   timeToWaitForResponse: 3
+  typingEventReference:
+    Guid:
+      Data1: 2008673922
+      Data2: 1184845757
+      Data3: 1885665204
+      Data4: 143156065
+    Path: event:/SFX/Computer/SFX_Computer_Type
   queuedMessage:
     messageText: 
     messagePhase: 0
